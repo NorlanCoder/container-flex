@@ -52,7 +52,7 @@
                     </select>
                 </div>
                 @if ($errors->any())
-                <div class="alert alert-danger">
+                <div class="alert al    ert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)
                         <li class=" text-red-600">{{ $error }}</li>
@@ -64,6 +64,7 @@
                     <button type="submit" class="bg-[#444] text-gray-800 p-2 px-4">Envoyer</button>
                 </div>
             </form>
+
         </div>
 
 

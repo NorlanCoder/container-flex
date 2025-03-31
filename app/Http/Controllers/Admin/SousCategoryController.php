@@ -16,6 +16,7 @@ class SousCategoryController extends Controller
     public function index()
     {
         $sous_categories = SousCategory::with('category')->get();
+        // dd($sous_categories);
         return view('admin.sous-categories.index', ['souscategories' => $sous_categories]);
     }
 
@@ -88,6 +89,6 @@ class SousCategoryController extends Controller
         $sous_category = SousCategory::find($id);
         $sous_category->delete();
 
-        return Redirect::route('sous-category.delete')->with('status', 'category deleted');
+        return Redirect::route('souscategories.index')->with('status', 'category deleted');
     }
 }

@@ -21,3 +21,4 @@ Route::get('/souscategory/create', [SousCategoryController::class, 'create'])->n
 Route::get('/souscategory/{souscategory}/edit', [SousCategoryController::class, 'edit'])->name('souscategory.edit');
 Route::post('/souscategory/store', [SousCategoryController::class, 'store'])->name('souscategory.store');
 Route::put('/souscategory/{souscategory}/update', [SousCategoryController::class, 'update'])->name('souscategory.update');
+Route::delete('/souscategory/{souscategory}/delete', [SousCategoryController::class, 'destroy'])->name('souscategory.delete');
