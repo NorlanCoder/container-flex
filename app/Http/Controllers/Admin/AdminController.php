@@ -14,6 +14,7 @@ class AdminController extends Controller
     {
         return view('admin.template');
     }
+    
 
     /**
      * Show the form for creating a new resource.
