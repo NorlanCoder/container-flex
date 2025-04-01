@@ -38,8 +38,6 @@ class CategoryController extends Controller
         ]);
 
         Category::create($validate);
-
-        
     }
 
     /**
@@ -83,6 +81,6 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $category->delete();
 
-        return Redirect::route('category.delete')->with('status', 'category deleted');
+        return Redirect::route('categories.index')->with('status', 'category deleted');
     }
 }

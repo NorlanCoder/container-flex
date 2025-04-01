@@ -43,12 +43,12 @@
                         <td class="dark:text-white text-black p-4">{{$souscategory->label}}</td>
                         <td class="dark:text-white text-black p-4">{{$souscategory->category->label}}</td>
                         <td class="dark:text-white text-black p-4">{{$souscategory->description ?? "_"}}</td>
-                        <td class="dark:text-white text-black p-4">
-                            <a class=" text-green-700" href="{{route('souscategory.edit',$souscategory->id)}}">Editer</a>
+                        <td class="dark:text-white text-black p-4 flex">
+                            <a class=" text-green-700 mr-2" href="{{route('souscategory.edit',$souscategory->id)}}">Editer</a>
                             <form id="deleteForm" action="{{ route('souscategory.delete',$souscategory->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit">Supprimer</button>
+                                <button type="submit" class="text-red-600">Supprimer</button>
                             </form>
                         </td>
                     </tr>

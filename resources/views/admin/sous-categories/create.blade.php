@@ -60,7 +60,7 @@
                 </div>
                 @endif
                 <div class="mt-4">
-                    <button type="submit" class="bg-[#444] text-white p-2 px-4">Envoyer</button>
+                    <button type="submit" class="bg-[#444] text-gray-600 p-2 px-4">Envoyer</button>
                 </div>
             </form>
         </div>

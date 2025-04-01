@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminConteneurController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\SousCategoryController;
@@ -22,3 +23,6 @@ Route::get('/souscategory/{souscategory}/edit', [SousCategoryController::class, 
 Route::post('/souscategory/store', [SousCategoryController::class, 'store'])->name('souscategory.store');
 Route::put('/souscategory/{souscategory}/update', [SousCategoryController::class, 'update'])->name('souscategory.update');
 Route::delete('/souscategory/{souscategory}/delete', [SousCategoryController::class, 'destroy'])->name('souscategory.delete');
+Route::delete('/category/{category}/delete', [CategoryController::class, 'destroy'])->name('category.delete');
+Route::get('/admin/conteneurs/index', [AdminConteneurController::class, 'index'])->name('admin.conteneur.index');
+Route::get('/admin/conteneurs/create', [AdminConteneurController::class, 'create'])->name('admin.conteneur.create');
