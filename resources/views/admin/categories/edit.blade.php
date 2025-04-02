@@ -23,7 +23,7 @@
     <div class="w-full overflow-hidden rounded-lg shadow-xs">
         <div class="w-full overflow-x-auto">
             <form action="{{ route('category.update',$category->id) }}" enctype="multipart/form-data" class="w-full"
-                method="put">
+                method="post">
                 @csrf
                 @method('put')
                 <div class="flex flex-col w-1/2 mt-4">

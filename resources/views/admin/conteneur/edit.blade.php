@@ -22,7 +22,7 @@
     </h4>
     <div class="w-full overflow-hidden rounded-lg shadow-xs">
         <div class="w-full overflow-x-auto">
-            <form action="{{ route('admin.conteneur.edit',{$conteneur}) }}" enctype="multipart/form-data" class="w-full"
+            <form action="{{ route('admin.conteneur.update',$conteneur->id) }}" enctype="multipart/form-data" class="w-full"
                 method="post">
                 @csrf
                 @method('PUT')
