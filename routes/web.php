@@ -26,3 +26,6 @@ Route::delete('/souscategory/{souscategory}/delete', [SousCategoryController::cl
 Route::delete('/category/{category}/delete', [CategoryController::class, 'destroy'])->name('category.delete');
 Route::get('/admin/conteneurs/index', [AdminConteneurController::class, 'index'])->name('admin.conteneur.index');
 Route::get('/admin/conteneurs/create', [AdminConteneurController::class, 'create'])->name('admin.conteneur.create');
+Route::post('/admin/conteneurs/store', [AdminConteneurController::class, 'store'])->name('admin.conteneur.store');
+Route::put('/admin/conteneurs/{conteneur}/edit', [AdminConteneurController::class, 'edit'])->name('admin.conteneur.edit');
+Route::delete('/admin/conteneur/{conteneur}/delete', [AdminConteneurController::class, 'destroy'])->name('admin.conteneur.delete');

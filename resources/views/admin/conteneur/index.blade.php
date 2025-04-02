@@ -50,8 +50,8 @@
                         <td class="dark:text-white text-black p-4">{{$conteneur->surface}}</td>
                         <td class="dark:text-white text-black p-4">{{$conteneur->capacity}}</td>
                         <td class="dark:text-white flex text-black p-4">
-                            <a class=" text-green-700 mr-2" href="{{route('category.edit',$category->id)}}">Editer</a>
-                            <form id="deleteForm" action="{{ route('category.delete',$category->id) }}" method="POST">
+                            <a class=" text-green-700 mr-2" href="{{route('admin.conteneur.edit',$conteneur->id)}}">Editer</a>
+                            <form id="deleteForm" action="{{ route('admin.conteneur.delete',$conteneur->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="text-red-600">Supprimer</button>

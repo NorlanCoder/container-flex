@@ -22,7 +22,7 @@
     </h4>
     <div class="w-full overflow-hidden rounded-lg shadow-xs">
         <div class="w-full overflow-x-auto">
-            <form action="{{ route('category.store') }}" enctype="multipart/form-data" class="w-full"
+            <form action="{{ route('admin.conteneur.store') }}" enctype="multipart/form-data" class="w-full"
                 method="post">
                 @csrf
                 <div class="flex flex-col w-1/2 mt-4">
@@ -32,22 +32,35 @@
                         placeholder="Saisir Libellé" name="label" id="libelle">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
+                    <label for="img2" class="text-black dark:text-white mb-2">Sous Categorie</label>
+                    <select name="conteneur_sous_category_id" id="category_id"
+                        class="w-full border border-[#444] bg-transparent text-black p-2">
+                        <option value="">Sélectionner une categorie</option>
+                        @if (count($souscategories))
+                        @foreach ($souscategories as $souscategory)
+                        <option class=" text-black" value="{{ $souscategory->id }}">{{ $souscategory->label }}
+                        </option>
+                        @endforeach
+                        @endif
+                    </select>
+                </div>
+                <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Etat</label>
                     <input type="text"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir etat" name="etat" id="etat">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Prix</label>
-                    <input type="text"
+                    <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir prix" name="prix" id="prix">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Description Rapide</label>
                     <input type="text"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir description rapide" name="quick_description" id="quick_description">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Description</label>
@@ -57,87 +70,87 @@
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">surface</label>
-                    <input type="decimal"
+                    <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir surface" name="surface" id="surface">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Capacité</label>
-                    <input type="text"
+                    <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir capacite" name="capacity" id="capacity">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Nombre de palettes</label>
                     <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir nombre de palette" name="nbr_palette" id="nbr_palette">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Longueur Exterieur</label>
                     <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir longueur exterieur" name="longueur_exterieur" id="longueur_exterieur">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Largeur Exterieur</label>
-                    <input type="text"
+                    <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir largeur exterieur" name="largeur_exterieur" id="largeur_exterieur">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Hauteur Exterieur</label>
-                    <input type="text"
+                    <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir hauteur exterieur" name="hauteur_exterieur" id="hauteur_exterieur">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Longueur interieur</label>
-                    <input type="text"
+                    <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir longueur interieur" name="longueur_interieur" id="longueur_interieur">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Largeur interieur</label>
-                    <input type="text"
+                    <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir largeur interieur" name="largeur_interieur" id="largeur_interieur">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Hauteur interieur</label>
-                    <input type="text"
+                    <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir hauteur interieur" name="hauteur_interieur" id="hauteur_interieur">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Largeur de porte</label>
-                    <input type="text"
+                    <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir largeur porte" name="largeur_porte" id="largeur_porte">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Hauteur porte</label>
-                    <input type="text"
+                    <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir hauteur porte" name="hauteur_porte" id="hauteur_porte">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Structure</label>
                     <input type="text"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir structure" name="structure" id="structure">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Plancher</label>
                     <input type="text"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir plancher" name="plancher" id="plancher">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">passage_de_fourche</label>
-                    <input type="text"
+                    <input type="number"
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
-                        placeholder="Saisir description" name="description" id="description">
+                        placeholder="Saisir passage de  fourche" name="passage_de_fourche" id="passage_de_fourche">
                 </div>
                 <div class="flex flex-col w-1/2 mt-4">
                     <label for="equipe1" class="text-black dark:text-white mb-2">Images</label>
@@ -145,6 +158,15 @@
                         class="w-full border border-[#444] bg-transparent text-black  p-2"
                         placeholder="Saisir description" name="description" id="description" accept="image/png, image/jpeg" multiple>
                 </div>
+                @if ($errors->any())
+                <div class=" bg-amber-700">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
 
                 <div class="mt-4">
                     <button type="submit" class="bg-[#444] text-gray-600 p-2 px-4">Envoyer</button>
