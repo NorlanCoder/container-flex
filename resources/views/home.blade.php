@@ -408,18 +408,18 @@
                             }
                         }'>
                         <div class="swiper-wrapper">
+                            
                             <!-- item 1 -->
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="img-product lazyload"
-                                                data-src="images/products/furniture/nightstand-brown.jpg"
-                                                src="images/products/furniture/nightstand-brown.jpg"
-                                                alt="image-product">
+                                                data-src="images/products/furniture/three-big-table.jpg"
+                                                src="images/products/furniture/three-big-table.jpg" alt="image-product">
                                             <img class="img-hover lazyload"
-                                                data-src="images/products/furniture/nightstand-black.jpg"
-                                                src="images/products/furniture/nightstand-black.jpg"
+                                                data-src="images/products/furniture/three-big-table-blue.jpg"
+                                                src="images/products/furniture/three-big-table-blue.jpg"
                                                 alt="image-product">
                                         </a>
                                         <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
@@ -453,63 +453,32 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <div class="countdown-box pos1">
-                                            <div class="js-countdown" data-timer="1007500"
-                                                data-labels="D  :,H  :,M  :,S"></div>
-                                        </div>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="product-detail.html" class="name-product link fw-medium text-md">Nook
-                                            Nightstand</a>
+                                        <a href="product-detail.html" class="name-product link fw-medium text-md">Three
+                                            Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
-                                            <span class="price-new text-primary">$150.00</span>
-                                            <span class="price-old">$170.00</span>
+                                            <span class="price-new text-primary">$120.00</span>
+                                            <span class="price-old">$140.00</span>
                                         </p>
-                                        <ul class="list-color-product">
-                                            <li class="list-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                <span class="tooltip">Brown</span>
-                                                <span class="swatch-value bg-brown-7"></span>
-                                                <img class="lazyload"
-                                                    data-src="images/products/furniture/nightstand-brown.jpg"
-                                                    src="images/products/furniture/nightstand-brown.jpg"
-                                                    alt="image-product">
-                                            </li>
-                                            <li class="list-color-item color-swatch hover-tooltip tooltip-bot">
-                                                <span class="tooltip">Black</span>
-                                                <span class="swatch-value bg-dark"></span>
-                                                <img class=" lazyload"
-                                                    data-src="images/products/furniture/nightstand-black.jpg"
-                                                    src="images/products/furniture/nightstand-black.jpg"
-                                                    alt="image-product">
-                                            </li>
-                                            <li class="list-color-item color-swatch hover-tooltip tooltip-bot">
-                                                <span class="tooltip">Dark Brown</span>
-                                                <span class="swatch-value bg-brown-8"></span>
-                                                <img class="lazyload"
-                                                    data-src="images/products/furniture/nightstand-dark-brown.jpg"
-                                                    src="images/products/furniture/nightstand-dark-brown.jpg"
-                                                    alt="image-product">
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- item 2 -->
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="img-product lazyload"
-                                                data-src="images/products/furniture/talco-table-blue.jpg"
-                                                src="images/products/furniture/talco-table-blue.jpg"
-                                                alt="image-product">
+                                                data-src="images/products/furniture/three-big-table.jpg"
+                                                src="images/products/furniture/three-big-table.jpg" alt="image-product">
                                             <img class="img-hover lazyload"
-                                                data-src="images/products/furniture/talco-table-darkpink.jpg"
-                                                src="images/products/furniture/talco-table-darkpink.jpg"
+                                                data-src="images/products/furniture/three-big-table-blue.jpg"
+                                                src="images/products/furniture/three-big-table-blue.jpg"
                                                 alt="image-product">
                                         </a>
-                                        <div class="on-sale-wrap"><span class="on-sale-item trending">Trending</span>
-                                        </div>
+                                        <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
                                         <ul class="list-product-btn">
                                             <li>
                                                 <a href="#shoppingCart" data-bs-toggle="offcanvas"
@@ -542,46 +511,30 @@
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="product-detail.html" class="name-product link fw-medium text-md">Talco
-                                            Coffee Table</a>
+                                        <a href="product-detail.html" class="name-product link fw-medium text-md">Three
+                                            Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
-                                            <span class="price-new">$130.00</span>
+                                            <span class="price-new text-primary">$120.00</span>
+                                            <span class="price-old">$140.00</span>
                                         </p>
-                                        <ul class="list-color-product">
-                                            <li class="list-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                <span class="tooltip color-filter">Teal Blue</span>
-                                                <span class="swatch-value bg-teal-blue"></span>
-                                                <img class="lazyload"
-                                                    data-src="images/products/furniture/talco-table-blue.jpg"
-                                                    src="images/products/furniture/talco-table-blue.jpg"
-                                                    alt="image-product">
-                                            </li>
-                                            <li class="list-color-item color-swatch hover-tooltip tooltip-bot">
-                                                <span class="tooltip color-filter">Dark Pink</span>
-                                                <span class="swatch-value bg-dark-pink"></span>
-                                                <img class=" lazyload"
-                                                    data-src="images/products/furniture/talco-table-darkpink.jpg"
-                                                    src="images/products/furniture/talco-table-darkpink.jpg"
-                                                    alt="image-product">
-                                            </li>
-
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- item 3 -->
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="img-product lazyload"
-                                                data-src="images/products/furniture/porcini-table.jpg"
-                                                src="images/products/furniture/porcini-table.jpg" alt="image-product">
+                                                data-src="images/products/furniture/three-big-table.jpg"
+                                                src="images/products/furniture/three-big-table.jpg" alt="image-product">
                                             <img class="img-hover lazyload"
-                                                data-src="images/products/furniture/porcini-table-brown.jpg"
-                                                src="images/products/furniture/porcini-table-brown.jpg"
+                                                data-src="images/products/furniture/three-big-table-blue.jpg"
+                                                src="images/products/furniture/three-big-table-blue.jpg"
                                                 alt="image-product">
                                         </a>
+                                        <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
                                         <ul class="list-product-btn">
                                             <li>
                                                 <a href="#shoppingCart" data-bs-toggle="offcanvas"
@@ -614,32 +567,16 @@
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="product-detail.html"
-                                            class="name-product link fw-medium text-md">Porcini Coffee Table</a>
+                                        <a href="product-detail.html" class="name-product link fw-medium text-md">Three
+                                            Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
-                                            <span class="price-new">$120.00</span>
+                                            <span class="price-new text-primary">$120.00</span>
+                                            <span class="price-old">$140.00</span>
                                         </p>
-                                        <ul class="list-color-product">
-                                            <li class="list-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                <span class="tooltip color-filter">Beige</span>
-                                                <span class="swatch-value bg-beige"></span>
-                                                <img class="lazyload"
-                                                    data-src="images/products/furniture/porcini-table.jpg"
-                                                    src="images/products/furniture/porcini-table.jpg"
-                                                    alt="image-product">
-                                            </li>
-                                            <li class="list-color-item color-swatch hover-tooltip tooltip-bot">
-                                                <span class="tooltip color-filter">Brown</span>
-                                                <span class="swatch-value bg-brown-7"></span>
-                                                <img class=" lazyload"
-                                                    data-src="images/products/furniture/porcini-table-brown.jpg"
-                                                    src="images/products/furniture/porcini-table-brown.jpg"
-                                                    alt="image-product">
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- item 4 -->
                             <div class="swiper-slide">
                                 <div class="card-product">
@@ -692,40 +629,21 @@
                                             <span class="price-new text-primary">$120.00</span>
                                             <span class="price-old">$140.00</span>
                                         </p>
-                                        <ul class="list-color-product">
-                                            <li
-                                                class="list-color-item color-swatch hover-tooltip tooltip-bot line active">
-                                                <span class="tooltip">Brown</span>
-                                                <span class="swatch-value bg-brown-8"></span>
-                                                <img class="lazyload"
-                                                    data-src="images/products/furniture/three-big-table.jpg"
-                                                    src="images/products/furniture/three-big-table.jpg"
-                                                    alt="image-product">
-                                            </li>
-                                            <li class="list-color-item color-swatch hover-tooltip tooltip-bot">
-                                                <span class="tooltip">Blue</span>
-                                                <span class="swatch-value bg-light-blue-2"></span>
-                                                <img class=" lazyload"
-                                                    data-src="images/products/furniture/three-big-table-blue.jpg"
-                                                    src="images/products/furniture/three-big-table-blue.jpg"
-                                                    alt="image-product">
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- item 5 -->
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
                                         <a href="product-detail.html" class="product-img">
                                             <img class="img-product lazyload"
-                                                data-src="images/products/furniture/nightstand-brown.jpg"
-                                                src="images/products/furniture/nightstand-brown.jpg"
-                                                alt="image-product">
+                                                data-src="images/products/furniture/three-big-table.jpg"
+                                                src="images/products/furniture/three-big-table.jpg" alt="image-product">
                                             <img class="img-hover lazyload"
-                                                data-src="images/products/furniture/nightstand-black.jpg"
-                                                src="images/products/furniture/nightstand-black.jpg"
+                                                data-src="images/products/furniture/three-big-table-blue.jpg"
+                                                src="images/products/furniture/three-big-table-blue.jpg"
                                                 alt="image-product">
                                         </a>
                                         <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
@@ -759,44 +677,14 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <div class="countdown-box pos1">
-                                            <div class="js-countdown" data-timer="1007500"
-                                                data-labels="D  :,H  :,M  :,S"></div>
-                                        </div>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="product-detail.html" class="name-product link fw-medium text-md">Nook
-                                            Nightstand</a>
+                                        <a href="product-detail.html" class="name-product link fw-medium text-md">Three
+                                            Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
-                                            <span class="price-new text-primary">$150.00</span>
-                                            <span class="price-old">$170.00</span>
+                                            <span class="price-new text-primary">$120.00</span>
+                                            <span class="price-old">$140.00</span>
                                         </p>
-                                        <ul class="list-color-product">
-                                            <li class="list-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                <span class="tooltip">Brown</span>
-                                                <span class="swatch-value bg-brown-7"></span>
-                                                <img class="lazyload"
-                                                    data-src="images/products/furniture/nightstand-brown.jpg"
-                                                    src="images/products/furniture/nightstand-brown.jpg"
-                                                    alt="image-product">
-                                            </li>
-                                            <li class="list-color-item color-swatch hover-tooltip tooltip-bot">
-                                                <span class="tooltip">Black</span>
-                                                <span class="swatch-value bg-dark"></span>
-                                                <img class=" lazyload"
-                                                    data-src="images/products/furniture/nightstand-black.jpg"
-                                                    src="images/products/furniture/nightstand-black.jpg"
-                                                    alt="image-product">
-                                            </li>
-                                            <li class="list-color-item color-swatch hover-tooltip tooltip-bot">
-                                                <span class="tooltip">Dark Brown</span>
-                                                <span class="swatch-value bg-brown-8"></span>
-                                                <img class="lazyload"
-                                                    data-src="images/products/furniture/nightstand-dark-brown.jpg"
-                                                    src="images/products/furniture/nightstand-dark-brown.jpg"
-                                                    alt="image-product">
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -822,7 +710,7 @@
                         </a>
                         <div class="cls-btn text-center wow fadeInUp">
                             <a href="shop-default.html"
-                                class="tf-btn btn-cls btn-white animate-btn animate-dark">Chairs</a>
+                                class="tf-btn btn-cls btn-white animate-btn animate-dark">40' Container</a>
                         </div>
                     </div>
                     <div class="item2 wg-cls style-abs hover-img">
@@ -833,7 +721,7 @@
                         </a>
                         <div class="cls-btn text-center wow fadeInUp">
                             <a href="shop-default.html"
-                                class="tf-btn btn-cls btn-white animate-btn animate-dark">Tables</a>
+                                class="tf-btn btn-cls btn-white animate-btn animate-dark">Office</a>
                         </div>
                     </div>
                     <div class="item3 wg-cls style-abs hover-img">
@@ -844,7 +732,7 @@
                         </a>
                         <div class="cls-btn text-center wow fadeInUp">
                             <a href="shop-default.html"
-                                class="tf-btn btn-cls btn-white animate-btn animate-dark">Decorations</a>
+                                class="tf-btn btn-cls btn-white animate-btn animate-dark">Reefer</a>
                         </div>
                     </div>
                 </div>
@@ -856,127 +744,7 @@
             <div class="container-2">
                 <div class="flat-title wow fadeInUp">
                     <h4 class="title">Curated Just for You</h4>
-                    <p class="desc text-main text-md">Discover a selection of timeless designs and trends that match
-                        your style, all in one place.</p>
-                </div>
-                <div class="fl-control-sw2 pos1 wow fadeInUp">
-                    <div dir="ltr" class="swiper tf-swiper" data-swiper='{
-                            "slidesPerView": 2,
-                            "spaceBetween": 12,
-                            "speed": 800,
-                            "observer": true,
-                            "observeParents": true,
-                            "slidesPerGroup": 2,
-                            "navigation": {
-                                "clickable": true,
-                                "nextEl": ".nav-next-categories",
-                                "prevEl": ".nav-prev-categories"
-                            },
-                            "pagination": { "el": ".sw-pagination-categories", "clickable": true },
-                            "breakpoints": {
-                            "575": { "slidesPerView": 3, "spaceBetween": 12 ,"slidesPerGroup": 2 },    
-                            "768": { "slidesPerView": 4, "spaceBetween": 24, "slidesPerGroup": 3 },
-                            "1200": { "slidesPerView": 6, "spaceBetween": 64, "slidesPerGroup": 3}
-                            }
-                        }'>
-                        <div class="swiper-wrapper">
-                            <!-- item 1 -->
-                            <div class="swiper-slide">
-                                <div class="wg-cls style-circle hover-img">
-                                    <a href="shop-default.html" class="image img-style d-block">
-                                        <img src="images/cls-categories/furniture/circle-newin.jpg"
-                                            data-src="images/cls-categories/furniture/circle-newin.jpg" alt="categories"
-                                            class="lazyload">
-                                    </a>
-                                    <div class="cls-content text-center">
-                                        <a href="shop-default.html" class="link text-xl-2 fw-medium">New In</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 2 -->
-                            <div class="swiper-slide">
-                                <div class="wg-cls style-circle hover-img">
-                                    <a href="shop-default.html" class="image img-style d-block">
-                                        <img src="images/cls-categories/furniture/circle-lighting.jpg"
-                                            data-src="images/cls-categories/furniture/circle-lighting.jpg"
-                                            alt="categories" class="lazyload">
-                                    </a>
-                                    <div class="cls-content text-center">
-                                        <a href="shop-default.html" class="link text-xl-2 fw-medium">Lighting</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 3 -->
-                            <div class="swiper-slide">
-                                <div class="wg-cls style-circle hover-img">
-                                    <a href="shop-default.html" class="image img-style d-block">
-                                        <img src="images/cls-categories/furniture/circle-table.jpg"
-                                            data-src="images/cls-categories/furniture/circle-table.jpg" alt="categories"
-                                            class="lazyload">
-                                    </a>
-                                    <div class="cls-content text-center">
-                                        <a href="shop-default.html" class="link text-xl-2 fw-medium">Table</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 4 -->
-                            <div class="swiper-slide">
-                                <div class="wg-cls style-circle hover-img">
-                                    <a href="shop-default.html" class="image img-style d-block">
-                                        <img src="images/cls-categories/furniture/circle-chair.jpg"
-                                            data-src="images/cls-categories/furniture/circle-chair.jpg" alt="categories"
-                                            class="lazyload">
-                                    </a>
-                                    <div class="cls-content text-center">
-                                        <a href="shop-default.html" class="link text-xl-2 fw-medium">Chair</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 5 -->
-                            <div class="swiper-slide">
-                                <div class="wg-cls style-circle hover-img">
-                                    <a href="shop-default.html" class="image img-style d-block">
-                                        <img src="images/cls-categories/furniture/circle-decor.jpg"
-                                            data-src="images/cls-categories/furniture/circle-decor.jpg" alt="categories"
-                                            class="lazyload">
-                                    </a>
-                                    <div class="cls-content text-center">
-                                        <a href="shop-default.html" class="link text-xl-2 fw-medium">Decor</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 6 -->
-                            <div class="swiper-slide">
-                                <div class="wg-cls style-circle hover-img">
-                                    <a href="shop-default.html" class="image img-style d-block">
-                                        <img src="images/cls-categories/furniture/circle-outdoor.jpg"
-                                            data-src="images/cls-categories/furniture/circle-outdoor.jpg"
-                                            alt="categories" class="lazyload">
-                                    </a>
-                                    <div class="cls-content text-center">
-                                        <a href="shop-default.html" class="link text-xl-2 fw-medium">Outdoor</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 7 -->
-                            <div class="swiper-slide">
-                                <div class="wg-cls style-circle hover-img">
-                                    <a href="shop-default.html" class="image img-style d-block">
-                                        <img src="images/cls-categories/furniture/circle-newin.jpg"
-                                            data-src="images/cls-categories/furniture/circle-newin.jpg" alt="categories"
-                                            class="lazyload">
-                                    </a>
-                                    <div class="cls-content text-center">
-                                        <a href="shop-default.html" class="link text-xl-2 fw-medium">New In</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <span
-                            class="d-flex d-xl-none sw-dot-default sw-pagination-categories justify-content-center"></span>
-                    </div>
-                    <div class="d-none d-xl-flex swiper-button-next nav-swiper nav-next-categories"></div>
-                    <div class="d-none d-xl-flex swiper-button-prev nav-swiper nav-prev-categories"></div>
+                    <p class="desc text-main text-md">Explore a selection of durable and stylish container solutions, all in one place.</p>
                 </div>
             </div>
         </section>
@@ -1046,110 +814,8 @@
             </div>
         </div>
         <!-- /Shop Collection -->
-        <!-- Banner Lookbook -->
-        <section class="flat-spacing-3">
-            <div class="container">
-                <div class="flat-title wow fadeInUp">
-                    <h4 class="title">Inspired by You</h4>
-                    <p class="desc text-main text-md">Find everything you need to recreate the look.</p>
-                </div>
-                <div class="banner-lookbook">
-                    <img class="img-banner" src="images/banner/furniture.jpg" data-src="images/banner/furniture.jpg"
-                        alt="">
-                    <div class="lookbook-item position1">
-                        <div class="dropdown dropup-center dropdown-custom">
-                            <div role="dialog" class="tf-pin-btn" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span></span>
-                            </div>
-                            <div class="dropdown-menu">
-                                <div class="loobook-product style-row">
-                                    <div class="img-style">
-                                        <img src="images/products/furniture/lookbook.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <div class="info">
-                                            <a href="product-detail.html"
-                                                class="text-md fw-medium text-line-clamp-1 link">Curved
-                                                Sofa</a>
-                                            <p class="price-wrap text-md fw-medium">
-                                                <span class="price-new text-primary">$999<span
-                                                        class="zero">.00</span></span>
-                                                <span class="price-old">$2,999<span class="zero">.00</span></span>
-                                            </p>
-                                        </div>
-                                        <a href="#quickView" data-bs-toggle="modal" class="btn-lookbook hover-tooltip">
-                                            <i class="icon-view"></i>
-                                            <span class="tooltip">Quick view</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lookbook-item position2">
-                        <div class="dropdown dropup-center dropdown-custom">
-                            <div role="dialog" class="tf-pin-btn" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span></span>
-                            </div>
-                            <div class="dropdown-menu">
-                                <div class="loobook-product style-row">
-                                    <div class="img-style">
-                                        <img src="images/products/furniture/lookbook-2.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <div class="info">
-                                            <a href="product-detail.html"
-                                                class="text-md fw-medium text-line-clamp-1 link">SOL Dining Table</a>
-                                            <p class="price-wrap text-md fw-medium">
-                                                <span class="price-new text-primary">$899<span
-                                                        class="zero">.00</span></span>
-                                                <span class="price-old">$1,999<span class="zero">.00</span></span>
-                                            </p>
-                                        </div>
-                                        <a href="#quickView" data-bs-toggle="modal" class="btn-lookbook hover-tooltip">
-                                            <i class="icon-view"></i>
-                                            <span class="tooltip">Quick view</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lookbook-item position3">
-                        <div class="dropdown dropup-center dropdown-custom">
-                            <div role="dialog" class="tf-pin-btn" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span></span>
-                            </div>
-                            <div class="dropdown-menu">
-                                <div class="loobook-product style-row">
-                                    <div class="img-style">
-                                        <img src="images/products/furniture/lookbook-3.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <div class="info">
-                                            <a href="product-detail.html"
-                                                class="text-md fw-medium text-line-clamp-1 link">Oak Pendant </a>
-                                            <p class="price-wrap text-md fw-medium">
-                                                <span class="price-new text-primary">$899<span
-                                                        class="zero">.00</span></span>
-                                                <span class="price-old">$1,999<span class="zero">.00</span></span>
-                                            </p>
-                                        </div>
-                                        <a href="#quickView" data-bs-toggle="modal" class="btn-lookbook hover-tooltip">
-                                            <i class="icon-view"></i>
-                                            <span class="tooltip">Quick view</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /Banner Lookbook -->
         <!-- Testimonial -->
-        <div class="flat-spacing-9 pt-0">
+        <div class="flat-spacing-9 pt-5">
             <div class="container">
                 <div class="wrapper-thumbs-tes flat-thumbs-tes" data-effect="fade">
                     <div class="box-left">
@@ -1945,10 +1611,6 @@
                 </div>
                 <div class="mb-other-content">
                     <div class="group-icon">
-                        <a href="wish-list.html" class="site-nav-icon">
-                            <i class="icon icon-heart"></i>
-                            Wishlist
-                        </a>
                         <a href="#login" data-bs-toggle="offcanvas" class="site-nav-icon">
                             <i class="icon icon-user"></i>
                             Login
@@ -3107,16 +2769,16 @@
 
 
     <!-- Javascript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
-    <script src="js/lazysize.min.js"></script>
-    <script src="js/count-down.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('js/jquery.min.js')}}"></script>
+    <script src="{{asset('js/swiper-bundle.min.js')}}"></script>
+    <script src="{{asset('js/carousel.js')}}"></script>
+    <script src="{{asset('js/bootstrap-select.min.js')}}"></script>
+    <script src="{{asset('js/lazysize.min.js')}}"></script>
+    <script src="{{asset('js/count-down.js')}}"></script>
+    <script src="{{asset('js/wow.min.js')}}"></script>
 
-    <script src="js/main.js"></script>
+    <script src="{{asset('js/main.js')}}"></script>
 </body>
 
 
