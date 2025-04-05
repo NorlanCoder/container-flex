@@ -81,16 +81,16 @@
                         <td class="dark:text-white text-black p-4">{{$conteneur->structure ?? "_"}}</td>
                         <td class="dark:text-white text-black p-4">{{$conteneur->plancher ?? "_"}}</td>
                         <td class="dark:text-white text-black p-4">{{$conteneur->passage_de_fourche." mm" ?? "_"}}</td>
-                        <td class="dark:text-white text-black p-4">{{$conteneur->img1 ?? "_"}}</td>
-                        <td class="dark:text-white text-black p-4">{{$conteneur->img2 ?? "_"}}</td>
-                        <td class="dark:text-white text-black p-4">{{$conteneur->img3 ?? "_"}}</td>
-                        <td class="dark:text-white text-black p-4">{{$conteneur->img4 ?? "_"}}</td>
-                        <td class="dark:text-white text-black p-4">{{$conteneur->img5 ?? "_"}}</td>
-                        <td class="dark:text-white text-black p-4">{{$conteneur->img6 ?? "_"}}</td>
-                        <td class="dark:text-white text-black p-4">{{$conteneur->img7 ?? "_"}}</td>
-                        <td class="dark:text-white text-black p-4">{{$conteneur->img8 ?? "_"}}</td>
-                        <td class="dark:text-white text-black p-4">{{$conteneur->img9 ?? "_"}}</td>
-                        <td class="dark:text-white text-black p-4">{{$conteneur->img10 ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4"> <a href=""> <img src="{{asset($conteneur->img1)}}" alt="" srcset="" width="100" height="100" /> </a> </td>
+                        <td class="dark:text-white text-black p-4"><a href="{{$conteneur->img2}}"> <img src="{{asset($conteneur->img2)}}" alt="" srcset=""> </a></td>
+                        <td class="dark:text-white text-black p-4"><a href="{{$conteneur->img3}}"> <img src="{{asset($conteneur->img3)}}" alt="" srcset=""> </a></td>
+                        <td class="dark:text-white text-black p-4"><a href="{{$conteneur->img4}}"> <img src="{{asset($conteneur->img4)}}" alt="" srcset=""> </a></td>
+                        <td class="dark:text-white text-black p-4"><a href="{{$conteneur->img5}}"> <img src="{{asset($conteneur->img5)}}" alt="" srcset=""> </a></td>
+                        <td class="dark:text-white text-black p-4"><a href="{{$conteneur->img6}}"> <img src="{{asset($conteneur->img6)}}" alt="" srcset=""> </a></td>
+                        <td class="dark:text-white text-black p-4"><a href="{{$conteneur->img7}}"> <img src="{{asset($conteneur->img7)}}" alt="" srcset=""> </a></td>
+                        <td class="dark:text-white text-black p-4"><a href="{{$conteneur->img8}}"> <img src="{{asset($conteneur->img8)}}" alt="" srcset=""> </a></td>
+                        <td class="dark:text-white text-black p-4"><a href="{{$conteneur->img9}}"> <img src="{{asset($conteneur->img9)}}" alt="" srcset=""> </a></td>
+                        <td class="dark:text-white text-black p-4"><a href="{{$conteneur->img10}}"> <img src="{{asset($conteneur->img10)}}" alt="" srcset=""> </a></td>
                         <td class="dark:text-white flex text-black p-4">
                             <a class=" text-green-700 mr-2" href="{{route('admin.conteneur.edit',$conteneur->id)}}">Editer</a>
                             <form id="deleteForm" action="{{ route('admin.conteneur.delete',$conteneur->id) }}" method="POST">
