@@ -29,6 +29,18 @@
     <link rel="shortcut icon" href="{{asset('images/logo/favicon.png')}}">
     <link rel="apple-touch-icon-precomposed" href="{{asset('images/logo/favicon.png')}}">
 
+    <style>
+        .yoyo {
+            height: 900px;
+        }
+
+        @media (max-width: 768px) {
+            .yoyo {
+                height: 150px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -240,14 +252,14 @@
                                             </p>
                                         </div>
                                         <div class="box-btn-slider fade-item fade-item-3">
-                                            <a href="" class="tf-btn btn-out-line-white">
+                                            <a href="{{route('productlist')}}" class="tf-btn btn-out-line-white">
                                                 See Maritime container
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="image" style="height: 900px;">
+                            <div class="image yoyo">
                                 <img src="{{asset('images/container/cont1.jpg')}}"
                                     data-src="{{asset('images/container/cont1.jpg')}}" alt="" class="lazyload">
                             </div>
@@ -267,14 +279,14 @@
                                             </p>
                                         </div>
                                         <div class="box-btn-slider fade-item fade-item-3">
-                                            <a href="" class="tf-btn btn-out-line-white">
+                                            <a href="{{route('productlist')}}" class="tf-btn btn-out-line-white">
                                                 See Cold container
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="image" style="height: 900px;">
+                            <div class="image yoyo">
                                 <img src="{{asset('images/container/cont2.jpg')}}"
                                     data-src="{{asset('images/container/cont2.jpg')}}" alt="" class="lazyload">
                             </div>
@@ -294,14 +306,14 @@
                                             </p>
                                         </div>
                                         <div class="box-btn-slider fade-item fade-item-3">
-                                            <a href="shop-default.html" class="tf-btn btn-out-line-white">
+                                            <a href="{{route('productlist')}}" class="tf-btn btn-out-line-white">
                                                 See furnished container
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="image" style="height: 900px;">
+                            <div class="image yoyo">
                                 <img src="{{asset('images/container/cont3.jpg')}}"
                                     data-src="{{asset('images/container/cont3.jpg')}}" alt="" class="lazyload">
                             </div>
@@ -413,13 +425,13 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="product-detail.html" class="product-img">
+                                        <a href="{{route('productdetails')}}" class="product-img">
                                             <img class="img-product lazyload"
-                                                data-src="images/products/furniture/three-big-table.jpg"
-                                                src="images/products/furniture/three-big-table.jpg" alt="image-product">
+                                                data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
                                             <img class="img-hover lazyload"
-                                                data-src="images/products/furniture/three-big-table-blue.jpg"
-                                                src="images/products/furniture/three-big-table-blue.jpg"
+                                                data-src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
                                                 alt="image-product">
                                         </a>
                                         <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
@@ -431,31 +443,10 @@
                                                     <span class="tooltip">Add to Cart</span>
                                                 </a>
                                             </li>
-                                            <li class="wishlist">
-                                                <a href="javascript:void(0);"
-                                                    class="hover-tooltip tooltip-left box-icon">
-                                                    <span class="icon icon-heart2"></span>
-                                                    <span class="tooltip">Add to Wishlist</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#quickView" data-bs-toggle="modal"
-                                                    class="hover-tooltip tooltip-left box-icon quickview">
-                                                    <span class="icon icon-view"></span>
-                                                    <span class="tooltip">Quick View</span>
-                                                </a>
-                                            </li>
-                                            <li class="compare">
-                                                <a href="#compare" data-bs-toggle="modal" aria-controls="compare"
-                                                    class="hover-tooltip tooltip-left box-icon">
-                                                    <span class="icon icon-compare"></span>
-                                                    <span class="tooltip">Add to Compare</span>
-                                                </a>
-                                            </li>
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="product-detail.html" class="name-product link fw-medium text-md">Three
+                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -469,13 +460,13 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="product-detail.html" class="product-img">
+                                        <a href="{{route('productdetails')}}" class="product-img">
                                             <img class="img-product lazyload"
-                                                data-src="images/products/furniture/three-big-table.jpg"
-                                                src="images/products/furniture/three-big-table.jpg" alt="image-product">
+                                                data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
                                             <img class="img-hover lazyload"
-                                                data-src="images/products/furniture/three-big-table-blue.jpg"
-                                                src="images/products/furniture/three-big-table-blue.jpg"
+                                                data-src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
                                                 alt="image-product">
                                         </a>
                                         <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
@@ -487,31 +478,10 @@
                                                     <span class="tooltip">Add to Cart</span>
                                                 </a>
                                             </li>
-                                            <li class="wishlist">
-                                                <a href="javascript:void(0);"
-                                                    class="hover-tooltip tooltip-left box-icon">
-                                                    <span class="icon icon-heart2"></span>
-                                                    <span class="tooltip">Add to Wishlist</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#quickView" data-bs-toggle="modal"
-                                                    class="hover-tooltip tooltip-left box-icon quickview">
-                                                    <span class="icon icon-view"></span>
-                                                    <span class="tooltip">Quick View</span>
-                                                </a>
-                                            </li>
-                                            <li class="compare">
-                                                <a href="#compare" data-bs-toggle="modal" aria-controls="compare"
-                                                    class="hover-tooltip tooltip-left box-icon">
-                                                    <span class="icon icon-compare"></span>
-                                                    <span class="tooltip">Add to Compare</span>
-                                                </a>
-                                            </li>
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="product-detail.html" class="name-product link fw-medium text-md">Three
+                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -525,13 +495,13 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="product-detail.html" class="product-img">
+                                        <a href="{{route('productdetails')}}" class="product-img">
                                             <img class="img-product lazyload"
-                                                data-src="images/products/furniture/three-big-table.jpg"
-                                                src="images/products/furniture/three-big-table.jpg" alt="image-product">
+                                                data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
                                             <img class="img-hover lazyload"
-                                                data-src="images/products/furniture/three-big-table-blue.jpg"
-                                                src="images/products/furniture/three-big-table-blue.jpg"
+                                                data-src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
                                                 alt="image-product">
                                         </a>
                                         <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
@@ -543,31 +513,10 @@
                                                     <span class="tooltip">Add to Cart</span>
                                                 </a>
                                             </li>
-                                            <li class="wishlist">
-                                                <a href="javascript:void(0);"
-                                                    class="hover-tooltip tooltip-left box-icon">
-                                                    <span class="icon icon-heart2"></span>
-                                                    <span class="tooltip">Add to Wishlist</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#quickView" data-bs-toggle="modal"
-                                                    class="hover-tooltip tooltip-left box-icon quickview">
-                                                    <span class="icon icon-view"></span>
-                                                    <span class="tooltip">Quick View</span>
-                                                </a>
-                                            </li>
-                                            <li class="compare">
-                                                <a href="#compare" data-bs-toggle="modal" aria-controls="compare"
-                                                    class="hover-tooltip tooltip-left box-icon">
-                                                    <span class="icon icon-compare"></span>
-                                                    <span class="tooltip">Add to Compare</span>
-                                                </a>
-                                            </li>
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="product-detail.html" class="name-product link fw-medium text-md">Three
+                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -581,13 +530,13 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="product-detail.html" class="product-img">
+                                        <a href="{{route('productdetails')}}" class="product-img">
                                             <img class="img-product lazyload"
-                                                data-src="images/products/furniture/three-big-table.jpg"
-                                                src="images/products/furniture/three-big-table.jpg" alt="image-product">
+                                                data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
                                             <img class="img-hover lazyload"
-                                                data-src="images/products/furniture/three-big-table-blue.jpg"
-                                                src="images/products/furniture/three-big-table-blue.jpg"
+                                                data-src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
                                                 alt="image-product">
                                         </a>
                                         <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
@@ -599,31 +548,10 @@
                                                     <span class="tooltip">Add to Cart</span>
                                                 </a>
                                             </li>
-                                            <li class="wishlist">
-                                                <a href="javascript:void(0);"
-                                                    class="hover-tooltip tooltip-left box-icon">
-                                                    <span class="icon icon-heart2"></span>
-                                                    <span class="tooltip">Add to Wishlist</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#quickView" data-bs-toggle="modal"
-                                                    class="hover-tooltip tooltip-left box-icon quickview">
-                                                    <span class="icon icon-view"></span>
-                                                    <span class="tooltip">Quick View</span>
-                                                </a>
-                                            </li>
-                                            <li class="compare">
-                                                <a href="#compare" data-bs-toggle="modal" aria-controls="compare"
-                                                    class="hover-tooltip tooltip-left box-icon">
-                                                    <span class="icon icon-compare"></span>
-                                                    <span class="tooltip">Add to Compare</span>
-                                                </a>
-                                            </li>
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="product-detail.html" class="name-product link fw-medium text-md">Three
+                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -637,13 +565,13 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="product-detail.html" class="product-img">
+                                        <a href="{{route('productdetails')}}" class="product-img">
                                             <img class="img-product lazyload"
-                                                data-src="images/products/furniture/three-big-table.jpg"
-                                                src="images/products/furniture/three-big-table.jpg" alt="image-product">
+                                                data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
                                             <img class="img-hover lazyload"
-                                                data-src="images/products/furniture/three-big-table-blue.jpg"
-                                                src="images/products/furniture/three-big-table-blue.jpg"
+                                                data-src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
                                                 alt="image-product">
                                         </a>
                                         <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
@@ -655,31 +583,10 @@
                                                     <span class="tooltip">Add to Cart</span>
                                                 </a>
                                             </li>
-                                            <li class="wishlist">
-                                                <a href="javascript:void(0);"
-                                                    class="hover-tooltip tooltip-left box-icon">
-                                                    <span class="icon icon-heart2"></span>
-                                                    <span class="tooltip">Add to Wishlist</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#quickView" data-bs-toggle="modal"
-                                                    class="hover-tooltip tooltip-left box-icon quickview">
-                                                    <span class="icon icon-view"></span>
-                                                    <span class="tooltip">Quick View</span>
-                                                </a>
-                                            </li>
-                                            <li class="compare">
-                                                <a href="#compare" data-bs-toggle="modal" aria-controls="compare"
-                                                    class="hover-tooltip tooltip-left box-icon">
-                                                    <span class="icon icon-compare"></span>
-                                                    <span class="tooltip">Add to Compare</span>
-                                                </a>
-                                            </li>
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="product-detail.html" class="name-product link fw-medium text-md">Three
+                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -703,35 +610,35 @@
             <div class="container">
                 <div class="grid-cls grid-cls-v1">
                     <div class="item1 wg-cls style-abs hover-img">
-                        <a href="shop-default.html" class="image img-style d-block">
-                            <img src="images/cls-categories/grid-cls/furniture-1.jpg"
-                                data-src="images/cls-categories/grid-cls/furniture-1.jpg" alt="cls"
+                        <a href="{{route('productlist')}}" class="image img-style d-block">
+                            <img src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                data-src="{{asset('container/20piedsDRY-neuf_2.webp')}}" alt="cls"
                                 class="ls-is-cached lazyloaded">
                         </a>
                         <div class="cls-btn text-center wow fadeInUp">
-                            <a href="shop-default.html"
+                            <a href="{{route('productlist')}}"
                                 class="tf-btn btn-cls btn-white animate-btn animate-dark">40' Container</a>
                         </div>
                     </div>
                     <div class="item2 wg-cls style-abs hover-img">
-                        <a href="shop-default.html" class="image img-style d-block">
-                            <img src="images/cls-categories/grid-cls/furniture-2.jpg"
-                                data-src="images/cls-categories/grid-cls/furniture-2.jpg" alt="cls"
+                        <a href="{{route('productlist')}}" class="image img-style d-block">
+                            <img src="{{asset('container/18423846-01.jpg')}}"
+                                data-src="{{asset('container/18423846-01.jpg')}}" alt="cls"
                                 class="ls-is-cached lazyloaded">
                         </a>
                         <div class="cls-btn text-center wow fadeInUp">
-                            <a href="shop-default.html"
+                            <a href="{{route('productlist')}}"
                                 class="tf-btn btn-cls btn-white animate-btn animate-dark">Office</a>
                         </div>
                     </div>
                     <div class="item3 wg-cls style-abs hover-img">
-                        <a href="shop-default.html" class="image img-style d-block">
-                            <img src="images/cls-categories/grid-cls/furniture-3.jpg"
-                                data-src="images/cls-categories/grid-cls/furniture-3.jpg" alt="cls"
+                        <a href="{{route('productlist')}}" class="image img-style d-block">
+                            <img src="{{asset('container/20160803_103542.jpg')}}"
+                                data-src="{{asset('container/20160803_103542.jpg')}}" alt="cls"
                                 class="ls-is-cached lazyloaded">
                         </a>
                         <div class="cls-btn text-center wow fadeInUp">
-                            <a href="shop-default.html"
+                            <a href="{{route('productlist')}}"
                                 class="tf-btn btn-cls btn-white animate-btn animate-dark">Reefer</a>
                         </div>
                     </div>
@@ -749,70 +656,216 @@
             </div>
         </section>
         <!-- /Categories -->
-        <!-- Shop Collection -->
-        <div>
+        <!-- Top Pick -->
+        <section class="flat-spacing-3 pt-0">
             <div class="container">
-                <div dir="ltr" class="swiper tf-swiper" data-swiper='{
-                        "slidesPerView": 1,
-                        "spaceBetween": 12,
-                        "speed": 800,
-                        "observer": true,
-                        "observeParents": true,
-                        "slidesPerGroup": 1,
-                        "navigation": {
-                            "clickable": true,
-                            "nextEl": ".nav-next-cls",
-                            "prevEl": ".nav-prev-cls"
-                        },
-                        "pagination": { "el": ".sw-pagination-cls", "clickable": true },
-                        "breakpoints": {
-                        "768": { "slidesPerView": 2, "spaceBetween": 12, "slidesPerGroup": 2 },
-                        "1200": { "slidesPerView": 2, "spaceBetween": 24, "slidesPerGroup": 2 }
-                        }
-                    }'>
-                    <div class="swiper-wrapper wow fadeInUp">
-                        <!-- item 1 -->
-                        <div class="swiper-slide">
-                            <div class="wg-cls-2 hover-img">
-                                <a href="shop-default.html" class="img-style img-box">
-                                    <img src="images/cls-categories/furniture/banner-cls1.jpg"
-                                        data-src="images/cls-categories/furniture/banner-cls1.jpg" alt="banner-cls"
-                                        class="lazyload">
-                                </a>
-                                <div class="content">
-                                    <div class="box-title">
-                                        <h6 class="title"><a href="shop-default.html" class="link">Unbeatable
-                                                Savings</a></h6>
-                                        <p class="text-md text-main">Get stylish furniture at discounted prices</p>
+                <div class="fl-control-sw2 wrap-pos-nav sw-over-product wow fadeInUp">
+                    <div dir="ltr" class="swiper tf-swiper wrap-sw-over" data-swiper='{
+                            "slidesPerView": 2,
+                            "spaceBetween": 12,
+                            "speed": 800,
+                            "observer": true,
+                            "observeParents": true,
+                            "slidesPerGroup": 2,
+                            "navigation": {
+                                "clickable": true,
+                                "nextEl": ".nav-next-top-pick",
+                                "prevEl": ".nav-prev-top-pick"
+                            },
+                            "pagination": { "el": ".sw-pagination-top-pick", "clickable": true },
+                            "breakpoints": {
+                            "768": { "slidesPerView": 3, "spaceBetween": 12, "slidesPerGroup": 3 },
+                            "1200": { "slidesPerView": 4, "spaceBetween": 24, "slidesPerGroup": 4}
+                            }
+                        }'>
+                        <div class="swiper-wrapper">
+                            
+                            <!-- item 1 -->
+                            <div class="swiper-slide">
+                                <div class="card-product">
+                                    <div class="card-product-wrapper">
+                                        <a href="{{route('productdetails')}}" class="product-img">
+                                            <img class="img-product lazyload"
+                                                data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
+                                            <img class="img-hover lazyload"
+                                                data-src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                alt="image-product">
+                                        </a>
+                                        <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
+                                        <ul class="list-product-btn">
+                                            <li>
+                                                <a href="#shoppingCart" data-bs-toggle="offcanvas"
+                                                    class="hover-tooltip tooltip-left box-icon">
+                                                    <span class="icon icon-cart2"></span>
+                                                    <span class="tooltip">Add to Cart</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <a href="shop-default.html" class="tf-btn animate-btn">Shop Now</a>
+                                    <div class="card-product-info">
+                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                            Big Coffee Table</a>
+                                        <p class="price-wrap fw-medium">
+                                            <span class="price-new text-primary">$120.00</span>
+                                            <span class="price-old">$140.00</span>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+
+                            <!-- item 2 -->
+                            <div class="swiper-slide">
+                                <div class="card-product">
+                                    <div class="card-product-wrapper">
+                                        <a href="{{route('productdetails')}}" class="product-img">
+                                            <img class="img-product lazyload"
+                                                data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
+                                            <img class="img-hover lazyload"
+                                                data-src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                alt="image-product">
+                                        </a>
+                                        <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
+                                        <ul class="list-product-btn">
+                                            <li>
+                                                <a href="#shoppingCart" data-bs-toggle="offcanvas"
+                                                    class="hover-tooltip tooltip-left box-icon">
+                                                    <span class="icon icon-cart2"></span>
+                                                    <span class="tooltip">Add to Cart</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-product-info">
+                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                            Big Coffee Table</a>
+                                        <p class="price-wrap fw-medium">
+                                            <span class="price-new text-primary">$120.00</span>
+                                            <span class="price-old">$140.00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- item 3 -->
+                            <div class="swiper-slide">
+                                <div class="card-product">
+                                    <div class="card-product-wrapper">
+                                        <a href="{{route('productdetails')}}" class="product-img">
+                                            <img class="img-product lazyload"
+                                                data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
+                                            <img class="img-hover lazyload"
+                                                data-src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                alt="image-product">
+                                        </a>
+                                        <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
+                                        <ul class="list-product-btn">
+                                            <li>
+                                                <a href="#shoppingCart" data-bs-toggle="offcanvas"
+                                                    class="hover-tooltip tooltip-left box-icon">
+                                                    <span class="icon icon-cart2"></span>
+                                                    <span class="tooltip">Add to Cart</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-product-info">
+                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                            Big Coffee Table</a>
+                                        <p class="price-wrap fw-medium">
+                                            <span class="price-new text-primary">$120.00</span>
+                                            <span class="price-old">$140.00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- item 4 -->
+                            <div class="swiper-slide">
+                                <div class="card-product">
+                                    <div class="card-product-wrapper">
+                                        <a href="{{route('productdetails')}}" class="product-img">
+                                            <img class="img-product lazyload"
+                                                data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
+                                            <img class="img-hover lazyload"
+                                                data-src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                alt="image-product">
+                                        </a>
+                                        <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
+                                        <ul class="list-product-btn">
+                                            <li>
+                                                <a href="#shoppingCart" data-bs-toggle="offcanvas"
+                                                    class="hover-tooltip tooltip-left box-icon">
+                                                    <span class="icon icon-cart2"></span>
+                                                    <span class="tooltip">Add to Cart</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-product-info">
+                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                            Big Coffee Table</a>
+                                        <p class="price-wrap fw-medium">
+                                            <span class="price-new text-primary">$120.00</span>
+                                            <span class="price-old">$140.00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- item 5 -->
+                            <div class="swiper-slide">
+                                <div class="card-product">
+                                    <div class="card-product-wrapper">
+                                        <a href="{{route('productdetails')}}" class="product-img">
+                                            <img class="img-product lazyload"
+                                                data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
+                                            <img class="img-hover lazyload"
+                                                data-src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
+                                                alt="image-product">
+                                        </a>
+                                        <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
+                                        <ul class="list-product-btn">
+                                            <li>
+                                                <a href="#shoppingCart" data-bs-toggle="offcanvas"
+                                                    class="hover-tooltip tooltip-left box-icon">
+                                                    <span class="icon icon-cart2"></span>
+                                                    <span class="tooltip">Add to Cart</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-product-info">
+                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                            Big Coffee Table</a>
+                                        <p class="price-wrap fw-medium">
+                                            <span class="price-new text-primary">$120.00</span>
+                                            <span class="price-old">$140.00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
                         </div>
-                        <!-- item 2 -->
-                        <div class="swiper-slide">
-                            <div class="wg-cls-2 hover-img">
-                                <a href="shop-default.html" class="img-style img-box">
-                                    <img src="images/cls-categories/furniture/banner-cls2.jpg"
-                                        data-src="images/cls-categories/furniture/banner-cls2.jpg" alt="banner-cls"
-                                        class="lazyload">
-                                </a>
-                                <div class="content">
-                                    <div class="box-title">
-                                        <h6 class="title"><a href="shop-default.html" class="link">Limited-Time
-                                                Offers</a></h6>
-                                        <p class="text-md text-main">Upgrade your home with exclusive deals</p>
-                                    </div>
-                                    <a href="shop-default.html" class="tf-btn animate-btn">Shop Now</a>
-                                </div>
-                            </div>
+                        <div class="d-flex d-xl-none mt_5 sw-dot-default sw-pagination-top-pick justify-content-center">
                         </div>
                     </div>
-                    <span class="d-flex d-xl-none sw-dot-default sw-pagination-cls justify-content-center"></span>
-
+                    <div class="d-none d-xl-flex swiper-button-next nav-swiper nav-next-top-pick"></div>
+                    <div class="d-none d-xl-flex swiper-button-prev nav-swiper nav-prev-top-pick"></div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- Top Pick -->
         <!-- /Shop Collection -->
         <!-- Testimonial -->
         <div class="flat-spacing-9 pt-5">
@@ -862,7 +915,7 @@
                                                 </div>
                                                 <div class="info">
                                                     <div class="name text-white text-md fw-medium">Sarah T.</div>
-                                                    <a href="product-detail.html" class="meta text-white link">Purchase
+                                                    <a href="{{route('productdetails')}}" class="meta text-white link">Purchase
                                                         item: <span class="fw-medium">Linen Wrap Top</span></a>
                                                 </div>
                                             </div>
@@ -891,7 +944,7 @@
                                                 </div>
                                                 <div class="info">
                                                     <div class="name text-white text-md fw-medium">Vineta P.</div>
-                                                    <a href="product-detail.html" class="meta text-white link">Purchase
+                                                    <a href="{{route('productdetails')}}" class="meta text-white link">Purchase
                                                         item: <span class="fw-medium">Round Wooden Table </span></a>
                                                 </div>
                                             </div>
@@ -918,27 +971,27 @@
                 <div class="container">
                     <div class="footer-top-wrap">
                         <div class="footer-logo">
-                            <a href="home-furniture.html">
+                            <a href="{{route('homepage')}}">
                                 <img src="images/logo/logo.svg" class="logo" alt="logo">
                             </a>
                         </div>
                         <ul class="tf-social-icon style-large">
                             <li>
-                                <a href="../www.facebook.com/index.html" class="social-item social-facebook">
+                                <a href="" class="social-item social-facebook">
                                     <i class="icon icon-fb"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="../www.instagram.com/index.html" class="social-item social-instagram">
+                                <a href="" class="social-item social-instagram">
                                     <i class="icon icon-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="../www.snapchat.com/index.html" class="social-item social-linkedin"><i
+                                <a href="" class="social-item social-linkedin"><i
                                         class="icon icon-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="../x.com/index.html" class="social-item social-x">
+                                <a href="" class="social-item social-x">
                                     <i class="icon icon-x"></i>
                                 </a>
                             </li>
@@ -1052,16 +1105,10 @@
                                 <div class="tf-collapse-content">
                                     <ul class="footer-menu-list">
                                         <li>
-                                            <a href="about-us.html">About Us</a>
+                                            <a href="">About Us</a>
                                         </li>
                                         <li>
-                                            <a href="contact-us.html">Contact Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="store-location.html">Our Store</a>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html">Our Story</a>
+                                            <a href="">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1071,19 +1118,13 @@
                                 <div class="tf-collapse-content">
                                     <ul class="footer-menu-list">
                                         <li>
-                                            <a href="privacy-policy.html">Privacy Policies</a>
+                                            <a href="">Privacy Policies</a>
                                         </li>
                                         <li>
-                                            <a href="term-and-condition.html">Terms & Conditions</a>
+                                            <a href="">Terms & Conditions</a>
                                         </li>
                                         <li>
-                                            <a href="return-and-refund.html">Returns & Refunds</a>
-                                        </li>
-                                        <li>
-                                            <a href="faq.html">FAQ’s</a>
-                                        </li>
-                                        <li>
-                                            <a href="shipping.html">Shipping</a>
+                                            <a href="">FAQ’s</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1095,7 +1136,7 @@
             <div class="footer-bottom">
                 <div class="container">
                     <div class="footer-bottom-wrap">
-                        <p class="text-dark">Copyright © 2025 by <span class="fw-medium">Vineta.</span> All Rights
+                        <p class="text-dark">Copyright © 2025 by <span class="fw-medium"> TopSeller.</span> All Rights
                             Reserved.</p>
                         <ul class="tf-payment">
                             <li class="item"><img src="images/payment/EximBank.png" alt="payment"></li>
@@ -1116,219 +1157,35 @@
         <!-- /Footer -->
     </div>
 
-    <!-- modal demo -->
-    <div class="modal fade modalDemo" id="modalDemo">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="header">
-                    <h5 class="demo-title">Ultimate HTML Theme</h5>
-                    <span class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
-                </div>
-                <div class="mega-menu">
-                    <div class="row-demo">
-                        <div class="demo-item">
-                            <a href="index-2.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/fashion-1.jpg"
-                                    src="images/demo/fashion-1.jpg" alt="home-fashion">
-                                <div class="demo-label">
-                                    <span>New</span>
-                                </div>
-                            </a>
-                            <a href="index-2.html" class="demo-name link">Fashion Style 1</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-fashion-02.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/fashion-2.jpg"
-                                    src="images/demo/fashion-2.jpg" alt="home-fashion">
-                                <div class="demo-label">
-                                    <span>New</span>
-                                    <span class="demo-hot">Hot</span>
-                                </div>
-                            </a>
-                            <a href="home-fashion-02.html" class="demo-name link">Fashion Style
-                                2</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-electronic.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/electronic.jpg"
-                                    src="images/demo/electronic.jpg" alt="home-electronic">
-                                <div class="demo-label"><span>New</span></div>
-                            </a>
-                            <a href="home-electronic.html" class="demo-name link">Electronic</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-furniture.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/furniture.jpg"
-                                    src="images/demo/furniture.jpg" alt="home-furniture">
-                                <div class="demo-label"><span>New</span></div>
-                            </a>
-                            <a href="home-furniture.html" class="demo-name link">Furniture</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-fashion-women.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/women-fashion.jpg"
-                                    src="images/demo/women-fashion.jpg" alt="home-women-fashion">
-                                <div class="demo-label"><span>New</span></div>
-                            </a>
-                            <a href="home-fashion-women.html" class="demo-name link">Women
-                                Fashion</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-skincare.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/comestic.jpg" src="images/demo/comestic.jpg"
-                                    alt="home-comestic">
-                                <div class="demo-label"><span>New</span></div>
-                            </a>
-                            <a href="home-skincare.html" class="demo-name link">Skincare</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-bicycle.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/bicycle.jpg" src="images/demo/bicycle.jpg"
-                                    alt="home-bicycle">
-                                <div class="demo-label"><span>New</span></div>
-                            </a>
-                            <a href="home-bicycle.html" class="demo-name link">Bicycle</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-phonecase.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/phonecase.jpg"
-                                    src="images/demo/phonecase.jpg" alt="home-phonecase">
-                                <div class="demo-label"><span>New</span></div>
-                            </a>
-                            <a href="home-phonecase.html" class="demo-name link">Phone Case</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-pet-accessories.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/pet-accessories.jpg"
-                                    src="images/demo/pet-accessories.jpg" alt="home-pet">
-                                <div class="demo-label"><span>New</span></div>
-                            </a>
-                            <a href="home-pet-accessories.html" class="demo-name link">Pet
-                                Accessories</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-sportwear.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/sportwear.jpg"
-                                    src="images/demo/sportwear.jpg" alt="home-bicycle">
-                                <div class="demo-label"><span>New</span></div>
-                            </a>
-                            <a href="home-sportwear.html" class="demo-name link">Sportwear</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-jewelry.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/jewelry.jpg" src="images/demo/jewelry.jpg"
-                                    alt="home-jewelry">
-                                <div class="demo-label"><span>New</span></div>
-                            </a>
-                            <a href="home-jewelry.html" class="demo-name link">Jewelry</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-electric-accessories.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/eletric-accessories.jpg"
-                                    src="images/demo/eletric-accessories.jpg" alt="home-electric-accessories">
-                                <div class="demo-label">
-                                    <span>New</span>
-                                    <span class="demo-hot">Hot</span>
-                                </div>
-                            </a>
-                            <a href="home-electric-accessories.html" class="demo-name link">Eletronic Accessories</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-mega-electronic.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/mega-shop.jpg"
-                                    src="images/demo/mega-shop.jpg" alt="home-mega-electronic">
-                                <div class="demo-label">
-                                    <span>New</span>
-                                </div>
-                            </a>
-                            <a href="home-mega-electronic.html" class="demo-name link">Mega Shop</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-vegetable.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/supermarket.jpg"
-                                    src="images/demo/supermarket.jpg" alt="home-supermarket">
-                                <div class="demo-label">
-                                    <span>New</span>
-                                </div>
-                            </a>
-                            <a href="home-vegetable.html" class="demo-name link">Supermarket</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-pod.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/pod.jpg" src="images/demo/pod.jpg"
-                                    alt="home-pod">
-                                <div class="demo-label">
-                                    <span>New</span>
-                                </div>
-                            </a>
-                            <a href="home-pod.html" class="demo-name link">Print On Demand</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-baby.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/baby.jpg" src="images/demo/baby.jpg"
-                                    alt="home-baby">
-                                <div class="demo-label">
-                                    <span>New</span>
-                                </div>
-                            </a>
-                            <a href="home-baby.html" class="demo-name link">Baby</a>
-                        </div>
-                        <div class="demo-item">
-                            <a href="home-plant.html" class="demo-image">
-                                <img class="lazyload" data-src="images/demo/plant.jpg" src="images/demo/plant.jpg"
-                                    alt="home-plant">
-                                <div class="demo-label">
-                                    <span>New</span>
-                                </div>
-                            </a>
-                            <a href="home-plant.html" class="demo-name link">Plant</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /modal demo -->
-
     <!-- mobile menu -->
     <div class="offcanvas offcanvas-start canvas-mb" id="mobileMenu">
         <button class="icon-close icon-close-popup" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         <div class="mb-canvas-content">
             <div class="mb-body">
                 <div class="mb-content-top">
-                    <form class="form-search">
+                    {{-- <form class="form-search">
                         <input type="text" placeholder="Search product" class="" name="text" tabindex="0" value=""
                             aria-required="true" required="">
                         <button type="submit"><i class="icon icon-search"></i></button>
-                    </form>
+                    </form> --}}
                     <ul class="nav-ul-mb" id="wrapper-menu-navigation">
+                        <li class="nav-mb-item">
+                            <a href="{{route('homepage')}}" class="mb-menu-link">Home</a>
+                        </li>
                         <li class="nav-mb-item">
                             <a href="#dropdown-menu-home" class="collapsed mb-menu-link" data-bs-toggle="collapse"
                                 aria-expanded="true" aria-controls="dropdown-menu-home">
-                                <span>Home</span>
+                                <span>Maritime</span>
                                 <span class="btn-open-sub"></span>
                             </a>
                             <div id="dropdown-menu-home" class="collapse">
                                 <ul class="sub-nav-menu">
-                                    <li><a href="index-2.html" class="sub-nav-link">Fashion Style 1</a></li>
-                                    <li><a href="home-fashion-02.html" class="sub-nav-link">Fashion Style 2</a></li>
-                                    <li><a href="home-electronic.html" class="sub-nav-link">Electronic</a></li>
-                                    <li><a href="home-furniture.html" class="sub-nav-link">Furniture</a></li>
-                                    <li><a href="home-fashion-women.html" class="sub-nav-link">Women Fashion</a></li>
-                                    <li><a href="home-skincare.html" class="sub-nav-link">Skincare</a></li>
-                                    <li><a href="home-bicycle.html" class="sub-nav-link">Bicycle</a></li>
-                                    <li><a href="home-phonecase.html" class="sub-nav-link">Phone Case</a></li>
-                                    <li><a href="home-pet-accessories.html" class="sub-nav-link">Pet Accessories</a>
-                                    </li>
-                                    <li><a href="home-sportwear.html" class="sub-nav-link">Sportwear</a></li>
-                                    <li><a href="home-jewelry.html" class="sub-nav-link">Jewelry</a></li>
-                                    <li><a href="home-electric-accessories.html" class="sub-nav-link">Electronic
-                                            Accessories</a></li>
-                                    <li><a href="home-mega-electronic.html" class="sub-nav-link">Mega Shop</a></li>
-                                    <li><a href="home-baby.html" class="sub-nav-link">Baby</a></li>
-                                    <li><a href="home-vegetable.html" class="sub-nav-link">Supermarket</a></li>
-                                    <li><a href="home-pod.html" class="sub-nav-link">POD</a></li>
-                                    <li><a href="home-plant.html" class="sub-nav-link">Plant</a></li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">20' container</a></li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">40' container</a></li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Occasions</a></li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Small</a></li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Standards</a></li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Specific</a></li>
                                 </ul>
                             </div>
 
@@ -1336,322 +1193,41 @@
                         <li class="nav-mb-item">
                             <a href="#dropdown-menu-shop" class="collapsed mb-menu-link" data-bs-toggle="collapse"
                                 aria-expanded="true" aria-controls="dropdown-menu-shop">
-                                <span>Shop</span>
+                                <span>Cold</span>
                                 <span class="btn-open-sub"></span>
                             </a>
                             <div id="dropdown-menu-shop" class="collapse">
                                 <ul class="sub-nav-menu">
-                                    <li><a href="#sub-shop-layout" class="sub-nav-link collapsed"
-                                            data-bs-toggle="collapse" aria-expanded="true"
-                                            aria-controls="sub-shop-layout">
-                                            <span>Shop Layout</span>
-                                            <span class="btn-open-sub"></span>
-                                        </a>
-                                        <div id="sub-shop-layout" class="collapse">
-                                            <ul class="sub-nav-menu sub-menu-level-2">
-                                                <li><a href="shop-default.html" class="sub-nav-link">Default</a></li>
-                                                <li><a href="shop-left-sidebar.html" class="sub-nav-link">Filter
-                                                        Left Sidebar</a></li>
-                                                <li><a href="shop-right-sidebar.html" class="sub-nav-link">Filter
-                                                        Right Sidebar</a></li>
-                                                <li><a href="shop-horizontal-filter.html"
-                                                        class="menu-link-text link">Horizontal Filter</a></li>
-                                                <li><a href="shop-default.html" class="sub-nav-link">Filter
-                                                        Drawer</a></li>
-                                                <li><a href="shop-collection-list.html"
-                                                        class="menu-link-text link">Collection List</a></li>
-                                                <li><a href="shop-sub-collection.html" class="sub-nav-link">Sub
-                                                        Collection 1</a></li>
-                                                <li><a href="shop-sub-collection-02.html" class="sub-nav-link">Sub
-                                                        Collection 2</a></li>
-                                                <li><a href="shop-grid-3-columns.html" class="sub-nav-link">Grid
-                                                        3 Columns </a></li>
-                                                <li><a href="shop-default.html" class="sub-nav-link">Grid 4
-                                                        Columns</a></li>
-                                                <li><a href="shop-fullwidth.html" class="sub-nav-link">Full
-                                                        Width</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="#sub-shop-list" class="sub-nav-link collapsed"
-                                            data-bs-toggle="collapse" aria-expanded="true"
-                                            aria-controls="sub-shop-list">
-                                            <span>Shop List</span>
-                                            <span class="btn-open-sub"></span>
-                                        </a>
-                                        <div id="sub-shop-list" class="collapse">
-                                            <ul class="sub-nav-menu sub-menu-level-2">
-                                                <li><a href="shop-default.html" class="sub-nav-link">Pagination
-                                                        Links</a></li>
-                                                <li><a href="shop-load-more-button.html" class="sub-nav-link">Load More
-                                                        Button</a></li>
-                                                <li><a href="shop-infinity-scroll.html" class="sub-nav-link">Infinity
-                                                        Scroll <span class="demo-label">Hot</span></a></li>
-                                                <li><a href="404.html" class="sub-nav-link">Filter
-                                                        Sidebar</a></li>
-                                                <li><a href="404-2.html" class="sub-nav-link">Filter
-                                                        Hidden</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="#sub-shop-styles" class="sub-nav-link collapsed"
-                                            data-bs-toggle="collapse" aria-expanded="true"
-                                            aria-controls="sub-shop-styles">
-                                            <span>Product Styles</span>
-                                            <span class="btn-open-sub"></span>
-                                        </a>
-                                        <div id="sub-shop-styles" class="collapse">
-                                            <ul class="sub-nav-menu sub-menu-level-2">
-                                                <li><a href="product-style-01.html" class="sub-nav-link">Product
-                                                        Style 1</a></li>
-                                                <li><a href="product-style-02.html" class="sub-nav-link">Product
-                                                        Style 2</a></li>
-                                                <li><a href="product-style-03.html" class="sub-nav-link">Product
-                                                        Style 3</a></li>
-                                                <li><a href="home-fashion-02.html" class="sub-nav-link">Product
-                                                        Popup</a></li>
-                                                <li><a href="index-2.html" class="sub-nav-link">Newsletter
-                                                        Popup 1</a></li>
-                                                <li><a href="newsletter-popup-02.html" class="sub-nav-link">Newsletter
-                                                        Popup 2</a></li>
-                                                <li><a href="newsletter-popup-03.html" class="sub-nav-link">Newsletter
-                                                        Popup 3</a></li>
-                                                <li><a href="account-page.html" class="sub-nav-link">
-                                                        My Account</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Reefer</a></li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Isotherm</a></li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Cold Room</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-mb-item">
                             <a href="#dropdown-menu-product" class="collapsed mb-menu-link" data-bs-toggle="collapse"
                                 aria-expanded="true" aria-controls="dropdown-menu-product">
-                                <span>Products</span>
+                                <span>Furnished</span>
                                 <span class="btn-open-sub"></span>
                             </a>
                             <div id="dropdown-menu-product" class="collapse">
                                 <ul class="sub-nav-menu">
-                                    <li>
-                                        <a href="#sub-product-layout" class="sub-nav-link collapsed"
-                                            data-bs-toggle="collapse" aria-expanded="true"
-                                            aria-controls="sub-product-layout">
-                                            <span>Product Layouts</span>
-                                            <span class="btn-open-sub"></span>
-                                        </a>
-                                        <div id="sub-product-layout" class="collapse">
-                                            <ul class="sub-nav-menu sub-menu-level-2">
-                                                <li><a href="product-detail.html" class="sub-nav-link">Product
-                                                        Single</a></li>
-                                                <li><a href="product-right-thumbnail.html" class="sub-nav-link">Product
-                                                        Right Thumbnail</a></li>
-                                                <li><a href="product-detail.html" class="sub-nav-link">Product
-                                                        Left Thumbnail</a></li>
-                                                <li><a href="product-bottom-thumbnail.html" class="sub-nav-link">Product
-                                                        Bottom Thumbnail</a>
-                                                </li>
-                                                <li><a href="product-grid.html" class="sub-nav-link">Product
-                                                        Grid</a></li>
-                                                <li><a href="product-grid-02.html" class="sub-nav-link">Product
-                                                        Grid 2</a></li>
-                                                <li><a href="product-stacked.html" class="sub-nav-link">Product
-                                                        Stacked</a></li>
-                                                <li><a href="product-drawer-sidebar.html" class="sub-nav-link">Product
-                                                        Drawer Sidebar</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="#sub-product-detail" class="sub-nav-link collapsed"
-                                            data-bs-toggle="collapse" aria-expanded="true"
-                                            aria-controls="sub-product-detail">
-                                            <span>Product Details</span>
-                                            <span class="btn-open-sub"></span>
-                                        </a>
-                                        <div id="sub-product-detail" class="collapse">
-                                            <ul class="sub-nav-menu sub-menu-level-2">
-                                                <li><a href="product-inner-zoom.html" class="sub-nav-link">Product Inner
-                                                        Zoom</a></li>
-                                                <li><a href="product-inner-circle-zoom.html"
-                                                        class="sub-nav-link">Product Inner Circle Zoom</a>
-                                                </li>
-                                                <li><a href="product-no-zoom.html" class="sub-nav-link">Product
-                                                        No Zoom <span class="demo-label">Hot</span></a></li>
-                                                <li><a href="product-external-zoom.html" class="sub-nav-link">Product
-                                                        External Zoom</a></li>
-                                                <li><a href="product-open-lightbox.html" class="sub-nav-link">Product
-                                                        Open Lightbox <span class="demo-label bg-primary">New</span></a>
-                                                </li>
-                                                <li><a href="product-video.html" class="sub-nav-link">Product
-                                                        Video</a></li>
-                                                <li><a href="product-3d.html" class="sub-nav-link">Product
-                                                        3D/AR</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="#sub-product-feature" class="sub-nav-link collapsed"
-                                            data-bs-toggle="collapse" aria-expanded="true"
-                                            aria-controls="sub-product-feature">
-                                            <span>Products Features</span>
-                                            <span class="btn-open-sub"></span>
-                                        </a>
-                                        <div id="sub-product-feature" class="collapse">
-                                            <ul class="sub-nav-menu sub-menu-level-2">
-                                                <li><a href="product-together.html" class="sub-nav-link">Buy
-                                                        Together</a></li>
-
-                                                <li><a href="product-countdown-timer.html"
-                                                        class="sub-nav-link">Countdown Timer</a></li>
-
-                                                <li><a href="product-volume-discount.html" class="sub-nav-link">Volume
-                                                        Discount</a></li>
-                                                <li><a href="product-volume-discount-thumbnail.html"
-                                                        class="sub-nav-link">Volume Discount Thumbnail</a>
-                                                </li>
-                                                <li><a href="product-swatch-dropdown.html" class="sub-nav-link">Swatch
-                                                        Dropdown</a></li>
-                                                <li><a href="product-swatch-dropdown-color.html"
-                                                        class="sub-nav-link">Swatch Dropdown Color</a></li>
-                                                <li><a href="product-swatch-image.html" class="sub-nav-link">Swatch
-                                                        Image</a></li>
-                                                <li><a href="product-swatch-image-square.html"
-                                                        class="sub-nav-link">Swatch Image rectangle</a></li>
-                                                <li><a href="product-pickup-available.html" class="sub-nav-link">Pickup
-                                                        Available</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="#sub-product-desc" class="sub-nav-link collapsed"
-                                            data-bs-toggle="collapse" aria-expanded="true"
-                                            aria-controls="sub-product-desc">
-                                            <span>Products Description</span>
-                                            <span class="btn-open-sub"></span>
-                                        </a>
-                                        <div id="sub-product-desc" class="collapse">
-                                            <ul class="sub-nav-menu sub-menu-level-2">
-                                                <li><a href="product-description-vertical.html"
-                                                        class="sub-nav-link">Product Description Vertical</a>
-                                                </li>
-                                                <li><a href="product-description-tab.html" class="sub-nav-link">Product
-                                                        Description Tab</a></li>
-                                                <li><a href="product-description-accordions.html"
-                                                        class="sub-nav-link">Product Description
-                                                        Accordions</a></li>
-                                                <li><a href="product-description-side-accordions.html"
-                                                        class="sub-nav-link">Product Description Side
-                                                        Accordions</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Office</a></li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Sanitary</a></li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Bungalow</a></li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Catering</a></li>
+                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Swimming pool</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-mb-item">
-                            <a href="#dropdown-menu-pages" class="collapsed mb-menu-link" data-bs-toggle="collapse"
-                                aria-expanded="true" aria-controls="dropdown-menu-pages">
-                                <span>Pages</span>
-                                <span class="btn-open-sub"></span>
-                            </a>
-                            <div id="dropdown-menu-pages" class="collapse">
-                                <ul class="sub-nav-menu">
-                                    <li><a href="about-us.html" class="sub-nav-link">About</a></li>
-                                    <li><a href="contact-us.html" class="sub-nav-link">Contact</a></li>
-                                    <li><a href="store-location.html" class="sub-nav-link">Store
-                                            location</a></li>
-                                    <li><a href="account-page.html" class="sub-nav-link">Login
-                                            register</a></li>
-                                    <li><a href="faq.html" class="sub-nav-link">FAQ</a></li>
-                                    <li><a href="cart-empty.html" class="sub-nav-link">Cart empty</a>
-                                    </li>
-                                    <li><a href="cart-drawer-v2.html" class="sub-nav-link">Cart drawer
-                                            v2</a></li>
-                                    <li><a href="view-cart.html" class="sub-nav-link">View cart</a></li>
-                                    <li><a href="before-you-leave.html" class="sub-nav-link">Before you
-                                            leave</a></li>
-                                    <li><a href="cookies.html" class="sub-nav-link">Cookies</a></li>
-                                    <li><a href="home-fashion-02.html" class="sub-nav-link">Sub navtab
-                                            products</a></li>
-                                    <li><a href="404-3.html" class="sub-nav-link">404</a></li>
-                                    <li><a href="coming-soon.html" class="sub-nav-link">Coming Soon!</a>
-                                    </li>
-                                </ul>
-                            </div>
-
+                            <a href="{{route('homepage')}}" class="mb-menu-link">Accessories</a>
                         </li>
                         <li class="nav-mb-item">
-                            <a href="#dropdown-menu-blog" class="collapsed mb-menu-link" data-bs-toggle="collapse"
-                                aria-expanded="true" aria-controls="dropdown-menu-blog">
-                                <span>Blog</span>
-                                <span class="btn-open-sub"></span>
-                            </a>
-                            <div id="dropdown-menu-blog" class="collapse">
-                                <ul class="sub-nav-menu">
-                                    <li><a href="blog-list-01.html" class="sub-nav-link">Blog List 1</a>
-                                    </li>
-                                    <li><a href="blog-list-02.html" class="sub-nav-link">Blog List 2</a>
-                                    </li>
-                                    <li><a href="blog-grid-01.html" class="sub-nav-link">Blog Grid 1</a>
-                                    </li>
-                                    <li><a href="blog-grid-02.html" class="sub-nav-link">Blog Grid 2</a>
-                                    </li>
-                                    <li><a href="blog-single.html" class="sub-nav-link">Single Blog </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <a href="{{route('homepage')}}" class="mb-menu-link">Our achievements</a>
                         </li>
-                        <li class="nav-mb-item">
-                            <a href="../themeforest.net/user/themesflat.html" class="mb-menu-link">Buy Theme</a>
-                        </li>
+                        
                     </ul>
-                </div>
-                <div class="mb-other-content">
-                    <div class="group-icon">
-                        <a href="#login" data-bs-toggle="offcanvas" class="site-nav-icon">
-                            <i class="icon icon-user"></i>
-                            Login
-                        </a>
-                    </div>
-                    <div class="mb-notice">
-                        <a href="contact-us.html" class="text-need">Need Help?</a>
-                    </div>
-                    <div class="mb-contact">
-                        <p>Address: 123 Yarran st, Punchbowl, NSW 2196, Australia</p>
-                    </div>
-                    <ul class="mb-info">
-                        <li>
-                            Email:
-                            <b class="fw-medium">clientcare@ecom.com</b>
-                        </li>
-                        <li>
-                            Phone:
-                            <b class="fw-medium">1.888.838.3022</b>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mb-bottom">
-                <div class="bottom-bar-language">
-                    <div class="tf-currencies">
-                        <select class="image-select center style-default type-currencies">
-                            <option selected data-thumbnail="images/country/us.png">USD</option>
-                            <option data-thumbnail="images/country/fr.png">EUR</option>
-                            <option data-thumbnail="images/country/ger.png">EUR</option>
-                            <option data-thumbnail="images/country/vn.png">VND</option>
-                        </select>
-                    </div>
-                    <div class="tf-languages">
-                        <select class="image-select center style-default type-languages">
-                            <option>English</option>
-                            <option>العربية</option>
-                            <option>简体中文</option>
-                            <option>اردو</option>
-                        </select>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1661,7 +1237,7 @@
     <!-- toolbar -->
     <div class="tf-toolbar-bottom">
         <div class="toolbar-item">
-            <a href="home-furniture.html">
+            <a href="{{route('homepage')}}">
                 <div class="toolbar-icon">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="../www.w3.org/2000/svg.html">
                         <path
@@ -1693,51 +1269,7 @@
                 <div class="toolbar-label">Account</div>
             </a>
         </div>
-        <div class="toolbar-item">
-            <a href="shop-default.html">
-                <div class="toolbar-icon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="../www.w3.org/2000/svg.html">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M1.875 8.479C1.875 8.134 2.155 7.854 2.5 7.854C2.845 7.854 3.125 8.134 3.125 8.479V15.5623C3.125 16.5982 3.96417 17.4373 5 17.4373H15C16.0358 17.4373 16.875 16.5982 16.875 15.5623V8.479C16.875 8.134 17.155 7.854 17.5 7.854C17.845 7.854 18.125 8.134 18.125 8.479V15.5623C18.125 17.2882 16.7258 18.6873 15 18.6873H5C3.27417 18.6873 1.875 17.2882 1.875 15.5623V8.479Z"
-                            fill="black" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10 11.1875C10.8292 11.1875 11.6233 11.5167 12.21 12.1025C12.7958 12.6892 13.125 13.4833 13.125 14.3125V18.0625C13.125 18.4075 12.845 18.6875 12.5 18.6875C12.155 18.6875 11.875 18.4075 11.875 18.0625V14.3125C11.875 13.815 11.6775 13.3383 11.3258 12.9867C10.9742 12.635 10.4975 12.4375 10 12.4375C9.5025 12.4375 9.02583 12.635 8.67417 12.9867C8.3225 13.3383 8.125 13.815 8.125 14.3125V18.0625C8.125 18.4075 7.845 18.6875 7.5 18.6875C7.155 18.6875 6.875 18.4075 6.875 18.0625V14.3125C6.875 13.4833 7.20417 12.6892 7.79 12.1025C8.37667 11.5167 9.17083 11.1875 10 11.1875Z"
-                            fill="black" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M7.45325 1.9375V6.625C7.45325 8.385 6.02492 9.8125 4.26492 9.8125C3.27242 9.8125 2.33492 9.355 1.72408 8.57333C1.11325 7.79083 0.897416 6.77167 1.13742 5.80833L1.79992 3.15917C2.07158 2.07333 3.04658 1.3125 4.16492 1.3125H6.82825C7.17325 1.3125 7.45325 1.5925 7.45325 1.9375ZM6.20325 2.5625H4.16492C3.61992 2.5625 3.14492 2.93333 3.01325 3.46167L2.35075 6.11167C2.20325 6.70083 2.33575 7.325 2.70908 7.80417C3.08325 8.2825 3.65742 8.5625 4.26492 8.5625C5.33492 8.5625 6.20325 7.695 6.20325 6.625V2.5625Z"
-                            fill="black" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M13.1716 1.3125H15.835C16.9533 1.3125 17.9283 2.07333 18.2 3.15917L18.8625 5.80833C19.1025 6.77167 18.8866 7.79083 18.2758 8.57333C17.665 9.355 16.7275 9.8125 15.735 9.8125C13.975 9.8125 12.5466 8.385 12.5466 6.625V1.9375C12.5466 1.5925 12.8266 1.3125 13.1716 1.3125ZM13.7966 2.5625V6.625C13.7966 7.695 14.665 8.5625 15.735 8.5625C16.3425 8.5625 16.9166 8.2825 17.2908 7.80417C17.6641 7.325 17.7966 6.70083 17.6491 6.11167L16.9866 3.46167C16.855 2.93333 16.38 2.5625 15.835 2.5625H13.7966Z"
-                            fill="black" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M6.82153 1.3125H13.1715C13.3374 1.3125 13.4965 1.37833 13.614 1.49583C13.7315 1.61333 13.7965 1.7725 13.7965 1.93833L13.7924 6.47167C13.7907 8.3175 12.294 9.8125 10.449 9.8125H9.5407C7.69403 9.8125 6.19653 8.31583 6.19653 6.46917V1.9375C6.19653 1.5925 6.47653 1.3125 6.82153 1.3125ZM7.44653 2.5625V6.46917C7.44653 7.625 8.38403 8.5625 9.5407 8.5625H10.449C11.6049 8.5625 12.5415 7.62667 12.5424 6.47083L12.5465 2.5625H7.44653Z"
-                            fill="black" />
-                    </svg>
-                </div>
-                <div class="toolbar-label">Shop</div>
-            </a>
-        </div>
-        <div class="toolbar-item">
-            <a href="wish-list.html">
-                <div class="toolbar-icon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="../www.w3.org/2000/svg.html">
-                        <g clip-path="url(#clip0_4013_1872)">
-                            <path
-                                d="M18.3932 3.30791C16.218 1.13334 12.6795 1.13334 10.5049 3.30791L9.99983 3.8127L9.49504 3.30791C7.32046 1.13304 3.78163 1.13304 1.60706 3.30791C-0.523361 5.43833 -0.537195 8.81527 1.57498 11.1632C3.50142 13.3039 9.18304 17.9289 9.4241 18.1246C9.58775 18.2576 9.78467 18.3224 9.9804 18.3224C9.98688 18.3224 9.99335 18.3224 9.99953 18.3221C10.202 18.3315 10.406 18.2621 10.575 18.1246C10.816 17.9289 16.4982 13.3039 18.4253 11.1629C20.5371 8.81527 20.5233 5.43833 18.3932 3.30791ZM17.1125 9.98174C15.6105 11.6503 11.4818 15.0917 9.99953 16.313C8.51724 15.092 4.38944 11.6509 2.88773 9.98203C1.41427 8.34433 1.40044 6.01199 2.85564 4.55679C3.59885 3.81388 4.57488 3.44213 5.5509 3.44213C6.52693 3.44213 7.50295 3.81358 8.24616 4.55679L9.3564 5.66703C9.48856 5.79919 9.65516 5.87807 9.82999 5.90574C10.1137 5.96667 10.4216 5.88749 10.6424 5.66732L11.7532 4.55679C13.2399 3.07067 15.6582 3.07097 17.144 4.55679C18.5992 6.01199 18.5854 8.34433 17.1125 9.98174Z"
-                                fill="black" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_4013_1872">
-                                <rect width="20" height="20" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <div class="toolbar-count">0</div>
-                </div>
-                <div class="toolbar-label">Wishlist</div>
-            </a>
-        </div>
-        <div class="toolbar-item">
+        {{-- <div class="toolbar-item">
             <a href="#shoppingCart" data-bs-toggle="offcanvas">
                 <div class="toolbar-icon">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="../www.w3.org/2000/svg.html">
@@ -1752,7 +1284,7 @@
                 </div>
                 <div class="toolbar-label">Cart</div>
             </a>
-        </div>
+        </div> --}}
     </div>
     <!-- /toolbar  -->
 
@@ -1784,50 +1316,6 @@
                         </div>
                     </div>
                 </form>
-                <div class="other-login">
-                    <p class="text-sm text-center text-main-2">Or sign in with:</p>
-                    <a href="account-page.html" class="w-100 text-md mb_8">
-                        <svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                            xmlns="../www.w3.org/2000/svg.html">
-                            <circle cx="16" cy="16" r="16" fill="#3B5998" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M20.155 10.656L18.649 10.657C17.468 10.657 17.239 11.218 17.239 12.041V13.857H20.056L19.689 16.702H17.239V24H14.302V16.702H11.846V13.857H14.302V11.76C14.302 9.325 15.789 8 17.96 8C19 8 19.894 8.077 20.155 8.112V10.656ZM16 0C7.164 0 0 7.163 0 16C0 24.836 7.164 32 16 32C24.837 32 32 24.836 32 16C32 7.163 24.837 0 16 0Z"
-                                fill="white" />
-                        </svg>
-                        FACEBOOK
-                    </a>
-                    <a href="account-page.html" class="w-100 text-md bg-dark">
-                        <svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
-                            xmlns="../www.w3.org/2000/svg.html">
-                            <g clip-path="url(#clip0_235_18876)">
-                                <path
-                                    d="M30.7919 13.218L17.7394 13.2174C17.163 13.2174 16.6958 13.6845 16.6958 14.2609V18.4306C16.6958 19.0068 17.163 19.4741 17.7393 19.4741H25.0897C24.2848 21.5629 22.7825 23.3122 20.8659 24.4237L24.0001 29.8493C29.0277 26.9416 32.0001 21.8398 32.0001 16.1287C32.0001 15.3155 31.9402 14.7342 31.8203 14.0796C31.7292 13.5823 31.2974 13.218 30.7919 13.218Z"
-                                    fill="#167EE6" />
-                                <path
-                                    d="M16.0002 25.7392C12.4031 25.7392 9.26282 23.7738 7.57625 20.8655L2.15088 23.9926C4.91182 28.7777 10.0839 32 16.0002 32C18.9025 32 21.6411 31.2186 24.0002 29.8568V29.8494L20.866 24.4237C19.4324 25.2552 17.7734 25.7392 16.0002 25.7392Z"
-                                    fill="#12B347" />
-                                <path
-                                    d="M24 29.8568V29.8493L20.8658 24.4237C19.4322 25.2551 17.7733 25.7391 16 25.7391V32C18.9023 32 21.641 31.2186 24 29.8568Z"
-                                    fill="#0F993E" />
-                                <path
-                                    d="M6.26088 16C6.26088 14.2269 6.74475 12.5681 7.57606 11.1346L2.15069 8.00745C0.781375 10.3591 0 13.0903 0 16C0 18.9098 0.781375 21.6409 2.15069 23.9926L7.57606 20.8654C6.74475 19.4319 6.26088 17.7731 6.26088 16Z"
-                                    fill="#FFD500" />
-                                <path
-                                    d="M16.0002 6.26088C18.3459 6.26088 20.5005 7.09437 22.1834 8.48081C22.5986 8.82281 23.2021 8.79813 23.5824 8.41781L26.5368 5.46344C26.9683 5.03194 26.9375 4.32562 26.4766 3.92575C23.6569 1.47956 19.9881 0 16.0002 0C10.0839 0 4.91182 3.22231 2.15088 8.00744L7.57625 11.1346C9.26282 8.22625 12.4031 6.26088 16.0002 6.26088Z"
-                                    fill="#FF4B26" />
-                                <path
-                                    d="M22.1833 8.48081C22.5984 8.82281 23.2019 8.79813 23.5822 8.41781L26.5366 5.46344C26.968 5.03194 26.9373 4.32562 26.4764 3.92575C23.6567 1.4795 19.9879 0 16 0V6.26088C18.3456 6.26088 20.5003 7.09437 22.1833 8.48081Z"
-                                    fill="#D93F21" />
-                            </g>
-                            <defs>
-                                <clipPath>
-                                    <rect width="32" height="32" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        GOOGLE
-                    </a>
-                </div>
             </div>
         </div>
     </div>
@@ -1954,7 +1442,7 @@
                                     <div class="swiper-slide">
                                         <div class="card-product">
                                             <div class="card-product-wrapper">
-                                                <a href="product-detail.html" class="product-img">
+                                                <a href="{{route('productdetails')}}" class="product-img">
                                                     <img class="img-product lazyload"
                                                         data-src="images/products/furniture/nightstand-brown.jpg"
                                                         src="images/products/furniture/nightstand-brown.jpg"
@@ -2003,7 +1491,7 @@
                                                 </div>
                                             </div>
                                             <div class="card-product-info">
-                                                <a href="product-detail.html"
+                                                <a href="{{route('productdetails')}}"
                                                     class="name-product link fw-medium text-md">Nook Nightstand</a>
                                                 <p class="price-wrap fw-medium">
                                                     <span class="price-new text-primary">$150.00</span>
@@ -2043,7 +1531,7 @@
                                     <div class="swiper-slide">
                                         <div class="card-product">
                                             <div class="card-product-wrapper">
-                                                <a href="product-detail.html" class="product-img">
+                                                <a href="{{route('productdetails')}}" class="product-img">
                                                     <img class="img-product lazyload"
                                                         data-src="images/products/furniture/talco-table-blue.jpg"
                                                         src="images/products/furniture/talco-table-blue.jpg"
@@ -2089,7 +1577,7 @@
                                                 </ul>
                                             </div>
                                             <div class="card-product-info">
-                                                <a href="product-detail.html"
+                                                <a href="{{route('productdetails')}}"
                                                     class="name-product link fw-medium text-md">Talco Coffee Table</a>
                                                 <p class="price-wrap fw-medium">
                                                     <span class="price-new">$130.00</span>
@@ -2121,7 +1609,7 @@
                                     <div class="swiper-slide">
                                         <div class="card-product">
                                             <div class="card-product-wrapper">
-                                                <a href="product-detail.html" class="product-img">
+                                                <a href="{{route('productdetails')}}" class="product-img">
                                                     <img class="img-product lazyload"
                                                         data-src="images/products/furniture/porcini-table.jpg"
                                                         src="images/products/furniture/porcini-table.jpg"
@@ -2164,7 +1652,7 @@
                                                 </ul>
                                             </div>
                                             <div class="card-product-info">
-                                                <a href="product-detail.html"
+                                                <a href="{{route('productdetails')}}"
                                                     class="name-product link fw-medium text-md">Porcini Coffee Table</a>
                                                 <p class="price-wrap fw-medium">
                                                     <span class="price-new">$120.00</span>
@@ -2195,7 +1683,7 @@
                                     <div class="swiper-slide">
                                         <div class="card-product">
                                             <div class="card-product-wrapper">
-                                                <a href="product-detail.html" class="product-img">
+                                                <a href="{{route('productdetails')}}" class="product-img">
                                                     <img class="img-product lazyload"
                                                         data-src="images/products/furniture/three-big-table.jpg"
                                                         src="images/products/furniture/three-big-table.jpg"
@@ -2240,7 +1728,7 @@
                                                 </ul>
                                             </div>
                                             <div class="card-product-info">
-                                                <a href="product-detail.html"
+                                                <a href="{{route('productdetails')}}"
                                                     class="name-product link fw-medium text-md">Three Big Coffee
                                                     Table</a>
                                                 <p class="price-wrap fw-medium">
@@ -2307,7 +1795,7 @@
                             <div class="tf-mini-cart-items">
                                 <div class="tf-mini-cart-item file-delete">
                                     <div class="tf-mini-cart-image">
-                                        <a href="product-detail.html">
+                                        <a href="{{route('productdetails')}}">
                                             <img class="lazyload"
                                                 data-src="images/products/furniture/nightstand-dark-brown.jpg"
                                                 src="images/products/furniture/nightstand-dark-brown.jpg"
@@ -2316,7 +1804,7 @@
                                     </div>
                                     <div class="tf-mini-cart-info">
                                         <div class="d-flex justify-content-between">
-                                            <a class="title link text-md fw-medium" href="product-detail.html">Nook
+                                            <a class="title link text-md fw-medium" href="{{route('productdetails')}}">Nook
                                                 Nightstand</a>
                                             <i class="icon icon-close remove fs-12"></i>
                                         </div>
@@ -2338,7 +1826,7 @@
                                 </div>
                                 <div class="tf-mini-cart-item file-delete">
                                     <div class="tf-mini-cart-image">
-                                        <a href="product-detail.html">
+                                        <a href="{{route('productdetails')}}">
                                             <img class="lazyload"
                                                 data-src="images/products/furniture/talco-table-blue.jpg"
                                                 src="images/products/furniture/talco-table-blue.jpg" alt="img-product">
@@ -2346,7 +1834,7 @@
                                     </div>
                                     <div class="tf-mini-cart-info">
                                         <div class="d-flex justify-content-between">
-                                            <a class="title link text-md fw-medium" href="product-detail.html">Talco
+                                            <a class="title link text-md fw-medium" href="{{route('productdetails')}}">Talco
                                                 Coffee Table</a>
                                             <i class="icon icon-close remove fs-12"></i>
                                         </div>
@@ -2396,7 +1884,7 @@
                                         <div class="swiper-slide">
                                             <div class="tf-mini-cart-item line radius-16">
                                                 <div class="tf-mini-cart-image">
-                                                    <a href="product-detail.html">
+                                                    <a href="{{route('productdetails')}}">
                                                         <img class="lazyload"
                                                             data-src="images/products/furniture/porcini-table.jpg"
                                                             src="images/products/furniture/porcini-table.jpg"
@@ -2405,7 +1893,7 @@
                                                 </div>
                                                 <div class="tf-mini-cart-info justify-content-center">
                                                     <a class="title link text-md fw-medium"
-                                                        href="product-detail.html">Porcini Coffee Table</a>
+                                                        href="{{route('productdetails')}}">Porcini Coffee Table</a>
                                                     <p class="price-wrap text-sm fw-medium">
                                                         <span class="new-price">$120.00</span>
                                                     </p>
@@ -2418,7 +1906,7 @@
                                         <div class="swiper-slide">
                                             <div class="tf-mini-cart-item line radius-16">
                                                 <div class="tf-mini-cart-image">
-                                                    <a href="product-detail.html">
+                                                    <a href="{{route('productdetails')}}">
                                                         <img class="lazyload"
                                                             data-src="images/products/furniture/three-big-table.jpg"
                                                             src="images/products/furniture/three-big-table.jpg"
@@ -2427,7 +1915,7 @@
                                                 </div>
                                                 <div class="tf-mini-cart-info justify-content-center">
                                                     <a class="title link text-md fw-medium"
-                                                        href="product-detail.html">Three Big Coffee Table</a>
+                                                        href="{{route('productdetails')}}">Three Big Coffee Table</a>
                                                     <p class="price-wrap text-sm fw-medium">
                                                         <span class="new-price text-primary">$140.00</span>
                                                         <span
@@ -2634,7 +2122,7 @@
                 <div class="tf-product-info-wrap">
                     <div class="tf-product-info-inner">
                         <div class="tf-product-info-heading">
-                            <h6 class="product-info-name"><a href="product-detail.html" class="link">Nook Nightstand</a></h6>
+                            <h6 class="product-info-name"><a href="{{route('productdetails')}}" class="link">Nook Nightstand</a></h6>
                             <div class="product-info-price">
                                 <h6 class="price-new price-on-sale">$150.00</h6>
                                 <h6 class="price-old">$170.00</h6>
@@ -2686,7 +2174,7 @@
                             <a href="#" class="tf-btn w-100 animate-btn paypal btn-primary">Buy It Now</a>
                             <a href="checkout.html" class="more-choose-payment link">More payment options</a>
                         </div>
-                        <a href="product-detail.html" class="view-details link">View full details <i
+                        <a href="{{route('productdetails')}}" class="view-details link">View full details <i
                                 class="icon icon-arrow-right"></i></a>
                     </div>
                 </div>
@@ -2706,13 +2194,13 @@
                         <div class="tf-compare-list">
                             <div class="tf-compare-item file-delete">
                                 <span class="icon-close remove"></span>
-                                <a href="product-detail.html" class="image">
+                                <a href="{{route('productdetails')}}" class="image">
                                     <img class="lazyload" data-src="images/products/furniture/nightstand-brown.jpg"
                                         src="images/products/furniture/nightstand-brown.jpg" alt="">
                                 </a>
                                 <div class="content">
                                     <div class="text-title">
-                                        <a class="link text-line-clamp-2" href="product-detail.html">Nook Nightstand</a>
+                                        <a class="link text-line-clamp-2" href="{{route('productdetails')}}">Nook Nightstand</a>
                                     </div>
                                     <p class="price-wrap">
                                         <span class="new-price text-primary">$150.00</span>
@@ -2722,13 +2210,13 @@
                             </div>
                             <div class="tf-compare-item file-delete">
                                 <span class="icon-close remove"></span>
-                                <a href="product-detail.html" class="image">
+                                <a href="{{route('productdetails')}}" class="image">
                                     <img class="lazyload" data-src="images/products/furniture/talco-table-blue.jpg"
                                         src="images/products/furniture/talco-table-blue.jpg" alt="">
                                 </a>
                                 <div class="content">
                                     <div class="text-title">
-                                        <a class="link text-line-clamp-2" href="product-detail.html">Talco Coffee
+                                        <a class="link text-line-clamp-2" href="{{route('productdetails')}}">Talco Coffee
                                             Table</a>
                                     </div>
                                     <p class="price-wrap">
@@ -2738,13 +2226,13 @@
                             </div>
                             <div class="tf-compare-item file-delete">
                                 <span class="icon-close remove"></span>
-                                <a href="product-detail.html" class="image">
+                                <a href="{{route('productdetails')}}" class="image">
                                     <img class="lazyload" data-src="images/products/furniture/porcini-table.jpg"
                                         src="images/products/furniture/porcini-table.jpg" alt="">
                                 </a>
                                 <div class="content">
                                     <div class="text-title">
-                                        <a class="link text-line-clamp-2" href="product-detail.html">Porcini Coffee
+                                        <a class="link text-line-clamp-2" href="{{route('productdetails')}}">Porcini Coffee
                                             Table</a>
                                     </div>
                                     <p class="price-wrap">
