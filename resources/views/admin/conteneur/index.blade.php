@@ -35,6 +35,27 @@
                         <th class="px-4 py-3">Quick_description</th>
                         <th class="px-4 py-3">Surface</th>
                         <th class="px-4 py-3">capacité</th>
+                        <th class="px-4 py-3">Nombre de palette</th>
+                        <th class="px-4 py-3">Longueur exterieur</th>
+                        <th class="px-4 py-3">Largeur exterieur</th>
+                        <th class="px-4 py-3">Hauteur exterieur</th>
+                        <th class="px-4 py-3">longueur interieur</th>
+                        <th class="px-4 py-3">Largeur interieur</th>
+                        <th class="px-4 py-3">Largeur porte</th>
+                        <th class="px-4 py-3">Hauteur porte</th>
+                        <th class="px-4 py-3">Structure</th>
+                        <th class="px-4 py-3">Plancher</th>
+                        <th class="px-4 py-3">Passage de fourche</th>
+                        <th class="px-4 py-3">Image 1</th>
+                        <th class="px-4 py-3">Image 2</th>
+                        <th class="px-4 py-3">Image 3</th>
+                        <th class="px-4 py-3">Image 4</th>
+                        <th class="px-4 py-3">Image 5</th>
+                        <th class="px-4 py-3">Image 6</th>
+                        <th class="px-4 py-3">Image 7</th>
+                        <th class="px-4 py-3">Image 8</th>
+                        <th class="px-4 py-3">Image 9</th>
+                        <th class="px-4 py-3">Image 10</th>
                         <th class="px-4 py-3">Actions</th>
                     </tr>
                 </thead>
@@ -47,8 +68,29 @@
                         <td class="dark:text-white text-black p-4">{{$conteneur->etat}}</td>
                         <td class="dark:text-white text-black p-4">{{$conteneur->prix}}</td>
                         <td class="dark:text-white text-black p-4">{{$conteneur->quick_description}}</td>
-                        <td class="dark:text-white text-black p-4">{{$conteneur->surface}}</td>
-                        <td class="dark:text-white text-black p-4">{{$conteneur->capacity}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->surface." m²"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->capacity." m³"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->longueur_exterieur." m²" ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->largeur_exterieur." m" ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->hauteur_exterieur." m" ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->longueur_interieur." m" ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->largeur_interieur." m" ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->hauteur_interieur." m" ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->largeur_porte." m" ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->hauteur_porte." m" ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->structure ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->plancher ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->passage_de_fourche." mm" ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->img1 ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->img2 ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->img3 ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->img4 ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->img5 ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->img6 ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->img7 ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->img8 ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->img9 ?? "_"}}</td>
+                        <td class="dark:text-white text-black p-4">{{$conteneur->img10 ?? "_"}}</td>
                         <td class="dark:text-white flex text-black p-4">
                             <a class=" text-green-700 mr-2" href="{{route('admin.conteneur.edit',$conteneur->id)}}">Editer</a>
                             <form id="deleteForm" action="{{ route('admin.conteneur.delete',$conteneur->id) }}" method="POST">
