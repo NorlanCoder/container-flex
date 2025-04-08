@@ -7,15 +7,15 @@ use App\Http\Controllers\Admin\SousCategoryController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [HomeController::class,'homepage'])->name('homepage');
-Route::get('/list/product', [HomeController::class,'productlist'])->name('productlist');
-Route::get('/product', [HomeController::class,'productdetails'])->name('productdetails');
+Route::get('/', [HomeController::class, 'homepage'])->name('homepage');
+Route::get('/list/product/{category}', [HomeController::class, 'productlist'])->name('productlist');
+Route::get('/product', [HomeController::class, 'productdetails'])->name('productdetails');
 
 // 
-Route::get('/contact', [HomeController::class,'contactpage'])->name('contactpage');
-Route::get('/about', [HomeController::class,'aboutpage'])->name('aboutpage');
-Route::get('/privacyandpolicies', [HomeController::class,'privacypage'])->name('privacypage');
-Route::get('/termsandconditions', [HomeController::class,'conditionpage'])->name('conditionpage');
+Route::get('/contact', [HomeController::class, 'contactpage'])->name('contactpage');
+Route::get('/about', [HomeController::class, 'aboutpage'])->name('aboutpage');
+Route::get('/privacyandpolicies', [HomeController::class, 'privacypage'])->name('privacypage');
+Route::get('/termsandconditions', [HomeController::class, 'conditionpage'])->name('conditionpage');
 
 
 // ####################################################################################################
