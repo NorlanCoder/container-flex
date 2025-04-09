@@ -7,7 +7,9 @@
 
 
 <!-- Mirrored from vineta-html.vercel.app/shop-default.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Mar 2025 18:09:14 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <meta charset="utf-8">
     <title>Vineta - Multipurpose eCommerce</title>
@@ -138,7 +140,7 @@
                             </a>
                         </div>
                         <div class="col-xl-5 d-none d-xl-block text-center">
-                            
+
                         </div>
 
                         <div class="col-xl-4 col-md-4 col-3">
@@ -172,13 +174,13 @@
                                 <a href="#" class="item-link">Maritime<i class="icon icon-arr-down"></i></a>
                                 <div class="sub-menu">
                                     <ul class="menu-list">
-                                        <li><a href="shop-default.html" class="menu-link-text link">20' container</a>
+                                        <li><a href="{{route('productlist','20\' container')}}" class="menu-link-text link">20' container</a>
                                         </li>
-                                        <li><a href="shop-left-sidebar.html" class="menu-link-text link">40' container</a></li>
-                                        <li><a href="shop-right-sidebar.html" class="menu-link-text link">Occasions</a></li>
-                                        <li><a href="shop-horizontal-filter.html" class="menu-link-text link">Small</a></li>
-                                        <li><a href="shop-horizontal-filter.html" class="menu-link-text link">Standards</a></li>
-                                        <li><a href="shop-horizontal-filter.html" class="menu-link-text link">Specific</a></li>
+                                        <li><a href="{{route('productlist','40\' container')}}" class="menu-link-text link">40' container</a></li>
+                                        <li><a href="{{route('productlist','Occasions')}}" class="menu-link-text link">Occasions</a></li>
+                                        <li><a href="{{route('productlist','Petit')}}" class="menu-link-text link">Small</a></li>
+                                        <li><a href="{{route('productlist','Standard')}}" class="menu-link-text link">Standards</a></li>
+                                        <li><a href="{{route('productlist', 'Specifique')}}" class="menu-link-text link">Specific</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -186,10 +188,10 @@
                                 <a href="#" class="item-link">Cold<i class="icon icon-arr-down"></i></a>
                                 <div class="sub-menu">
                                     <ul class="menu-list">
-                                        <li><a href="shop-default.html" class="menu-link-text link">Reefer</a>
+                                        <li><a href="{{route('productlist','Réfrigérant')}}" class="menu-link-text link">Reefer</a>
                                         </li>
-                                        <li><a href="shop-left-sidebar.html" class="menu-link-text link">Isotherm</a></li>
-                                        <li><a href="shop-right-sidebar.html" class="menu-link-text link">Cold room</a></li>
+                                        <li><a href="{{route('productlist', 'Isotherme')}}" class="menu-link-text link">Isotherm</a></li>
+                                        <li><a href="{{route('productlist', 'Chambre froide')}}" class="menu-link-text link">Cold room</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -197,11 +199,11 @@
                                 <a href="#" class="item-link">Furnished<i class="icon icon-arr-down"></i></a>
                                 <div class="sub-menu">
                                     <ul class="menu-list">
-                                        <li><a href="shop-left-sidebar.html" class="menu-link-text link">Office</a></li>
-                                        <li><a href="shop-right-sidebar.html" class="menu-link-text link">Sanitary</a></li>
-                                        <li><a href="shop-horizontal-filter.html" class="menu-link-text link">Bungalow</a></li>
-                                        <li><a href="shop-horizontal-filter.html" class="menu-link-text link">Catering</a></li>
-                                        <li><a href="shop-horizontal-filter.html" class="menu-link-text link">Swimming pool</a></li>
+                                        <li><a href="{{route('productlist','Bureau')}}" class="menu-link-text link">Office</a></li>
+                                        <li><a href="{{route('productlist', 'Sanitaire')}}" class="menu-link-text link">Sanitary</a></li>
+                                        <li><a href="{{route('productlist', 'Bungalow')}}" class="menu-link-text link">Bungalow</a></li>
+                                        <li><a href="{{route('productlist', 'Restauration')}}" class="menu-link-text link">Catering</a></li>
+                                        <li><a href="{{route('productlist', 'Piscine')}}" class="menu-link-text link">Swimming pool</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -493,6 +495,9 @@
                     </div>
                     <div class="wrapper-shop tf-grid-layout tf-col-4" id="gridLayout">
                         <!-- Card Product 1 -->
+                        @if (count($conteneurs))
+                        @foreach ($conteneurs as $key=>$conteneur)
+
                         <div class="card-product grid style-1 card-product-size" data-availability="In stock"
                             data-brand="Vineta">
                             <div class="card-product-wrapper">
@@ -502,7 +507,7 @@
                                     <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
                                         src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
                                 </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
+                                <!-- <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div> -->
                                 <ul class="list-product-btn">
                                     <li>
                                         <a href="#shoppingCart" data-bs-toggle="offcanvas"
@@ -511,554 +516,36 @@
                                             <span class="tooltip">Add to Cart</span>
                                         </a>
                                     </li>
-                                    
+
                                 </ul>
-                
+
 
                             </div>
                             <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
+                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">{{$conteneur->label}}</a>
                                 <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
+                                    <span class="price-new text-primary">${{$conteneur->prix}}</span>
+                                    <span class="">{{$conteneur->etat}}</span>
                                 </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 2 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
 
                             </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
                         </div>
-                        <!-- Card Product 3 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
+                        @endforeach
+                        @endif
 
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 4 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 5 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 6 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 7 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 8 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 9 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
-                                        src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 10 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 11 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 12 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 13 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 14 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 15 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Card Product 16 -->
-                        <div class="card-product grid style-1 card-product-size" data-availability="In stock"
-                            data-brand="Vineta">
-                            <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
-                                </a>
-                                <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div>
-                                <ul class="list-product-btn">
-                                    <li>
-                                        <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                            class="hover-tooltip tooltip-left box-icon">
-                                            <span class="icon icon-cart2"></span>
-                                            <span class="tooltip">Add to Cart</span>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
-                
-
-                            </div>
-                            <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Loose Fit
-                                    Tee</a>
-                                <p class="price-wrap fw-medium">
-                                    <span class="price-new text-primary">$120.00</span>
-                                    <span class="price-old">$150.00</span>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        <!-- Pagination -->
-                        <ul class="wg-pagination">
-                            <li class="active">
-                                <div class="pagination-item">1</div>
-                            </li>
-                            <li>
-                                <a href="#" class="pagination-item">2</a>
-                            </li>
-                            <li>
-                                <a href="#" class="pagination-item">3</a>
-                            </li>
-                            <li>
-                                <a href="#" class="pagination-item"><i class="icon-arr-right2"></i></a>
-                            </li>
-                        </ul>
                     </div>
+                    <!-- Pagination -->
+                    {{ $conteneurs->links('vendor.pagination.default') }}
+
+
                 </div>
             </div>
-        </section>
-        
-        <div class="flat-spacing-5 line-top flat-wrap-iconbox">
-            <div class="container">
-                <div dir="ltr" class="swiper tf-swiper wow fadeInUp" data-swiper='{
+    </div>
+    </section>
+
+    <div class="flat-spacing-5 line-top flat-wrap-iconbox">
+        <div class="container">
+            <div dir="ltr" class="swiper tf-swiper wow fadeInUp" data-swiper='{
                     "slidesPerView": 1,
                     "spaceBetween": 12,
                     "speed": 800,
@@ -1072,243 +559,243 @@
                         "1440": { "slidesPerView": 3, "spaceBetween": 205}
                     }
                 }'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="tf-icon-box style-2">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="../www.w3.org/2000/svg.html">
-                                    <path
-                                        d="M38.9421 14.922L24.328 6.48452C24.2283 6.42685 24.1151 6.39648 23.9999 6.39648C23.8847 6.39648 23.7715 6.42685 23.6717 6.48452L9.05762 14.922C8.95781 14.9795 8.87492 15.0623 8.81731 15.1621C8.75971 15.2618 8.72941 15.375 8.72949 15.4901V32.3651C8.72946 32.4804 8.75977 32.5936 8.81737 32.6934C8.87497 32.7932 8.95783 32.876 9.05762 32.9336L23.6717 41.3711C23.7715 41.4286 23.8847 41.4589 23.9999 41.4589C24.115 41.4589 24.2282 41.4286 24.328 41.3711L38.9421 32.9336C39.0419 32.876 39.1248 32.7932 39.1824 32.6934C39.24 32.5936 39.2703 32.4804 39.2702 32.3651V15.4901C39.2703 15.375 39.24 15.2618 39.1824 15.1621C39.1248 15.0623 39.0419 14.9795 38.9421 14.922ZM23.9999 7.81052L37.3015 15.4901L23.9999 23.1698L10.6982 15.4901L23.9999 7.81052ZM10.042 16.6268L23.3436 24.3064V39.666L10.042 31.9875V16.6268ZM37.9577 31.9875L24.6561 39.666V24.3064L37.9577 16.6268V31.9875Z"
-                                        fill="#ABABAB" />
-                                </svg>
-                                <div class="content">
-                                    <div class="title">Free Shipping</div>
-                                    <p class="desc text-grey-2">Enjoy free shipping on all orders over $150</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tf-icon-box style-2">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="../www.w3.org/2000/svg.html">
-                                    <path
-                                        d="M24.3943 15.1144C24.3216 15.0724 24.239 15.0503 24.155 15.0503C24.071 15.0503 23.9885 15.0724 23.9158 15.1144L16.6187 19.3274C16.5459 19.3694 16.4855 19.4298 16.4435 19.5025C16.4015 19.5753 16.3794 19.6578 16.3794 19.7418V28.1677C16.3794 28.2517 16.4015 28.3342 16.4435 28.407C16.4855 28.4797 16.5459 28.5401 16.6187 28.5821L23.9158 32.7952C23.9885 32.8372 24.071 32.8593 24.155 32.8593C24.239 32.8593 24.3216 32.8372 24.3943 32.7952L31.6915 28.5821C31.7642 28.5401 31.8246 28.4797 31.8666 28.407C31.9086 28.3342 31.9307 28.2517 31.9307 28.1677V19.7418C31.9307 19.6578 31.9086 19.5753 31.8666 19.5025C31.8246 19.4298 31.7642 19.3694 31.6915 19.3274L24.3943 15.1144ZM24.155 16.0813L30.4951 19.7418L24.155 23.4022L17.815 19.7418L24.155 16.0813ZM17.3365 20.5706L23.6765 24.231V31.5523L17.3365 27.8918V20.5706ZM24.6336 31.5519V24.2306L30.9737 20.5702V27.8915L24.6336 31.5519ZM8.18376 25.8952C8.19119 25.9576 8.18624 26.0209 8.1692 26.0815C8.15215 26.142 8.12334 26.1986 8.08442 26.2479C8.04549 26.2973 7.99722 26.3386 7.94235 26.3693C7.88748 26.4 7.8271 26.4196 7.76465 26.427C7.74577 26.4292 7.72678 26.4304 7.70777 26.4304C7.59071 26.4302 7.47776 26.3872 7.39031 26.3093C7.30286 26.2315 7.24697 26.1243 7.23322 26.0081C7.15459 25.3417 7.11519 24.6712 7.11523 24.0002C7.11592 21.0265 7.90177 18.1056 9.39334 15.533C10.8849 12.9604 13.0293 10.8272 15.6097 9.34915C18.1901 7.87109 21.115 7.10055 24.0887 7.11545C27.0624 7.13034 29.9795 7.93015 32.5449 9.43399C34.624 10.6583 36.4184 12.3116 37.8086 14.2836L37.7701 8.77077C37.7697 8.70793 37.7816 8.64561 37.8052 8.58738C37.8289 8.52916 37.8637 8.47615 37.9078 8.4314C37.9969 8.34102 38.1183 8.28974 38.2452 8.28883C38.3721 8.28793 38.4942 8.33747 38.5846 8.42657C38.6749 8.51567 38.7262 8.63702 38.7271 8.76393L38.7772 15.9456C38.7777 16.0087 38.7656 16.0713 38.7418 16.1297C38.7179 16.1882 38.6828 16.2413 38.6383 16.2861C38.5938 16.3309 38.5409 16.3664 38.4826 16.3907C38.4244 16.4149 38.3619 16.4274 38.2987 16.4274C38.2942 16.4274 38.2895 16.4274 38.2851 16.4274L31.6136 16.235C31.5505 16.2336 31.4883 16.2197 31.4306 16.1942C31.3729 16.1687 31.3208 16.132 31.2774 16.0863C31.2339 16.0405 31.1999 15.9866 31.1773 15.9277C31.1548 15.8688 31.1441 15.806 31.1459 15.7429C31.1477 15.6799 31.162 15.6178 31.1879 15.5602C31.2137 15.5027 31.2508 15.4508 31.2968 15.4077C31.3428 15.3645 31.3969 15.3308 31.4559 15.3086C31.515 15.2865 31.5779 15.2762 31.6409 15.2784L37.4378 15.4456C35.9942 13.19 34.0074 11.3329 31.6595 10.0447C29.3117 8.75649 26.678 8.07835 24 8.07247C15.2174 8.07247 8.07227 15.2176 8.07227 24.0002C8.0723 24.6335 8.10953 25.2663 8.18376 25.8952ZM40.8848 24.0002C40.8838 26.9002 40.1361 29.751 38.7138 32.2783C37.2915 34.8055 35.2425 36.924 32.7641 38.4297C30.2857 39.9355 27.4613 40.7777 24.563 40.8754C21.6647 40.973 18.79 40.3228 16.2158 38.9874C14.2573 37.9639 12.5166 36.569 11.0908 34.8806L10.8796 39.7981C10.8744 39.9212 10.8217 40.0376 10.7327 40.123C10.6437 40.2083 10.5252 40.256 10.402 40.2561C10.3951 40.2561 10.3883 40.2561 10.381 40.2556C10.2542 40.2501 10.1348 40.1945 10.049 40.101C9.9632 40.0075 9.91806 39.8838 9.92351 39.757L10.1901 33.5439C10.1951 33.4201 10.248 33.3031 10.3376 33.2177C10.4273 33.1322 10.5466 33.0849 10.6705 33.0859L17.54 33.1193C17.6029 33.1195 17.6651 33.132 17.7231 33.1562C17.7811 33.1804 17.8337 33.2158 17.8781 33.2603C17.9224 33.3048 17.9575 33.3577 17.9814 33.4158C18.0053 33.4739 18.0176 33.5362 18.0174 33.599C18.0173 33.6618 18.0048 33.724 17.9806 33.782C17.9564 33.84 17.921 33.8927 17.8765 33.937C17.8319 33.9814 17.7791 34.0165 17.721 34.0404C17.6629 34.0643 17.6006 34.0765 17.5378 34.0764H17.5355L11.6419 34.0479C13.1384 35.8813 15.0231 37.3598 17.1602 38.3766C19.2973 39.3934 21.6334 39.9233 24 39.9279C32.7826 39.9279 39.9277 32.7828 39.9277 24.0002C39.9277 23.8733 39.9781 23.7516 40.0679 23.6618C40.1576 23.5721 40.2793 23.5217 40.4062 23.5217C40.5332 23.5217 40.6549 23.5721 40.7446 23.6618C40.8344 23.7516 40.8848 23.8733 40.8848 24.0002Z"
-                                        fill="#ABABAB" />
-                                </svg>
-                                <div class="content">
-                                    <div class="title">Gift Package</div>
-                                    <p class="desc text-grey-2">Hassle-free returns for a worry-free shopping
-                                        experience.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tf-icon-box style-2">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="../www.w3.org/2000/svg.html">
-                                    <path
-                                        d="M18.2486 37.718C18.2484 38.0955 18.5544 38.4017 18.932 38.4017C19.0615 38.4018 19.1884 38.365 19.2978 38.2957L29.2659 31.9856H38.0487C39.9538 31.9836 41.4977 30.4398 41.4999 28.5346V13.0492C41.4977 11.1441 39.9538 9.60027 38.0487 9.59814H9.95096C8.04595 9.60034 6.50213 11.1442 6.5 13.0492V28.5345C6.5022 30.4395 8.04595 31.9833 9.95096 31.9855H18.2498L18.2486 37.718ZM9.95096 30.6184C8.80064 30.6171 7.86847 29.6849 7.86719 28.5346V13.0492C7.86854 11.8989 8.80064 10.9667 9.95096 10.9654H38.0487C39.1991 10.9667 40.1313 11.8988 40.1327 13.0492V28.5345C40.1314 29.6848 39.1993 30.617 38.049 30.6183H29.0678C28.9384 30.6183 28.8115 30.6551 28.7021 30.7243L19.6162 36.476L19.6176 31.3021C19.6176 30.9247 19.3115 30.6186 18.934 30.6186L9.95096 30.6184Z"
-                                        fill="#ABABAB" />
-                                </svg>
-                                <div class="content">
-                                    <div class="title">Free Returns</div>
-                                    <p class="desc text-grey-2">Shop with confidence, covered by our one-year warranty.
-                                    </p>
-                                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="tf-icon-box style-2">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M38.9421 14.922L24.328 6.48452C24.2283 6.42685 24.1151 6.39648 23.9999 6.39648C23.8847 6.39648 23.7715 6.42685 23.6717 6.48452L9.05762 14.922C8.95781 14.9795 8.87492 15.0623 8.81731 15.1621C8.75971 15.2618 8.72941 15.375 8.72949 15.4901V32.3651C8.72946 32.4804 8.75977 32.5936 8.81737 32.6934C8.87497 32.7932 8.95783 32.876 9.05762 32.9336L23.6717 41.3711C23.7715 41.4286 23.8847 41.4589 23.9999 41.4589C24.115 41.4589 24.2282 41.4286 24.328 41.3711L38.9421 32.9336C39.0419 32.876 39.1248 32.7932 39.1824 32.6934C39.24 32.5936 39.2703 32.4804 39.2702 32.3651V15.4901C39.2703 15.375 39.24 15.2618 39.1824 15.1621C39.1248 15.0623 39.0419 14.9795 38.9421 14.922ZM23.9999 7.81052L37.3015 15.4901L23.9999 23.1698L10.6982 15.4901L23.9999 7.81052ZM10.042 16.6268L23.3436 24.3064V39.666L10.042 31.9875V16.6268ZM37.9577 31.9875L24.6561 39.666V24.3064L37.9577 16.6268V31.9875Z"
+                                    fill="#ABABAB" />
+                            </svg>
+                            <div class="content">
+                                <div class="title">Free Shipping</div>
+                                <p class="desc text-grey-2">Enjoy free shipping on all orders over $150</p>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex d-xl-none sw-dot-default sw-pagination-iconbox justify-content-center"></div>
+                    <div class="swiper-slide">
+                        <div class="tf-icon-box style-2">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M24.3943 15.1144C24.3216 15.0724 24.239 15.0503 24.155 15.0503C24.071 15.0503 23.9885 15.0724 23.9158 15.1144L16.6187 19.3274C16.5459 19.3694 16.4855 19.4298 16.4435 19.5025C16.4015 19.5753 16.3794 19.6578 16.3794 19.7418V28.1677C16.3794 28.2517 16.4015 28.3342 16.4435 28.407C16.4855 28.4797 16.5459 28.5401 16.6187 28.5821L23.9158 32.7952C23.9885 32.8372 24.071 32.8593 24.155 32.8593C24.239 32.8593 24.3216 32.8372 24.3943 32.7952L31.6915 28.5821C31.7642 28.5401 31.8246 28.4797 31.8666 28.407C31.9086 28.3342 31.9307 28.2517 31.9307 28.1677V19.7418C31.9307 19.6578 31.9086 19.5753 31.8666 19.5025C31.8246 19.4298 31.7642 19.3694 31.6915 19.3274L24.3943 15.1144ZM24.155 16.0813L30.4951 19.7418L24.155 23.4022L17.815 19.7418L24.155 16.0813ZM17.3365 20.5706L23.6765 24.231V31.5523L17.3365 27.8918V20.5706ZM24.6336 31.5519V24.2306L30.9737 20.5702V27.8915L24.6336 31.5519ZM8.18376 25.8952C8.19119 25.9576 8.18624 26.0209 8.1692 26.0815C8.15215 26.142 8.12334 26.1986 8.08442 26.2479C8.04549 26.2973 7.99722 26.3386 7.94235 26.3693C7.88748 26.4 7.8271 26.4196 7.76465 26.427C7.74577 26.4292 7.72678 26.4304 7.70777 26.4304C7.59071 26.4302 7.47776 26.3872 7.39031 26.3093C7.30286 26.2315 7.24697 26.1243 7.23322 26.0081C7.15459 25.3417 7.11519 24.6712 7.11523 24.0002C7.11592 21.0265 7.90177 18.1056 9.39334 15.533C10.8849 12.9604 13.0293 10.8272 15.6097 9.34915C18.1901 7.87109 21.115 7.10055 24.0887 7.11545C27.0624 7.13034 29.9795 7.93015 32.5449 9.43399C34.624 10.6583 36.4184 12.3116 37.8086 14.2836L37.7701 8.77077C37.7697 8.70793 37.7816 8.64561 37.8052 8.58738C37.8289 8.52916 37.8637 8.47615 37.9078 8.4314C37.9969 8.34102 38.1183 8.28974 38.2452 8.28883C38.3721 8.28793 38.4942 8.33747 38.5846 8.42657C38.6749 8.51567 38.7262 8.63702 38.7271 8.76393L38.7772 15.9456C38.7777 16.0087 38.7656 16.0713 38.7418 16.1297C38.7179 16.1882 38.6828 16.2413 38.6383 16.2861C38.5938 16.3309 38.5409 16.3664 38.4826 16.3907C38.4244 16.4149 38.3619 16.4274 38.2987 16.4274C38.2942 16.4274 38.2895 16.4274 38.2851 16.4274L31.6136 16.235C31.5505 16.2336 31.4883 16.2197 31.4306 16.1942C31.3729 16.1687 31.3208 16.132 31.2774 16.0863C31.2339 16.0405 31.1999 15.9866 31.1773 15.9277C31.1548 15.8688 31.1441 15.806 31.1459 15.7429C31.1477 15.6799 31.162 15.6178 31.1879 15.5602C31.2137 15.5027 31.2508 15.4508 31.2968 15.4077C31.3428 15.3645 31.3969 15.3308 31.4559 15.3086C31.515 15.2865 31.5779 15.2762 31.6409 15.2784L37.4378 15.4456C35.9942 13.19 34.0074 11.3329 31.6595 10.0447C29.3117 8.75649 26.678 8.07835 24 8.07247C15.2174 8.07247 8.07227 15.2176 8.07227 24.0002C8.0723 24.6335 8.10953 25.2663 8.18376 25.8952ZM40.8848 24.0002C40.8838 26.9002 40.1361 29.751 38.7138 32.2783C37.2915 34.8055 35.2425 36.924 32.7641 38.4297C30.2857 39.9355 27.4613 40.7777 24.563 40.8754C21.6647 40.973 18.79 40.3228 16.2158 38.9874C14.2573 37.9639 12.5166 36.569 11.0908 34.8806L10.8796 39.7981C10.8744 39.9212 10.8217 40.0376 10.7327 40.123C10.6437 40.2083 10.5252 40.256 10.402 40.2561C10.3951 40.2561 10.3883 40.2561 10.381 40.2556C10.2542 40.2501 10.1348 40.1945 10.049 40.101C9.9632 40.0075 9.91806 39.8838 9.92351 39.757L10.1901 33.5439C10.1951 33.4201 10.248 33.3031 10.3376 33.2177C10.4273 33.1322 10.5466 33.0849 10.6705 33.0859L17.54 33.1193C17.6029 33.1195 17.6651 33.132 17.7231 33.1562C17.7811 33.1804 17.8337 33.2158 17.8781 33.2603C17.9224 33.3048 17.9575 33.3577 17.9814 33.4158C18.0053 33.4739 18.0176 33.5362 18.0174 33.599C18.0173 33.6618 18.0048 33.724 17.9806 33.782C17.9564 33.84 17.921 33.8927 17.8765 33.937C17.8319 33.9814 17.7791 34.0165 17.721 34.0404C17.6629 34.0643 17.6006 34.0765 17.5378 34.0764H17.5355L11.6419 34.0479C13.1384 35.8813 15.0231 37.3598 17.1602 38.3766C19.2973 39.3934 21.6334 39.9233 24 39.9279C32.7826 39.9279 39.9277 32.7828 39.9277 24.0002C39.9277 23.8733 39.9781 23.7516 40.0679 23.6618C40.1576 23.5721 40.2793 23.5217 40.4062 23.5217C40.5332 23.5217 40.6549 23.5721 40.7446 23.6618C40.8344 23.7516 40.8848 23.8733 40.8848 24.0002Z"
+                                    fill="#ABABAB" />
+                            </svg>
+                            <div class="content">
+                                <div class="title">Gift Package</div>
+                                <p class="desc text-grey-2">Hassle-free returns for a worry-free shopping
+                                    experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="tf-icon-box style-2">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M18.2486 37.718C18.2484 38.0955 18.5544 38.4017 18.932 38.4017C19.0615 38.4018 19.1884 38.365 19.2978 38.2957L29.2659 31.9856H38.0487C39.9538 31.9836 41.4977 30.4398 41.4999 28.5346V13.0492C41.4977 11.1441 39.9538 9.60027 38.0487 9.59814H9.95096C8.04595 9.60034 6.50213 11.1442 6.5 13.0492V28.5345C6.5022 30.4395 8.04595 31.9833 9.95096 31.9855H18.2498L18.2486 37.718ZM9.95096 30.6184C8.80064 30.6171 7.86847 29.6849 7.86719 28.5346V13.0492C7.86854 11.8989 8.80064 10.9667 9.95096 10.9654H38.0487C39.1991 10.9667 40.1313 11.8988 40.1327 13.0492V28.5345C40.1314 29.6848 39.1993 30.617 38.049 30.6183H29.0678C28.9384 30.6183 28.8115 30.6551 28.7021 30.7243L19.6162 36.476L19.6176 31.3021C19.6176 30.9247 19.3115 30.6186 18.934 30.6186L9.95096 30.6184Z"
+                                    fill="#ABABAB" />
+                            </svg>
+                            <div class="content">
+                                <div class="title">Free Returns</div>
+                                <p class="desc text-grey-2">Shop with confidence, covered by our one-year warranty.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex d-xl-none sw-dot-default sw-pagination-iconbox justify-content-center"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer" class="footer-default xl-pb-70">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-wrap">
+                    <div class="footer-logo">
+                        <a href="index-2.html">
+                            <img src="{{asset('images/logo/logo.svg')}}" class="logo" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="tf-social-icon style-large">
+                        <li>
+                            <a href="" class="social-item social-facebook">
+                                <i class="icon icon-fb"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-item social-instagram">
+                                <i class="icon icon-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-item social-linkedin"><i
+                                    class="icon icon-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="" class="social-item social-x">
+                                <i class="icon icon-x"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <footer id="footer" class="footer-default xl-pb-70">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="footer-top-wrap">
-                        <div class="footer-logo">
-                            <a href="index-2.html">
-                                <img src="{{asset('images/logo/logo.svg')}}" class="logo" alt="logo">
-                            </a>
+        <div class="footer-body">
+            <div class="container">
+                <div class="row-footer">
+                    <div class="footer-col-block s1">
+                        <div class="footer-heading footer-heading-mobile text-xl fw-medium">
+                            Business Contact
                         </div>
-                        <ul class="tf-social-icon style-large">
-                            <li>
-                                <a href="" class="social-item social-facebook">
-                                    <i class="icon icon-fb"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social-item social-instagram">
-                                    <i class="icon icon-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="social-item social-linkedin"><i
-                                        class="icon icon-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="" class="social-item social-x">
-                                    <i class="icon icon-x"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-body">
-                <div class="container">
-                    <div class="row-footer">
-                        <div class="footer-col-block s1">
-                            <div class="footer-heading footer-heading-mobile text-xl fw-medium">
-                                Business Contact
-                            </div>
-                            <div class="tf-collapse-content">
-                                <div class="footer-contact">
-                                    <ul class="footer-info">
-                                        <li class="item">
-                                            <span class="box-icon">
-                                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
-                                                    xmlns="../www.w3.org/2000/svg.html">
-                                                    <path
-                                                        d="M10.1869 1.73431C9.06854 0.61592 7.58155 0 5.99993 0C4.4183 0 2.93129 0.61592 1.81292 1.73431C0.694534 2.85273 0.0786133 4.33969 0.0786133 5.92129C0.0786133 9.12084 3.10388 11.7821 4.72917 13.2118C4.95504 13.4105 5.15008 13.582 5.30547 13.7272C5.50016 13.9091 5.75006 14 5.9999 14C6.24979 14 6.49964 13.9091 6.69435 13.7272C6.84975 13.582 7.04479 13.4105 7.27065 13.2118C8.89594 11.7821 11.9212 9.12084 11.9212 5.92129C11.9212 4.33969 11.3053 2.85273 10.1869 1.73431ZM6.72897 12.5961C6.49816 12.7991 6.29885 12.9744 6.13451 13.1279C6.05902 13.1984 5.94078 13.1984 5.86526 13.1279C5.70095 12.9744 5.50161 12.7991 5.2708 12.596C3.74283 11.2519 0.898656 8.75001 0.898656 5.92131C0.898656 3.1085 3.18704 0.820124 5.99987 0.820124C8.81268 0.820124 11.1011 3.1085 11.1011 5.92131C11.1011 8.75001 8.25694 11.2519 6.72897 12.5961Z"
-                                                        fill="#0D0D0D" />
-                                                    <path
-                                                        d="M6.00008 3.08887C4.56122 3.08887 3.39062 4.25943 3.39062 5.69829C3.39062 7.13715 4.56122 8.30772 6.00008 8.30772C7.43894 8.30772 8.6095 7.13715 8.6095 5.69829C8.6095 4.25943 7.43894 3.08887 6.00008 3.08887ZM6.00008 7.48759C5.01343 7.48759 4.21072 6.68489 4.21072 5.69826C4.21072 4.71164 5.01343 3.90894 6.00008 3.90894C6.98673 3.90894 7.7894 4.71164 7.7894 5.69826C7.7894 6.68489 6.98673 7.48759 6.00008 7.48759Z"
-                                                        fill="#0D0D0D" />
-                                                </svg>
-                                            </span>
-                                            <a target="_blank"
-                                                href="../www.google.com/mapsa118.html?q=123Yarranst,Punchbowl,NSW2196,Australia">
-                                                123 Yarran st, Punchbowl, NSW 2196, Australia
-                                            </a>
-                                        </li>
-                                        <li class="item">
-                                            <span class="box-icon">
-                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                    xmlns="../www.w3.org/2000/svg.html">
-                                                    <path
-                                                        d="M11.6666 9.4091L10.9841 8.4641C10.7324 8.12417 10.3574 7.89649 9.93972 7.82996C9.522 7.76343 9.09484 7.86335 8.74998 8.10827L8.09081 8.59243C7.13399 7.73698 6.36526 6.69214 5.83331 5.5241L6.49248 5.04577C6.837 4.79478 7.06794 4.41741 7.13464 3.99641C7.20135 3.5754 7.09838 3.14513 6.84831 2.79993L6.18331 1.86077C5.93339 1.51663 5.55703 1.28582 5.13698 1.21909C4.71693 1.15236 4.28757 1.25518 3.94331 1.50493L2.91664 2.23993C2.58681 2.47798 2.33009 2.80349 2.17547 3.17972C2.02086 3.55595 1.9745 3.96792 2.04164 4.3691C2.33803 6.09644 3.02915 7.73206 4.06118 9.14856C5.0932 10.5651 6.43827 11.7242 7.99164 12.5358C8.30603 12.696 8.65376 12.78 9.00664 12.7808C9.46814 12.7804 9.91756 12.6333 10.29 12.3608L11.3108 11.6666C11.4837 11.5428 11.6302 11.3858 11.7419 11.2048C11.8535 11.0238 11.9281 10.8224 11.9612 10.6123C11.9943 10.4023 11.9853 10.1877 11.9347 9.98113C11.8842 9.77457 11.793 9.58012 11.6666 9.4091ZM10.7975 10.9433L9.78248 11.6666C9.58631 11.8098 9.35413 11.8954 9.11199 11.914C8.86984 11.9325 8.62732 11.8832 8.41164 11.7716C6.97557 11.0225 5.73227 9.95129 4.779 8.6418C3.82572 7.33231 3.18832 5.82004 2.91664 4.22327C2.87745 3.98261 2.90577 3.73579 2.99846 3.51026C3.09114 3.28473 3.24455 3.08933 3.44164 2.94577L4.45664 2.21077C4.6131 2.09841 4.80765 2.05252 4.99783 2.08312C5.188 2.11373 5.35834 2.21833 5.47164 2.3741L6.15998 3.3191C6.27119 3.47659 6.31717 3.67098 6.28831 3.8616C6.27352 3.95579 6.24012 4.04608 6.19004 4.12721C6.13996 4.20834 6.07421 4.27867 5.99664 4.3341L5.05164 5.02243C4.97248 5.07857 4.91486 5.16007 4.88834 5.25342C4.86182 5.34678 4.86798 5.44639 4.90581 5.53577C5.52168 7.06896 6.5077 8.42575 7.77581 9.48493C7.85256 9.54453 7.94697 9.57689 8.04414 9.57689C8.14132 9.57689 8.23573 9.54453 8.31248 9.48493L9.25748 8.80243C9.41322 8.68947 9.60729 8.64263 9.79741 8.67214C9.98754 8.70164 10.1583 8.80508 10.2725 8.95993L10.9608 9.9166C11.072 10.0741 11.118 10.2685 11.0891 10.4591C11.0752 10.5552 11.0422 10.6475 10.9921 10.7306C10.942 10.8137 10.8759 10.886 10.7975 10.9433Z"
-                                                        fill="#0D0D0D" />
-                                                </svg>
-                                            </span>
-                                            <a href="tel:18888383022">(64) 8342 1245</a>
-                                        </li>
-                                        <li class="item">
-                                            <span class="box-icon">
-                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                                    xmlns="../www.w3.org/2000/svg.html">
-                                                    <path
-                                                        d="M11.8125 2.625H2.1875C1.8394 2.625 1.50556 2.76328 1.25942 3.00942C1.01328 3.25556 0.875 3.5894 0.875 3.9375V10.0625C0.875 10.4106 1.01328 10.7444 1.25942 10.9906C1.50556 11.2367 1.8394 11.375 2.1875 11.375H11.8125C12.1606 11.375 12.4944 11.2367 12.7406 10.9906C12.9867 10.7444 13.125 10.4106 13.125 10.0625V3.9375C13.125 3.5894 12.9867 3.25556 12.7406 3.00942C12.4944 2.76328 12.1606 2.625 11.8125 2.625ZM11.5675 3.5L7.28 7.07438C7.20139 7.13985 7.10231 7.17571 7 7.17571C6.89769 7.17571 6.79861 7.13985 6.72 7.07438L2.4325 3.5H11.5675ZM11.8125 10.5H2.1875C2.07147 10.5 1.96019 10.4539 1.87814 10.3719C1.79609 10.2898 1.75 10.1785 1.75 10.0625V4.06875L6.16 7.74375C6.39584 7.94019 6.69307 8.04776 7 8.04776C7.30693 8.04776 7.60416 7.94019 7.84 7.74375L12.25 4.06875V10.0625C12.25 10.1785 12.2039 10.2898 12.1219 10.3719C12.0398 10.4539 11.9285 10.5 11.8125 10.5Z"
-                                                        fill="#0D0D0D" />
-                                                </svg>
-                                            </span>
-                                            <a href="mailto:support@example.com">support@example.com</a>
-                                        </li>
-                                    </ul>
-                                    <a href="../www.google.com/maps33cd.html?q=15Yarranst,Punchbowl,NSW,Australia"
-                                        class="tf-btn btn-line-dark fw-normal">
-                                        <span class="text-sm">
-                                            See location
+                        <div class="tf-collapse-content">
+                            <div class="footer-contact">
+                                <ul class="footer-info">
+                                    <li class="item">
+                                        <span class="box-icon">
+                                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                                xmlns="../www.w3.org/2000/svg.html">
+                                                <path
+                                                    d="M10.1869 1.73431C9.06854 0.61592 7.58155 0 5.99993 0C4.4183 0 2.93129 0.61592 1.81292 1.73431C0.694534 2.85273 0.0786133 4.33969 0.0786133 5.92129C0.0786133 9.12084 3.10388 11.7821 4.72917 13.2118C4.95504 13.4105 5.15008 13.582 5.30547 13.7272C5.50016 13.9091 5.75006 14 5.9999 14C6.24979 14 6.49964 13.9091 6.69435 13.7272C6.84975 13.582 7.04479 13.4105 7.27065 13.2118C8.89594 11.7821 11.9212 9.12084 11.9212 5.92129C11.9212 4.33969 11.3053 2.85273 10.1869 1.73431ZM6.72897 12.5961C6.49816 12.7991 6.29885 12.9744 6.13451 13.1279C6.05902 13.1984 5.94078 13.1984 5.86526 13.1279C5.70095 12.9744 5.50161 12.7991 5.2708 12.596C3.74283 11.2519 0.898656 8.75001 0.898656 5.92131C0.898656 3.1085 3.18704 0.820124 5.99987 0.820124C8.81268 0.820124 11.1011 3.1085 11.1011 5.92131C11.1011 8.75001 8.25694 11.2519 6.72897 12.5961Z"
+                                                    fill="#0D0D0D" />
+                                                <path
+                                                    d="M6.00008 3.08887C4.56122 3.08887 3.39062 4.25943 3.39062 5.69829C3.39062 7.13715 4.56122 8.30772 6.00008 8.30772C7.43894 8.30772 8.6095 7.13715 8.6095 5.69829C8.6095 4.25943 7.43894 3.08887 6.00008 3.08887ZM6.00008 7.48759C5.01343 7.48759 4.21072 6.68489 4.21072 5.69826C4.21072 4.71164 5.01343 3.90894 6.00008 3.90894C6.98673 3.90894 7.7894 4.71164 7.7894 5.69826C7.7894 6.68489 6.98673 7.48759 6.00008 7.48759Z"
+                                                    fill="#0D0D0D" />
+                                            </svg>
                                         </span>
-                                        <i class="icon-arrow-top-left fs-8"></i>
-                                    </a>
-                                </div>
+                                        <a target="_blank"
+                                            href="../www.google.com/mapsa118.html?q=123Yarranst,Punchbowl,NSW2196,Australia">
+                                            123 Yarran st, Punchbowl, NSW 2196, Australia
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <span class="box-icon">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="../www.w3.org/2000/svg.html">
+                                                <path
+                                                    d="M11.6666 9.4091L10.9841 8.4641C10.7324 8.12417 10.3574 7.89649 9.93972 7.82996C9.522 7.76343 9.09484 7.86335 8.74998 8.10827L8.09081 8.59243C7.13399 7.73698 6.36526 6.69214 5.83331 5.5241L6.49248 5.04577C6.837 4.79478 7.06794 4.41741 7.13464 3.99641C7.20135 3.5754 7.09838 3.14513 6.84831 2.79993L6.18331 1.86077C5.93339 1.51663 5.55703 1.28582 5.13698 1.21909C4.71693 1.15236 4.28757 1.25518 3.94331 1.50493L2.91664 2.23993C2.58681 2.47798 2.33009 2.80349 2.17547 3.17972C2.02086 3.55595 1.9745 3.96792 2.04164 4.3691C2.33803 6.09644 3.02915 7.73206 4.06118 9.14856C5.0932 10.5651 6.43827 11.7242 7.99164 12.5358C8.30603 12.696 8.65376 12.78 9.00664 12.7808C9.46814 12.7804 9.91756 12.6333 10.29 12.3608L11.3108 11.6666C11.4837 11.5428 11.6302 11.3858 11.7419 11.2048C11.8535 11.0238 11.9281 10.8224 11.9612 10.6123C11.9943 10.4023 11.9853 10.1877 11.9347 9.98113C11.8842 9.77457 11.793 9.58012 11.6666 9.4091ZM10.7975 10.9433L9.78248 11.6666C9.58631 11.8098 9.35413 11.8954 9.11199 11.914C8.86984 11.9325 8.62732 11.8832 8.41164 11.7716C6.97557 11.0225 5.73227 9.95129 4.779 8.6418C3.82572 7.33231 3.18832 5.82004 2.91664 4.22327C2.87745 3.98261 2.90577 3.73579 2.99846 3.51026C3.09114 3.28473 3.24455 3.08933 3.44164 2.94577L4.45664 2.21077C4.6131 2.09841 4.80765 2.05252 4.99783 2.08312C5.188 2.11373 5.35834 2.21833 5.47164 2.3741L6.15998 3.3191C6.27119 3.47659 6.31717 3.67098 6.28831 3.8616C6.27352 3.95579 6.24012 4.04608 6.19004 4.12721C6.13996 4.20834 6.07421 4.27867 5.99664 4.3341L5.05164 5.02243C4.97248 5.07857 4.91486 5.16007 4.88834 5.25342C4.86182 5.34678 4.86798 5.44639 4.90581 5.53577C5.52168 7.06896 6.5077 8.42575 7.77581 9.48493C7.85256 9.54453 7.94697 9.57689 8.04414 9.57689C8.14132 9.57689 8.23573 9.54453 8.31248 9.48493L9.25748 8.80243C9.41322 8.68947 9.60729 8.64263 9.79741 8.67214C9.98754 8.70164 10.1583 8.80508 10.2725 8.95993L10.9608 9.9166C11.072 10.0741 11.118 10.2685 11.0891 10.4591C11.0752 10.5552 11.0422 10.6475 10.9921 10.7306C10.942 10.8137 10.8759 10.886 10.7975 10.9433Z"
+                                                    fill="#0D0D0D" />
+                                            </svg>
+                                        </span>
+                                        <a href="tel:18888383022">(64) 8342 1245</a>
+                                    </li>
+                                    <li class="item">
+                                        <span class="box-icon">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="../www.w3.org/2000/svg.html">
+                                                <path
+                                                    d="M11.8125 2.625H2.1875C1.8394 2.625 1.50556 2.76328 1.25942 3.00942C1.01328 3.25556 0.875 3.5894 0.875 3.9375V10.0625C0.875 10.4106 1.01328 10.7444 1.25942 10.9906C1.50556 11.2367 1.8394 11.375 2.1875 11.375H11.8125C12.1606 11.375 12.4944 11.2367 12.7406 10.9906C12.9867 10.7444 13.125 10.4106 13.125 10.0625V3.9375C13.125 3.5894 12.9867 3.25556 12.7406 3.00942C12.4944 2.76328 12.1606 2.625 11.8125 2.625ZM11.5675 3.5L7.28 7.07438C7.20139 7.13985 7.10231 7.17571 7 7.17571C6.89769 7.17571 6.79861 7.13985 6.72 7.07438L2.4325 3.5H11.5675ZM11.8125 10.5H2.1875C2.07147 10.5 1.96019 10.4539 1.87814 10.3719C1.79609 10.2898 1.75 10.1785 1.75 10.0625V4.06875L6.16 7.74375C6.39584 7.94019 6.69307 8.04776 7 8.04776C7.30693 8.04776 7.60416 7.94019 7.84 7.74375L12.25 4.06875V10.0625C12.25 10.1785 12.2039 10.2898 12.1219 10.3719C12.0398 10.4539 11.9285 10.5 11.8125 10.5Z"
+                                                    fill="#0D0D0D" />
+                                            </svg>
+                                        </span>
+                                        <a href="mailto:support@example.com">support@example.com</a>
+                                    </li>
+                                </ul>
+                                <a href="../www.google.com/maps33cd.html?q=15Yarranst,Punchbowl,NSW,Australia"
+                                    class="tf-btn btn-line-dark fw-normal">
+                                    <span class="text-sm">
+                                        See location
+                                    </span>
+                                    <i class="icon-arrow-top-left fs-8"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="footer-inner-wrap footer-col-block s2">
-                            <div class="footer-heading footer-heading-mobile text-xl fw-medium">
-                                Subscribe Newsletter
-                            </div>
-                            <div class="tf-collapse-content">
-                                <div class="footer-newsletter">
-                                    <p>
-                                        We invite you to register to read the latest news, offers and events about
-                                        our company. We promise not spam your inbox.
-                                    </p>
-                                    <form action="#" class="form-newsletter" method="post" accept-charset="utf-8"
-                                        data-mailchimp="true">
-                                        <div class="subscribe-content">
-                                            <fieldset class="email">
-                                                <input type="email" name="email-form" class="subscribe-email"
-                                                    placeholder="Email address" tabindex="0" aria-required="true"
-                                                    required>
-                                            </fieldset>
-                                            <div class="button-submit">
-                                                <button class="subscribe-button animate-btn" type="submit">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                                        xmlns="../www.w3.org/2000/svg.html">
-                                                        <g clip-path="url(#clip0_5296_3345)">
-                                                            <path
-                                                                d="M17.7938 8.50229L17.7931 8.50162L14.1192 4.84537C13.8439 4.57147 13.3988 4.57249 13.1248 4.84776C12.8508 5.123 12.8519 5.56818 13.1271 5.84212L15.5938 8.29687H0.703125C0.314789 8.29687 0 8.61166 0 9C0 9.38833 0.314789 9.70312 0.703125 9.70312H15.5938L13.1272 12.1579C12.8519 12.4318 12.8509 12.877 13.1248 13.1522C13.3988 13.4275 13.844 13.4285 14.1192 13.1546L17.7932 9.49837L17.7938 9.4977C18.0692 9.22285 18.0683 8.77623 17.7938 8.50229Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_5296_3345">
-                                                                <rect width="18" height="18" fill="white" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </button>
-                                            </div>
+                    </div>
+                    <div class="footer-inner-wrap footer-col-block s2">
+                        <div class="footer-heading footer-heading-mobile text-xl fw-medium">
+                            Subscribe Newsletter
+                        </div>
+                        <div class="tf-collapse-content">
+                            <div class="footer-newsletter">
+                                <p>
+                                    We invite you to register to read the latest news, offers and events about
+                                    our company. We promise not spam your inbox.
+                                </p>
+                                <form action="#" class="form-newsletter" method="post" accept-charset="utf-8"
+                                    data-mailchimp="true">
+                                    <div class="subscribe-content">
+                                        <fieldset class="email">
+                                            <input type="email" name="email-form" class="subscribe-email"
+                                                placeholder="Email address" tabindex="0" aria-required="true"
+                                                required>
+                                        </fieldset>
+                                        <div class="button-submit">
+                                            <button class="subscribe-button animate-btn" type="submit">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="../www.w3.org/2000/svg.html">
+                                                    <g clip-path="url(#clip0_5296_3345)">
+                                                        <path
+                                                            d="M17.7938 8.50229L17.7931 8.50162L14.1192 4.84537C13.8439 4.57147 13.3988 4.57249 13.1248 4.84776C12.8508 5.123 12.8519 5.56818 13.1271 5.84212L15.5938 8.29687H0.703125C0.314789 8.29687 0 8.61166 0 9C0 9.38833 0.314789 9.70312 0.703125 9.70312H15.5938L13.1272 12.1579C12.8519 12.4318 12.8509 12.877 13.1248 13.1522C13.3988 13.4275 13.844 13.4285 14.1192 13.1546L17.7932 9.49837L17.7938 9.4977C18.0692 9.22285 18.0683 8.77623 17.7938 8.50229Z"
+                                                            fill="white" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_5296_3345">
+                                                            <rect width="18" height="18" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
                                         </div>
-                                    </form>
-                                </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <div class="footer-inner-wrap s3">
-                            <div class="footer-col-block inner-col">
-                                <div class="footer-heading footer-heading-mobile text-xl fw-medium">About Us</div>
-                                <div class="tf-collapse-content">
-                                    <ul class="footer-menu-list">
-                                        <li>
-                                            <a href="">About Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="footer-inner-wrap s3">
+                        <div class="footer-col-block inner-col">
+                            <div class="footer-heading footer-heading-mobile text-xl fw-medium">About Us</div>
+                            <div class="tf-collapse-content">
+                                <ul class="footer-menu-list">
+                                    <li>
+                                        <a href="">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact Us</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="footer-col-block inner-col">
-                                <div class="footer-heading footer-heading-mobile text-xl fw-medium">Resource</div>
-                                <div class="tf-collapse-content">
-                                    <ul class="footer-menu-list">
-                                        <li>
-                                            <a href="">Privacy Policies</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Terms & Conditions</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="footer-col-block inner-col">
+                            <div class="footer-heading footer-heading-mobile text-xl fw-medium">Resource</div>
+                            <div class="tf-collapse-content">
+                                <ul class="footer-menu-list">
+                                    <li>
+                                        <a href="">Privacy Policies</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Terms & Conditions</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="footer-bottom-wrap">
-                        <p class="text-dark">Copyright © 2025 by <span class="fw-medium">TopStore.</span> All Rights
-                            Reserved.</p>
-                        <ul class="tf-payment">
-                            <li class="item"><img src=" {{asset('images/payment/EximBank.png')}} " alt="payment"></li>
-                            <li class="item"><img src=" {{asset('images/payment/ApplePay.png')}} " alt="payment"></li>
-                            <li class="item"><img src=" {{asset('images/payment/DinersClub.png')}} " alt="payment"></li>
-                            <li class="item"><img src=" {{asset('images/payment/Discover.png')}} " alt="payment"></li>
-                            <li class="item"><img src=" {{asset('images/payment/GooglePay.png')}} " alt="payment"></li>
-                            <li class="item"><img src=" {{asset('images/payment/Mastercard-2.png')}} " alt="payment"></li>
-                            <li class="item"><img src=" {{asset('images/payment/Mastercard.png')}} " alt="payment"></li>
-                            <li class="item"><img src=" {{asset('images/payment/Shop.png')}} " alt="payment"></li>
-                            <li class="item"><img src=" {{asset('images/payment/UnionPay.png')}} " alt="payment"></li>
-                            <li class="item"><img src=" {{asset('images/payment/Visa.png')}} " alt="payment"></li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-wrap">
+                    <p class="text-dark">Copyright © 2025 by <span class="fw-medium">TopStore.</span> All Rights
+                        Reserved.</p>
+                    <ul class="tf-payment">
+                        <li class="item"><img src=" {{asset('images/payment/EximBank.png')}} " alt="payment"></li>
+                        <li class="item"><img src=" {{asset('images/payment/ApplePay.png')}} " alt="payment"></li>
+                        <li class="item"><img src=" {{asset('images/payment/DinersClub.png')}} " alt="payment"></li>
+                        <li class="item"><img src=" {{asset('images/payment/Discover.png')}} " alt="payment"></li>
+                        <li class="item"><img src=" {{asset('images/payment/GooglePay.png')}} " alt="payment"></li>
+                        <li class="item"><img src=" {{asset('images/payment/Mastercard-2.png')}} " alt="payment"></li>
+                        <li class="item"><img src=" {{asset('images/payment/Mastercard.png')}} " alt="payment"></li>
+                        <li class="item"><img src=" {{asset('images/payment/Shop.png')}} " alt="payment"></li>
+                        <li class="item"><img src=" {{asset('images/payment/UnionPay.png')}} " alt="payment"></li>
+                        <li class="item"><img src=" {{asset('images/payment/Visa.png')}} " alt="payment"></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-        <!-- /Footer -->
+        </div>
+    </footer>
+    <!-- /Footer -->
 
     </div>
 
@@ -1547,12 +1034,12 @@
                             </a>
                             <div id="dropdown-menu-home" class="collapse">
                                 <ul class="sub-nav-menu">
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">20' container</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">40' container</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Occasions</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Small</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Standards</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Specific</a></li>
+                                    <li><a href="{{route('productlist','20\' container')}}" class="sub-nav-link">20' container</a></li>
+                                    <li><a href="{{route('productlist','40\' container')}}" class="sub-nav-link">40' container</a></li>
+                                    <li><a href="{{route('productlist','Occasions')}}" class="sub-nav-link">Occasions</a></li>
+                                    <li><a href="{{route('productlist','Petit')}}" class="sub-nav-link">Small</a></li>
+                                    <li><a href="{{route('productlist','Standard')}}" class="sub-nav-link">Standards</a></li>
+                                    <li><a href="{{route('productlist', 'Specifique')}}" class="sub-nav-link">Specific</a></li>
                                 </ul>
                             </div>
 
@@ -1565,9 +1052,9 @@
                             </a>
                             <div id="dropdown-menu-shop" class="collapse">
                                 <ul class="sub-nav-menu">
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Reefer</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Isotherm</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Cold Room</a></li>
+                                    <li><a href="{{route('productlist','Réfrigérant')}}" class="sub-nav-link">Reefer</a></li>
+                                    <li><a href="{{route('productlist', 'Isotherme')}}" class="sub-nav-link">Isotherm</a></li>
+                                    <li><a href="{{route('productlist', 'Chambre froide')}}" class="sub-nav-link">Cold Room</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -1579,11 +1066,11 @@
                             </a>
                             <div id="dropdown-menu-product" class="collapse">
                                 <ul class="sub-nav-menu">
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Office</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Sanitary</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Bungalow</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Catering</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Swimming pool</a></li>
+                                    <li><a href="{{route('productlist','Bureau')}}" class="sub-nav-link">Office</a></li>
+                                    <li><a href="{{route('productlist', 'Sanitaire')}}" class="sub-nav-link">Sanitary</a></li>
+                                    <li><a href="{{route('productlist', 'Bungalow')}}" class="sub-nav-link">Bungalow</a></li>
+                                    <li><a href="{{route('productlist', 'Restauration')}}" class="sub-nav-link">Catering</a></li>
+                                    <li><a href="{{route('productlist', 'Piscine')}}" class="sub-nav-link">Swimming pool</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -1593,7 +1080,7 @@
                         <li class="nav-mb-item">
                             <a href="{{route('homepage')}}" class="mb-menu-link">Our achievements</a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -1818,7 +1305,7 @@
                                                         src="{{asset('images/products/fashion/product-23.jpg')}}"
                                                         alt="image-product">
                                                 </a>
-                                                
+
                                                 <div class="product-btn-main">
                                                     <a href="{{route('productdetails')}}" class="btn-main-product ">
                                                         <span class="icon icon-cart2"></span>
@@ -1837,7 +1324,7 @@
                                                     <span class="price-new text-primary">80.00</span>
                                                     <span class="price-old">$100.00</span>
                                                 </p>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -1854,7 +1341,7 @@
                                                         src="{{asset('images/products/fashion/product-20.jpg')}}"
                                                         alt="image-product">
                                                 </a>
-                                                
+
                                                 <div class="product-btn-main">
                                                     <a href="{{route('productdetails')}}" class="btn-main-product ">
                                                         <span class="icon icon-cart2"></span>
@@ -1873,7 +1360,7 @@
                                                     <span class="price-new text-primary">$130.00</span>
                                                     <span class=" price-old">$130.00</span>
                                                 </p>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -1890,7 +1377,7 @@
                                                         src="{{asset('images/products/fashion/women-black-3.jpg')}}"
                                                         alt="image-product">
                                                 </a>
-                                                
+
                                                 <div class="product-btn-main">
                                                     <a href="{{route('productdetails')}}" class="btn-main-product ">
                                                         <span class="icon icon-cart2"></span>
@@ -1907,7 +1394,7 @@
                                                     <span class="price-new text-primary">$80.00</span>
                                                     <span class=" price-old">$100.00</span>
                                                 </p>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -1923,7 +1410,7 @@
                                                         data-src="{{asset('images/products/fashion/product-5.jpg')}}"
                                                         src="{{asset('images/products/fashion/product-5.jpg')}}" alt="image-product">
                                                 </a>
-                                                
+
                                                 <div class="product-btn-main">
                                                     <a href="{{route('productdetails')}}" class="btn-main-product ">
                                                         <span class="icon icon-cart2"></span>
@@ -2038,7 +1525,7 @@
                         </div>
                     </div>
                     <div class="tf-mini-cart-bottom">
-                        
+
                         <div class="tf-mini-cart-bottom-wrap">
                             <div class="tf-cart-totals-discounts">
                                 <div class="tf-cart-total text-xl fw-medium">Total:</div>
@@ -2367,4 +1854,5 @@
 
 
 <!-- Mirrored from vineta-html.vercel.app/shop-default.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Mar 2025 18:09:22 GMT -->
+
 </html>

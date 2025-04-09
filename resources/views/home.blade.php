@@ -7,7 +7,9 @@
 
 
 <!-- Mirrored from vineta-html.vercel.app/home-furniture.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Mar 2025 18:03:17 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <meta charset="utf-8">
     <title>Vineta - Multipurpose eCommerce</title>
@@ -187,13 +189,13 @@
                                 <a href="#" class="item-link">Maritime<i class="icon icon-arr-down"></i></a>
                                 <div class="sub-menu">
                                     <ul class="menu-list">
-                                        <li><a href="shop-default.html" class="menu-link-text link">20' container</a>
+                                        <li><a href="{{route('productlist', '20\' container')}}" class="menu-link-text link">20' container</a>
                                         </li>
-                                        <li><a href="shop-left-sidebar.html" class="menu-link-text link">40' container</a></li>
-                                        <li><a href="shop-right-sidebar.html" class="menu-link-text link">Occasions</a></li>
-                                        <li><a href="shop-horizontal-filter.html" class="menu-link-text link">Small</a></li>
-                                        <li><a href="shop-horizontal-filter.html" class="menu-link-text link">Standards</a></li>
-                                        <li><a href="shop-horizontal-filter.html" class="menu-link-text link">Specific</a></li>
+                                        <li><a href="{{route('productlist', '40\' container')}}" class="menu-link-text link">40' container</a></li>
+                                        <li><a href="{{route('productlist', 'Occasions')}}" class="menu-link-text link">Occasions</a></li>
+                                        <li><a href="{{route('productlist', 'Petit')}}" class="menu-link-text link">Small</a></li>
+                                        <li><a href="{{route('productlist', 'Standard')}}" class="menu-link-text link">Standards</a></li>
+                                        <li><a href="{{route('productlist', 'Specifique')}}" class="menu-link-text link">Specific</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -252,7 +254,7 @@
                                             </p>
                                         </div>
                                         <div class="box-btn-slider fade-item fade-item-3">
-                                            <a href="{{route('productlist')}}" class="tf-btn btn-out-line-white">
+                                            <a href="#" class="tf-btn btn-out-line-white">
                                                 See Maritime container
                                             </a>
                                         </div>
@@ -279,7 +281,7 @@
                                             </p>
                                         </div>
                                         <div class="box-btn-slider fade-item fade-item-3">
-                                            <a href="{{route('productlist')}}" class="tf-btn btn-out-line-white">
+                                            <a href="#" class="tf-btn btn-out-line-white">
                                                 See Cold container
                                             </a>
                                         </div>
@@ -306,7 +308,7 @@
                                             </p>
                                         </div>
                                         <div class="box-btn-slider fade-item fade-item-3">
-                                            <a href="{{route('productlist')}}" class="tf-btn btn-out-line-white">
+                                            <a href="#" class="tf-btn btn-out-line-white">
                                                 See furnished container
                                             </a>
                                         </div>
@@ -420,7 +422,7 @@
                             }
                         }'>
                         <div class="swiper-wrapper">
-                            
+
                             <!-- item 1 -->
                             <div class="swiper-slide">
                                 <div class="card-product">
@@ -610,35 +612,35 @@
             <div class="container">
                 <div class="grid-cls grid-cls-v1">
                     <div class="item1 wg-cls style-abs hover-img">
-                        <a href="{{route('productlist')}}" class="image img-style d-block">
+                        <a href="{{route('productlist','40\' Container')}}" class="image img-style d-block">
                             <img src="{{asset('container/20piedsDRY-neuf_2.webp')}}"
                                 data-src="{{asset('container/20piedsDRY-neuf_2.webp')}}" alt="cls"
                                 class="ls-is-cached lazyloaded">
                         </a>
                         <div class="cls-btn text-center wow fadeInUp">
-                            <a href="{{route('productlist')}}"
+                            <a href="{{route('productlist','40\' Container')}}"
                                 class="tf-btn btn-cls btn-white animate-btn animate-dark">40' Container</a>
                         </div>
                     </div>
                     <div class="item2 wg-cls style-abs hover-img">
-                        <a href="{{route('productlist')}}" class="image img-style d-block">
+                        <a href="{{route('productlist','office')}}" class="image img-style d-block">
                             <img src="{{asset('container/18423846-01.jpg')}}"
                                 data-src="{{asset('container/18423846-01.jpg')}}" alt="cls"
                                 class="ls-is-cached lazyloaded">
                         </a>
                         <div class="cls-btn text-center wow fadeInUp">
-                            <a href="{{route('productlist')}}"
+                            <a href="{{route('productlist','Bureau')}}"
                                 class="tf-btn btn-cls btn-white animate-btn animate-dark">Office</a>
                         </div>
                     </div>
                     <div class="item3 wg-cls style-abs hover-img">
-                        <a href="{{route('productlist')}}" class="image img-style d-block">
+                        <a href="{{route('productlist','Réfrigérant')}}" class="image img-style d-block">
                             <img src="{{asset('container/20160803_103542.jpg')}}"
                                 data-src="{{asset('container/20160803_103542.jpg')}}" alt="cls"
                                 class="ls-is-cached lazyloaded">
                         </a>
                         <div class="cls-btn text-center wow fadeInUp">
-                            <a href="{{route('productlist')}}"
+                            <a href="{{route('productlist','Réfrigérant')}}"
                                 class="tf-btn btn-cls btn-white animate-btn animate-dark">Reefer</a>
                         </div>
                     </div>
@@ -679,7 +681,7 @@
                             }
                         }'>
                         <div class="swiper-wrapper">
-                            
+
                             <!-- item 1 -->
                             <div class="swiper-slide">
                                 <div class="card-product">
@@ -855,7 +857,7 @@
                                 </div>
                             </div>
 
-                            
+
                         </div>
                         <div class="d-flex d-xl-none mt_5 sw-dot-default sw-pagination-top-pick justify-content-center">
                         </div>
@@ -1180,12 +1182,12 @@
                             </a>
                             <div id="dropdown-menu-home" class="collapse">
                                 <ul class="sub-nav-menu">
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">20' container</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">40' container</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Occasions</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Small</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Standards</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Specific</a></li>
+                                    <li><a href="{{route('productlist','20\' container')}}" class="sub-nav-link">20' container</a></li>
+                                    <li><a href="{{route('productlist','40\' container')}}" class="sub-nav-link">40' container</a></li>
+                                    <li><a href="{{route('productlist','Occasions')}}" class="sub-nav-link">Occasions</a></li>
+                                    <li><a href="{{route('productlist','Petit')}}" class="sub-nav-link">Small</a></li>
+                                    <li><a href="{{route('productlist','Standard')}}" class="sub-nav-link">Standards</a></li>
+                                    <li><a href="{{route('productlist', 'Specifique')}}" class="sub-nav-link">Specific</a></li>
                                 </ul>
                             </div>
 
@@ -1198,9 +1200,9 @@
                             </a>
                             <div id="dropdown-menu-shop" class="collapse">
                                 <ul class="sub-nav-menu">
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Reefer</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Isotherm</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Cold Room</a></li>
+                                    <li><a href="{{route('productlist','Réfrigérant')}}" class="sub-nav-link">Reefer</a></li>
+                                    <li><a href="{{route('productlist', 'Isotherme')}}" class="sub-nav-link">Isotherm</a></li>
+                                    <li><a href="{{route('productlist', 'Chambre froide')}}" class="sub-nav-link">Cold Room</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -1212,11 +1214,11 @@
                             </a>
                             <div id="dropdown-menu-product" class="collapse">
                                 <ul class="sub-nav-menu">
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Office</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Sanitary</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Bungalow</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Catering</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Swimming pool</a></li>
+                                    <li><a href="{{route('productlist','Bureau')}}" class="sub-nav-link">Office</a></li>
+                                    <li><a href="{{route('productlist', 'Sanitaire')}}" class="sub-nav-link">Sanitary</a></li>
+                                    <li><a href="{{route('productlist', 'Bungalow')}}" class="sub-nav-link">Bungalow</a></li>
+                                    <li><a href="{{route('productlist', 'Restauration')}}" class="sub-nav-link">Catering</a></li>
+                                    <li><a href="{{route('productlist', 'Piscine')}}" class="sub-nav-link">Swimming pool</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -1226,7 +1228,7 @@
                         <li class="nav-mb-item">
                             <a href="{{route('homepage')}}" class="mb-menu-link">Our achievements</a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -2271,4 +2273,5 @@
 
 
 <!-- Mirrored from vineta-html.vercel.app/home-furniture.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Mar 2025 18:03:43 GMT -->
+
 </html>

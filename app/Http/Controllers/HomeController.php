@@ -20,7 +20,7 @@ class HomeController extends Controller
     public function productlist(Request $request, string $sous_category_name)
     {
         $sous_category = SousCategory::where('label', $sous_category_name)->first();
-        $conteneurs = Conteneur::where('sous_category_id', $sous_category->id)->get();
+        $conteneurs = Conteneur::where('conteneur_sous_category_id', $sous_category->id)->paginate(20);
         return view('shop', ['conteneurs' => $conteneurs]);
     }
 

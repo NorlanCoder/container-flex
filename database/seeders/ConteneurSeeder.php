@@ -13,6 +13,6 @@ class ConteneurSeeder extends Seeder
      */
     public function run(): void
     {
-        Conteneur::factory()->count(30)->create();
+        Conteneur::factory()->count(200)->create();
     }
 }
