@@ -427,7 +427,7 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="{{route('productdetails')}}" class="product-img">
+                                        <a href="" class="product-img">
                                             <img class="img-product lazyload"
                                                 data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
                                                 src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
@@ -448,7 +448,7 @@
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                        <a href="" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -462,7 +462,7 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="{{route('productdetails')}}" class="product-img">
+                                        <a href="" class="product-img">
                                             <img class="img-product lazyload"
                                                 data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
                                                 src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
@@ -483,7 +483,7 @@
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                        <a href="" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -497,7 +497,7 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="{{route('productdetails')}}" class="product-img">
+                                        <a href="" class="product-img">
                                             <img class="img-product lazyload"
                                                 data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
                                                 src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
@@ -518,7 +518,7 @@
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                        <a href="" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -532,7 +532,7 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="{{route('productdetails')}}" class="product-img">
+                                        <a href="" class="product-img">
                                             <img class="img-product lazyload"
                                                 data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
                                                 src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
@@ -553,7 +553,7 @@
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                        <a href="" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -567,7 +567,7 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="{{route('productdetails')}}" class="product-img">
+                                        <a href="" class="product-img">
                                             <img class="img-product lazyload"
                                                 data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
                                                 src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
@@ -588,7 +588,7 @@
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                        <a href="" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -686,7 +686,7 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="{{route('productdetails')}}" class="product-img">
+                                        <a href="" class="product-img">
                                             <img class="img-product lazyload"
                                                 data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
                                                 src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
@@ -707,7 +707,7 @@
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                        <a href="" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -721,7 +721,7 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="{{route('productdetails')}}" class="product-img">
+                                        <a href="" class="product-img">
                                             <img class="img-product lazyload"
                                                 data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
                                                 src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
@@ -742,7 +742,7 @@
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                        <a href="" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -756,7 +756,7 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="{{route('productdetails')}}" class="product-img">
+                                        <a href="" class="product-img">
                                             <img class="img-product lazyload"
                                                 data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
                                                 src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
@@ -777,7 +777,7 @@
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                        <a href="" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -791,7 +791,7 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="{{route('productdetails')}}" class="product-img">
+                                        <a href="" class="product-img">
                                             <img class="img-product lazyload"
                                                 data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
                                                 src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
@@ -812,7 +812,7 @@
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                        <a href="" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -826,7 +826,7 @@
                             <div class="swiper-slide">
                                 <div class="card-product">
                                     <div class="card-product-wrapper">
-                                        <a href="{{route('productdetails')}}" class="product-img">
+                                        <a href="" class="product-img">
                                             <img class="img-product lazyload"
                                                 data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
                                                 src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="image-product">
@@ -847,7 +847,7 @@
                                         </ul>
                                     </div>
                                     <div class="card-product-info">
-                                        <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Three
+                                        <a href="" class="name-product link fw-medium text-md">Three
                                             Big Coffee Table</a>
                                         <p class="price-wrap fw-medium">
                                             <span class="price-new text-primary">$120.00</span>
@@ -917,7 +917,7 @@
                                                 </div>
                                                 <div class="info">
                                                     <div class="name text-white text-md fw-medium">Sarah T.</div>
-                                                    <a href="{{route('productdetails')}}" class="meta text-white link">Purchase
+                                                    <a href="" class="meta text-white link">Purchase
                                                         item: <span class="fw-medium">Linen Wrap Top</span></a>
                                                 </div>
                                             </div>
@@ -946,7 +946,7 @@
                                                 </div>
                                                 <div class="info">
                                                     <div class="name text-white text-md fw-medium">Vineta P.</div>
-                                                    <a href="{{route('productdetails')}}" class="meta text-white link">Purchase
+                                                    <a href="" class="meta text-white link">Purchase
                                                         item: <span class="fw-medium">Round Wooden Table </span></a>
                                                 </div>
                                             </div>
@@ -1444,7 +1444,7 @@
                                     <div class="swiper-slide">
                                         <div class="card-product">
                                             <div class="card-product-wrapper">
-                                                <a href="{{route('productdetails')}}" class="product-img">
+                                                <a href="" class="product-img">
                                                     <img class="img-product lazyload"
                                                         data-src="images/products/furniture/nightstand-brown.jpg"
                                                         src="images/products/furniture/nightstand-brown.jpg"
@@ -1493,7 +1493,7 @@
                                                 </div>
                                             </div>
                                             <div class="card-product-info">
-                                                <a href="{{route('productdetails')}}"
+                                                <a href=""
                                                     class="name-product link fw-medium text-md">Nook Nightstand</a>
                                                 <p class="price-wrap fw-medium">
                                                     <span class="price-new text-primary">$150.00</span>
@@ -1533,7 +1533,7 @@
                                     <div class="swiper-slide">
                                         <div class="card-product">
                                             <div class="card-product-wrapper">
-                                                <a href="{{route('productdetails')}}" class="product-img">
+                                                <a href="" class="product-img">
                                                     <img class="img-product lazyload"
                                                         data-src="images/products/furniture/talco-table-blue.jpg"
                                                         src="images/products/furniture/talco-table-blue.jpg"
@@ -1579,7 +1579,7 @@
                                                 </ul>
                                             </div>
                                             <div class="card-product-info">
-                                                <a href="{{route('productdetails')}}"
+                                                <a href=""
                                                     class="name-product link fw-medium text-md">Talco Coffee Table</a>
                                                 <p class="price-wrap fw-medium">
                                                     <span class="price-new">$130.00</span>
@@ -1611,7 +1611,7 @@
                                     <div class="swiper-slide">
                                         <div class="card-product">
                                             <div class="card-product-wrapper">
-                                                <a href="{{route('productdetails')}}" class="product-img">
+                                                <a href="" class="product-img">
                                                     <img class="img-product lazyload"
                                                         data-src="images/products/furniture/porcini-table.jpg"
                                                         src="images/products/furniture/porcini-table.jpg"
@@ -1654,7 +1654,7 @@
                                                 </ul>
                                             </div>
                                             <div class="card-product-info">
-                                                <a href="{{route('productdetails')}}"
+                                                <a href=""
                                                     class="name-product link fw-medium text-md">Porcini Coffee Table</a>
                                                 <p class="price-wrap fw-medium">
                                                     <span class="price-new">$120.00</span>
@@ -1685,7 +1685,7 @@
                                     <div class="swiper-slide">
                                         <div class="card-product">
                                             <div class="card-product-wrapper">
-                                                <a href="{{route('productdetails')}}" class="product-img">
+                                                <a href="" class="product-img">
                                                     <img class="img-product lazyload"
                                                         data-src="images/products/furniture/three-big-table.jpg"
                                                         src="images/products/furniture/three-big-table.jpg"
@@ -1730,7 +1730,7 @@
                                                 </ul>
                                             </div>
                                             <div class="card-product-info">
-                                                <a href="{{route('productdetails')}}"
+                                                <a href=""
                                                     class="name-product link fw-medium text-md">Three Big Coffee
                                                     Table</a>
                                                 <p class="price-wrap fw-medium">
@@ -1797,7 +1797,7 @@
                             <div class="tf-mini-cart-items">
                                 <div class="tf-mini-cart-item file-delete">
                                     <div class="tf-mini-cart-image">
-                                        <a href="{{route('productdetails')}}">
+                                        <a href="">
                                             <img class="lazyload"
                                                 data-src="images/products/furniture/nightstand-dark-brown.jpg"
                                                 src="images/products/furniture/nightstand-dark-brown.jpg"
@@ -1806,7 +1806,7 @@
                                     </div>
                                     <div class="tf-mini-cart-info">
                                         <div class="d-flex justify-content-between">
-                                            <a class="title link text-md fw-medium" href="{{route('productdetails')}}">Nook
+                                            <a class="title link text-md fw-medium" href="">Nook
                                                 Nightstand</a>
                                             <i class="icon icon-close remove fs-12"></i>
                                         </div>
@@ -1828,7 +1828,7 @@
                                 </div>
                                 <div class="tf-mini-cart-item file-delete">
                                     <div class="tf-mini-cart-image">
-                                        <a href="{{route('productdetails')}}">
+                                        <a href="">
                                             <img class="lazyload"
                                                 data-src="images/products/furniture/talco-table-blue.jpg"
                                                 src="images/products/furniture/talco-table-blue.jpg" alt="img-product">
@@ -1836,7 +1836,7 @@
                                     </div>
                                     <div class="tf-mini-cart-info">
                                         <div class="d-flex justify-content-between">
-                                            <a class="title link text-md fw-medium" href="{{route('productdetails')}}">Talco
+                                            <a class="title link text-md fw-medium" href="">Talco
                                                 Coffee Table</a>
                                             <i class="icon icon-close remove fs-12"></i>
                                         </div>
@@ -1886,7 +1886,7 @@
                                         <div class="swiper-slide">
                                             <div class="tf-mini-cart-item line radius-16">
                                                 <div class="tf-mini-cart-image">
-                                                    <a href="{{route('productdetails')}}">
+                                                    <a href="">
                                                         <img class="lazyload"
                                                             data-src="images/products/furniture/porcini-table.jpg"
                                                             src="images/products/furniture/porcini-table.jpg"
@@ -1895,7 +1895,7 @@
                                                 </div>
                                                 <div class="tf-mini-cart-info justify-content-center">
                                                     <a class="title link text-md fw-medium"
-                                                        href="{{route('productdetails')}}">Porcini Coffee Table</a>
+                                                        href="">Porcini Coffee Table</a>
                                                     <p class="price-wrap text-sm fw-medium">
                                                         <span class="new-price">$120.00</span>
                                                     </p>
@@ -1908,7 +1908,7 @@
                                         <div class="swiper-slide">
                                             <div class="tf-mini-cart-item line radius-16">
                                                 <div class="tf-mini-cart-image">
-                                                    <a href="{{route('productdetails')}}">
+                                                    <a href="">
                                                         <img class="lazyload"
                                                             data-src="images/products/furniture/three-big-table.jpg"
                                                             src="images/products/furniture/three-big-table.jpg"
@@ -1917,7 +1917,7 @@
                                                 </div>
                                                 <div class="tf-mini-cart-info justify-content-center">
                                                     <a class="title link text-md fw-medium"
-                                                        href="{{route('productdetails')}}">Three Big Coffee Table</a>
+                                                        href="">Three Big Coffee Table</a>
                                                     <p class="price-wrap text-sm fw-medium">
                                                         <span class="new-price text-primary">$140.00</span>
                                                         <span
@@ -2124,7 +2124,7 @@
                 <div class="tf-product-info-wrap">
                     <div class="tf-product-info-inner">
                         <div class="tf-product-info-heading">
-                            <h6 class="product-info-name"><a href="{{route('productdetails')}}" class="link">Nook Nightstand</a></h6>
+                            <h6 class="product-info-name"><a href="" class="link">Nook Nightstand</a></h6>
                             <div class="product-info-price">
                                 <h6 class="price-new price-on-sale">$150.00</h6>
                                 <h6 class="price-old">$170.00</h6>
@@ -2176,7 +2176,7 @@
                             <a href="#" class="tf-btn w-100 animate-btn paypal btn-primary">Buy It Now</a>
                             <a href="checkout.html" class="more-choose-payment link">More payment options</a>
                         </div>
-                        <a href="{{route('productdetails')}}" class="view-details link">View full details <i
+                        <a href="" class="view-details link">View full details <i
                                 class="icon icon-arrow-right"></i></a>
                     </div>
                 </div>
@@ -2196,13 +2196,13 @@
                         <div class="tf-compare-list">
                             <div class="tf-compare-item file-delete">
                                 <span class="icon-close remove"></span>
-                                <a href="{{route('productdetails')}}" class="image">
+                                <a href="" class="image">
                                     <img class="lazyload" data-src="images/products/furniture/nightstand-brown.jpg"
                                         src="images/products/furniture/nightstand-brown.jpg" alt="">
                                 </a>
                                 <div class="content">
                                     <div class="text-title">
-                                        <a class="link text-line-clamp-2" href="{{route('productdetails')}}">Nook Nightstand</a>
+                                        <a class="link text-line-clamp-2" href="">Nook Nightstand</a>
                                     </div>
                                     <p class="price-wrap">
                                         <span class="new-price text-primary">$150.00</span>
@@ -2212,13 +2212,13 @@
                             </div>
                             <div class="tf-compare-item file-delete">
                                 <span class="icon-close remove"></span>
-                                <a href="{{route('productdetails')}}" class="image">
+                                <a href="" class="image">
                                     <img class="lazyload" data-src="images/products/furniture/talco-table-blue.jpg"
                                         src="images/products/furniture/talco-table-blue.jpg" alt="">
                                 </a>
                                 <div class="content">
                                     <div class="text-title">
-                                        <a class="link text-line-clamp-2" href="{{route('productdetails')}}">Talco Coffee
+                                        <a class="link text-line-clamp-2" href="">Talco Coffee
                                             Table</a>
                                     </div>
                                     <p class="price-wrap">
@@ -2228,13 +2228,13 @@
                             </div>
                             <div class="tf-compare-item file-delete">
                                 <span class="icon-close remove"></span>
-                                <a href="{{route('productdetails')}}" class="image">
+                                <a href="" class="image">
                                     <img class="lazyload" data-src="images/products/furniture/porcini-table.jpg"
                                         src="images/products/furniture/porcini-table.jpg" alt="">
                                 </a>
                                 <div class="content">
                                     <div class="text-title">
-                                        <a class="link text-line-clamp-2" href="{{route('productdetails')}}">Porcini Coffee
+                                        <a class="link text-line-clamp-2" href="">Porcini Coffee
                                             Table</a>
                                     </div>
                                     <p class="price-wrap">

@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'homepage'])->name('homepage');
 Route::get('/list/product/{category}', [HomeController::class, 'productlist'])->name('productlist');
-Route::get('/product', [HomeController::class, 'productdetails'])->name('productdetails');
+Route::get('/product/{product}', [HomeController::class, 'productdetails'])->name('productdetails');
 
 // 
 Route::get('/contact', [HomeController::class, 'contactpage'])->name('contactpage');

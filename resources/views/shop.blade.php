@@ -226,13 +226,13 @@
             <div class="container">
                 <ul class="breadcrumb-list">
                     <li class="item-breadcrumb">
-                        <a href="index-2.html" class="text">Home</a>
+                        <a href="index-2.html" class="text">Accueil</a>
                     </li>
                     <li class="item-breadcrumb dot">
                         <span></span>
                     </li>
                     <li class="item-breadcrumb">
-                        <span class="text">Women</span>
+                        <span class="text">Conteneurs</span>
                     </li>
                 </ul>
             </div>
@@ -242,7 +242,7 @@
         <section class="page-title flat-spacing-4 pt-0">
             <div class="container">
                 <div class="box-title text-center justify-items-center">
-                    <h4 class="title">Women</h4>
+                    <h4 class="title">Conteneurs</h4>
                 </div>
             </div>
         </section>
@@ -300,7 +300,7 @@
                         <!-- Card Product 1 -->
                         <div class="card-product style-list" data-availability="In stock" data-brand="Vineta">
                             <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
+                                <a href="" class="product-img">
                                     <img class="img-product lazyload" data-src="{{asset('container/20160803_103542.jpg')}}"
                                         src="{{asset('container/20160803_103542.jpg')}}" alt="image-product">
                                     <img class="img-hover lazyload" data-src="{{asset('container/20160803_103542.jpg')}}"
@@ -309,7 +309,7 @@
                             </div>
                             <div class="card-product-info">
                                 <div class="info-list">
-                                    <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Graphic
+                                    <a href="" class="name-product link fw-medium text-md">Graphic
                                         Printed Pure Cotton T-shirt</a>
                                     <p class="price-wrap fw-medium text-md">
                                         <span class="price-new text-primary">$50.00</span>
@@ -336,7 +336,7 @@
                         <!-- Card Product 2 -->
                         <div class="card-product style-list" data-availability="In stock" data-brand="Vineta">
                             <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
+                                <a href="" class="product-img">
                                     <img class="img-product lazyload" data-src="{{asset('container/20160803_103542.jpg')}}"
                                         src="{{asset('container/20160803_103542.jpg')}}" alt="image-product">
                                     <img class="img-hover lazyload" data-src="{{asset('container/20160803_103542.jpg')}}"
@@ -345,7 +345,7 @@
                             </div>
                             <div class="card-product-info">
                                 <div class="info-list">
-                                    <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Graphic
+                                    <a href="" class="name-product link fw-medium text-md">Graphic
                                         Printed Pure Cotton T-shirt</a>
                                     <p class="price-wrap fw-medium text-md">
                                         <span class="price-new text-primary">$50.00</span>
@@ -372,7 +372,7 @@
                         <!-- Card Product 3 -->
                         <div class="card-product style-list" data-availability="In stock" data-brand="Vineta">
                             <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
+                                <a href="" class="product-img">
                                     <img class="img-product lazyload" data-src="{{asset('container/20160803_103542.jpg')}}"
                                         src="{{asset('container/20160803_103542.jpg')}}" alt="image-product">
                                     <img class="img-hover lazyload" data-src="{{asset('container/20160803_103542.jpg')}}"
@@ -381,7 +381,7 @@
                             </div>
                             <div class="card-product-info">
                                 <div class="info-list">
-                                    <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Graphic
+                                    <a href="" class="name-product link fw-medium text-md">Graphic
                                         Printed Pure Cotton T-shirt</a>
                                     <p class="price-wrap fw-medium text-md">
                                         <span class="price-new text-primary">$50.00</span>
@@ -408,7 +408,7 @@
                         <!-- Card Product 4 -->
                         <div class="card-product style-list" data-availability="In stock" data-brand="Vineta">
                             <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
+                                <a href="" class="product-img">
                                     <img class="img-product lazyload" data-src="{{asset('container/20160803_103542.jpg')}}"
                                         src="{{asset('container/20160803_103542.jpg')}}" alt="image-product">
                                     <img class="img-hover lazyload" data-src="{{asset('container/20160803_103542.jpg')}}"
@@ -417,7 +417,7 @@
                             </div>
                             <div class="card-product-info">
                                 <div class="info-list">
-                                    <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Graphic
+                                    <a href="" class="name-product link fw-medium text-md">Graphic
                                         Printed Pure Cotton T-shirt</a>
                                     <p class="price-wrap fw-medium text-md">
                                         <span class="price-new text-primary">$50.00</span>
@@ -444,7 +444,7 @@
                         <!-- Card Product 5 -->
                         <div class="card-product style-list" data-availability="In stock" data-brand="Vineta">
                             <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
+                                <a href="" class="product-img">
                                     <img class="img-product lazyload" data-src="{{asset('container/20160803_103542.jpg')}}"
                                         src="{{asset('container/20160803_103542.jpg')}}" alt="image-product">
                                     <img class="img-hover lazyload" data-src="{{asset('container/20160803_103542.jpg')}}"
@@ -453,7 +453,7 @@
                             </div>
                             <div class="card-product-info">
                                 <div class="info-list">
-                                    <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">Graphic
+                                    <a href="" class="name-product link fw-medium text-md">Graphic
                                         Printed Pure Cotton T-shirt</a>
                                     <p class="price-wrap fw-medium text-md">
                                         <span class="price-new text-primary">$50.00</span>
@@ -501,11 +501,11 @@
                         <div class="card-product grid style-1 card-product-size" data-availability="In stock"
                             data-brand="Vineta">
                             <div class="card-product-wrapper">
-                                <a href="{{route('productdetails')}}" class="product-img">
-                                    <img class="img-product lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
-                                        src="{{asset('container/18423846-01.jpg')}}" alt="image-product">
-                                    <img class="img-hover lazyload" data-src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}"
-                                        src="{{asset('container/40piedsHCOpenSide-occasion.webp')}}" alt="image-product">
+                                <a href="{{route('productdetails',$conteneur->id)}}" class="product-img">
+                                    <img class="img-product lazyload" data-src="{{asset($conteneur->img1)}}"
+                                        src="{{asset($conteneur->img1)}}" alt="image-product">
+                                    <img class="img-hover lazyload" data-src="{{asset($conteneur->img1)}}"
+                                        src="{{asset($conteneur->img1)}}" alt="image-product">
                                 </a>
                                 <!-- <div class="on-sale-wrap"><span class="on-sale-item">20% Off</span></div> -->
                                 <ul class="list-product-btn">
@@ -522,7 +522,7 @@
 
                             </div>
                             <div class="card-product-info">
-                                <a href="{{route('productdetails')}}" class="name-product link fw-medium text-md">{{$conteneur->label}}</a>
+                                <a href="{{route('productdetails',$conteneur->id)}}" class="name-product link fw-medium text-md">{{$conteneur->label}}</a>
                                 <p class="price-wrap fw-medium">
                                     <span class="price-new text-primary">${{$conteneur->prix}}</span>
                                     <span class="">{{$conteneur->etat}}</span>
@@ -961,10 +961,10 @@
                     <ul class="collapse-body list-recent">
                         <li>
                             <div class="recent-blog-item">
-                                <a href="{{route('productdetails')}}" class="img-product"><img
+                                <a href="" class="img-product"><img
                                         src="images/products/recent/recent6.jpg" alt="img"></a>
                                 <div class="content">
-                                    <a href="{{route('productdetails')}}" class="title text-md link fw-medium">Striped short
+                                    <a href="" class="title text-md link fw-medium">Striped short
                                         sleeve shirt</a>
                                     <div class="price text-md fw-medium">
                                         <span class="new-price">$120.00</span>
@@ -976,10 +976,10 @@
                         </li>
                         <li>
                             <div class="recent-blog-item">
-                                <a href="{{route('productdetails')}}" class="img-product"><img
+                                <a href="" class="img-product"><img
                                         src="images/products/recent/recent7.jpg" alt="img"></a>
                                 <div class="content">
-                                    <a href="{{route('productdetails')}}" class="title text-md link fw-medium">Striped short
+                                    <a href="" class="title text-md link fw-medium">Striped short
                                         sleeve shirt</a>
                                     <div class="price text-md fw-medium">
                                         <span class="new-price">$120.00</span>
@@ -1039,7 +1039,7 @@
                                     <li><a href="{{route('productlist','Occasions')}}" class="sub-nav-link">Occasions</a></li>
                                     <li><a href="{{route('productlist','Petit')}}" class="sub-nav-link">Small</a></li>
                                     <li><a href="{{route('productlist','Standard')}}" class="sub-nav-link">Standards</a></li>
-                                    <li><a href="{{route('productlist', 'Specifique')}}" class="sub-nav-link">Specific</a></li>
+                                    <li><a href="{{route('productlist','Specifique')}}" class="sub-nav-link">Specific</a></li>
                                 </ul>
                             </div>
 
@@ -1053,8 +1053,8 @@
                             <div id="dropdown-menu-shop" class="collapse">
                                 <ul class="sub-nav-menu">
                                     <li><a href="{{route('productlist','Réfrigérant')}}" class="sub-nav-link">Reefer</a></li>
-                                    <li><a href="{{route('productlist', 'Isotherme')}}" class="sub-nav-link">Isotherm</a></li>
-                                    <li><a href="{{route('productlist', 'Chambre froide')}}" class="sub-nav-link">Cold Room</a></li>
+                                    <li><a href="{{route('productlist','Isotherme')}}" class="sub-nav-link">Isotherm</a></li>
+                                    <li><a href="{{route('productlist','Chambre froide')}}" class="sub-nav-link">Cold Room</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -1067,10 +1067,10 @@
                             <div id="dropdown-menu-product" class="collapse">
                                 <ul class="sub-nav-menu">
                                     <li><a href="{{route('productlist','Bureau')}}" class="sub-nav-link">Office</a></li>
-                                    <li><a href="{{route('productlist', 'Sanitaire')}}" class="sub-nav-link">Sanitary</a></li>
-                                    <li><a href="{{route('productlist', 'Bungalow')}}" class="sub-nav-link">Bungalow</a></li>
-                                    <li><a href="{{route('productlist', 'Restauration')}}" class="sub-nav-link">Catering</a></li>
-                                    <li><a href="{{route('productlist', 'Piscine')}}" class="sub-nav-link">Swimming pool</a></li>
+                                    <li><a href="{{route('productlist','Sanitaire')}}" class="sub-nav-link">Sanitary</a></li>
+                                    <li><a href="{{route('productlist','Bungalow')}}" class="sub-nav-link">Bungalow</a></li>
+                                    <li><a href="{{route('productlist','Restauration')}}" class="sub-nav-link">Catering</a></li>
+                                    <li><a href="{{route('productlist','Piscine')}}" class="sub-nav-link">Swimming pool</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -1295,7 +1295,7 @@
                                     <div class="swiper-slide">
                                         <div class="card-product grid style-3 card-product-size">
                                             <div class="card-product-wrapper">
-                                                <a href="{{route('productdetails')}}" class="product-img">
+                                                <a href="" class="product-img">
                                                     <img class="img-product lazyload"
                                                         data-src="{{asset('images/products/fashion/product-27.jpg')}}"
                                                         src="{{asset('images/products/fashion/product-27.jpg')}}"
@@ -1307,7 +1307,7 @@
                                                 </a>
 
                                                 <div class="product-btn-main">
-                                                    <a href="{{route('productdetails')}}" class="btn-main-product ">
+                                                    <a href="" class="btn-main-product ">
                                                         <span class="icon icon-cart2"></span>
                                                         <span class="text-md fw-medium">
                                                             Add to Cart
@@ -1317,7 +1317,7 @@
 
                                             </div>
                                             <div class="card-product-info">
-                                                <a href="{{route('productdetails')}}"
+                                                <a href=""
                                                     class="name-product link fw-medium text-md">Basic Sports T-Shirt
                                                     Crew Neck Ribbed</a>
                                                 <p class="price-wrap fw-medium">
@@ -1331,7 +1331,7 @@
                                     <div class="swiper-slide">
                                         <div class="card-product grid style-3">
                                             <div class="card-product-wrapper">
-                                                <a href="{{route('productdetails')}}" class="product-img">
+                                                <a href="" class="product-img">
                                                     <img class="img-product lazyload"
                                                         data-src="{{asset('images/products/fashion/product-10.jpg')}}"
                                                         src="{{asset('images/products/fashion/product-10.jpg')}}"
@@ -1343,7 +1343,7 @@
                                                 </a>
 
                                                 <div class="product-btn-main">
-                                                    <a href="{{route('productdetails')}}" class="btn-main-product ">
+                                                    <a href="" class="btn-main-product ">
                                                         <span class="icon icon-cart2"></span>
                                                         <span class="text-md fw-medium">
                                                             Add to Cart
@@ -1353,7 +1353,7 @@
 
                                             </div>
                                             <div class="card-product-info">
-                                                <a href="{{route('productdetails')}}"
+                                                <a href=""
                                                     class="name-product link fw-medium text-md">Regular Fit
                                                     Fine Knit Polo Shirt</a>
                                                 <p class="price-wrap fw-medium">
@@ -1367,7 +1367,7 @@
                                     <div class="swiper-slide">
                                         <div class="card-product grid style-3">
                                             <div class="card-product-wrapper">
-                                                <a href="{{route('productdetails')}}" class="product-img">
+                                                <a href="" class="product-img">
                                                     <img class="img-product lazyload"
                                                         data-src="{{asset('images/products/fashion/product-21.jpg')}}"
                                                         src="{{asset('images/products/fashion/product-21.jpg')}}"
@@ -1379,7 +1379,7 @@
                                                 </a>
 
                                                 <div class="product-btn-main">
-                                                    <a href="{{route('productdetails')}}" class="btn-main-product ">
+                                                    <a href="" class="btn-main-product ">
                                                         <span class="icon icon-cart2"></span>
                                                         <span class="text-md fw-medium">
                                                             Add to Cart
@@ -1388,7 +1388,7 @@
                                                 </div>
                                             </div>
                                             <div class="card-product-info">
-                                                <a href="{{route('productdetails')}}"
+                                                <a href=""
                                                     class="name-product link fw-medium text-md">Crop College T-Shirt</a>
                                                 <p class="price-wrap fw-medium">
                                                     <span class="price-new text-primary">$80.00</span>
@@ -1401,7 +1401,7 @@
                                     <div class="swiper-slide">
                                         <div class="card-product grid style-3 card-product-size">
                                             <div class="card-product-wrapper">
-                                                <a href="{{route('productdetails')}}" class="product-img">
+                                                <a href="" class="product-img">
                                                     <img class="img-product lazyload"
                                                         data-src="{{asset('images/products/fashion/product-22.jpg')}}"
                                                         src="{{asset('images/products/fashion/product-22.jpg')}}"
@@ -1412,7 +1412,7 @@
                                                 </a>
 
                                                 <div class="product-btn-main">
-                                                    <a href="{{route('productdetails')}}" class="btn-main-product ">
+                                                    <a href="" class="btn-main-product ">
                                                         <span class="icon icon-cart2"></span>
                                                         <span class="text-md fw-medium">
                                                             Add to Cart
@@ -1422,7 +1422,7 @@
 
                                             </div>
                                             <div class="card-product-info">
-                                                <a href="{{route('productdetails')}}"
+                                                <a href=""
                                                     class="name-product link fw-medium text-md">Bow-Tie T-Shirt</a>
                                                 <p class="price-wrap fw-medium">
                                                     <span class="price-new text-primary">$120.00</span>
@@ -1465,14 +1465,14 @@
                             <div class="tf-mini-cart-items">
                                 <div class="tf-mini-cart-item file-delete">
                                     <div class="tf-mini-cart-image">
-                                        <a href="{{route('productdetails')}}">
+                                        <a href="">
                                             <img class="lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
                                                 src="{{asset('container/18423846-01.jpg')}}" alt="img-product">
                                         </a>
                                     </div>
                                     <div class="tf-mini-cart-info">
                                         <div class="d-flex justify-content-between">
-                                            <a class="title link text-md fw-medium" href="{{route('productdetails')}}">Short
+                                            <a class="title link text-md fw-medium" href="">Short
                                                 Sleeve Sweat</a>
                                             <i class="icon icon-close remove fs-12"></i>
                                         </div>
@@ -1494,14 +1494,14 @@
                                 </div>
                                 <div class="tf-mini-cart-item file-delete">
                                     <div class="tf-mini-cart-image">
-                                        <a href="{{route('productdetails')}}">
+                                        <a href="">
                                             <img class="lazyload" data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
                                                 src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="img-product">
                                         </a>
                                     </div>
                                     <div class="tf-mini-cart-info">
                                         <div class="d-flex justify-content-between">
-                                            <a class="title link text-md fw-medium" href="{{route('productdetails')}}">Loose
+                                            <a class="title link text-md fw-medium" href="">Loose
                                                 Fit Tee</a>
                                             <i class="icon icon-close remove fs-12"></i>
                                         </div>
@@ -1703,7 +1703,7 @@
                 <div class="tf-product-info-wrap">
                     <div class="tf-product-info-inner">
                         <div class="tf-product-info-heading">
-                            <h6 class="product-info-name"><a class="link" href="{{route('productdetails')}}">Striped T-Shirt</a>
+                            <h6 class="product-info-name"><a class="link" href="">Striped T-Shirt</a>
                             </h6>
                             <div class="product-info-price">
                                 <h6 class="price-new price-on-sale">$100.00</h6>
@@ -1758,7 +1758,7 @@
                             <a href="#" class="tf-btn w-100 animate-btn paypal btn-primary">Buy It Now</a>
                             <a href="checkout.html" class="more-choose-payment link">More payment options</a>
                         </div>
-                        <a href="{{route('productdetails')}}" class="view-details link">View full details <i
+                        <a href="" class="view-details link">View full details <i
                                 class="icon icon-arrow-right"></i></a>
                     </div>
                 </div>
@@ -1778,13 +1778,13 @@
                         <div class="tf-compare-list">
                             <div class="tf-compare-item file-delete">
                                 <span class="icon-close remove"></span>
-                                <a href="{{route('productdetails')}}" class="image">
+                                <a href="" class="image">
                                     <img class="lazyload" data-src="images/products/fashion/product-8.jpg"
                                         src="images/products/fashion/product-8.jpg" alt="">
                                 </a>
                                 <div class="content">
                                     <div class="text-title">
-                                        <a class="link text-line-clamp-2" href="{{route('productdetails')}}">Striped T-Shirt</a>
+                                        <a class="link text-line-clamp-2" href="">Striped T-Shirt</a>
                                     </div>
                                     <p class="price-wrap">
                                         <span class="new-price text-primary">$130.00</span>
@@ -1794,13 +1794,13 @@
                             </div>
                             <div class="tf-compare-item file-delete">
                                 <span class="icon-close remove"></span>
-                                <a href="{{route('productdetails')}}" class="image">
+                                <a href="" class="image">
                                     <img class="lazyload" data-src="images/products/fashion/product-6.jpg"
                                         src="images/products/fashion/product-6.jpg" alt="">
                                 </a>
                                 <div class="content">
                                     <div class="text-title">
-                                        <a class="link text-line-clamp-2" href="{{route('productdetails')}}">Striped T-Shirt</a>
+                                        <a class="link text-line-clamp-2" href="">Striped T-Shirt</a>
                                     </div>
                                     <p class="price-wrap">
                                         <span class="new-price text-primary">$130.00</span>
@@ -1810,13 +1810,13 @@
                             </div>
                             <div class="tf-compare-item file-delete">
                                 <span class="icon-close remove"></span>
-                                <a href="{{route('productdetails')}}" class="image">
+                                <a href="" class="image">
                                     <img class="lazyload" data-src="images/products/fashion/product-15.jpg"
                                         src="images/products/fashion/product-15.jpg" alt="">
                                 </a>
                                 <div class="content">
                                     <div class="text-title">
-                                        <a class="link text-line-clamp-2" href="{{route('productdetails')}}">Striped T-Shirt</a>
+                                        <a class="link text-line-clamp-2" href="">Striped T-Shirt</a>
                                     </div>
                                     <p class="price-wrap">
                                         <span class="new-price text-primary">$130.00</span>

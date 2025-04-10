@@ -7,7 +7,9 @@
 
 
 <!-- Mirrored from vineta-html.vercel.app/product-description-accordions.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Mar 2025 18:10:40 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <meta charset="utf-8">
     <title>Vineta - Multipurpose eCommerce</title>
@@ -139,7 +141,7 @@
                             </a>
                         </div>
                         <div class="col-xl-5 d-none d-xl-block text-center">
-                            
+
                         </div>
 
                         <div class="col-xl-4 col-md-4 col-3">
@@ -230,7 +232,13 @@
                         <span></span>
                     </li>
                     <li class="item-breadcrumb">
-                        <span class="text">Linen Blend Pants</span>
+                        <a href="index-2.html" class="text">Conteneur</a>
+                    </li>
+                    <li class="item-breadcrumb dot">
+                        <span></span>
+                    </li>
+                    <li class="item-breadcrumb">
+                        <span class="text">{{$conteneur->label}}</span>
                     </li>
                 </ul>
             </div>
@@ -246,73 +254,91 @@
                             <div class="wrapper-gallery-scroll flat-single-grid flat-single-stacked"
                                 id="gallery-started">
                                 <!-- black -->
-                                <a href="images/products/fashion/women-black-1.jpg" data-scroll="black" target="_blank"
+                                @if ($conteneur->img1)
+                                <a href="{{asset($conteneur->img1)}}" data-scroll="black" target="_blank"
                                     class="item item-scroll-target" data-pswp-width="552px" data-pswp-height="827px">
                                     <img class="tf-image-zoom lazyload"
-                                        data-zoom="images/products/fashion/women-black-1.jpg"
-                                        data-src="images/products/fashion/women-black-1.jpg"
-                                        src="images/products/fashion/women-black-1.jpg" alt="img-product">
+                                        data-zoom="{{asset($conteneur->img1)}}"
+                                        data-src="{{asset($conteneur->img1)}}"
+                                        src="{{asset($conteneur->img1)}}" alt="img-product">
                                 </a>
-                                <a href="images/products/fashion/women-black-2.jpg" data-scroll="black" target="_blank"
+                                @endif
+                                @if ($conteneur->img2)
+                                <a href="{{asset($conteneur->img2)}}" data-scroll="black" target="_blank"
                                     class="item item-scroll-target" data-pswp-width="552px" data-pswp-height="827px">
                                     <img class="tf-image-zoom lazyload"
-                                        data-zoom="images/products/fashion/women-black-2.jpg"
-                                        data-src="images/products/fashion/women-black-2.jpg"
-                                        src="images/products/fashion/women-black-2.jpg" alt="img-product">
+                                        data-zoom="{{asset($conteneur->img2)}}"
+                                        data-src="{{asset($conteneur->img2)}}"
+                                        src="{{asset($conteneur->img2)}}" alt="img-product">
                                 </a>
-                                <a href="images/products/fashion/women-black-3.jpg" data-scroll="black" target="_blank"
+                                @endif
+                                @if ($conteneur->img3)
+                                <a href="{{asset($conteneur->img3)}}" data-scroll="black" target="_blank"
                                     class="item item-scroll-target" data-pswp-width="552px" data-pswp-height="827px">
                                     <img class="tf-image-zoom lazyload"
-                                        data-zoom="images/products/fashion/women-black-3.jpg"
-                                        data-src="images/products/fashion/women-black-3.jpg"
-                                        src="images/products/fashion/women-black-3.jpg" alt="img-product">
+                                        data-zoom="{{asset($conteneur->img3)}}"
+                                        data-src="{{asset($conteneur->img3)}}"
+                                        src="{{asset($conteneur->img3)}}" alt="img-product">
                                 </a>
-                                <a href="images/products/fashion/women-black-4.jpg" data-scroll="black" target="_blank"
+                                @endif
+                                @if ($conteneur->img4)
+                                <a href="{{asset($conteneur->img4)}}" data-scroll="black" target="_blank"
                                     class="item item-scroll-target" data-pswp-width="552px" data-pswp-height="827px">
                                     <img class="tf-image-zoom lazyload"
-                                        data-zoom="images/products/fashion/women-black-4.jpg"
-                                        data-src="images/products/fashion/women-black-4.jpg"
-                                        src="images/products/fashion/women-black-4.jpg" alt="img-product">
+                                        data-zoom="{{asset($conteneur->img4)}}"
+                                        data-src="{{asset($conteneur->img4)}}"
+                                        src="{{asset($conteneur->img4)}}" alt="img-product">
                                 </a>
-                                <a href="images/products/fashion/women-black-5.jpg" data-scroll="black" target="_blank"
+                                @endif
+                                @if ($conteneur->img5)
+                                <a href="{{asset($conteneur->img5)}}" data-scroll="black" target="_blank"
                                     class="item item-scroll-target" data-pswp-width="552px" data-pswp-height="827px">
                                     <img class="tf-image-zoom lazyload"
-                                        data-zoom="images/products/fashion/women-black-5.jpg"
-                                        data-src="images/products/fashion/women-black-5.jpg"
-                                        src="images/products/fashion/women-black-5.jpg" alt="img-product">
+                                        data-zoom="{{asset($conteneur->img5)}}"
+                                        data-src="{{asset($conteneur->img5)}}"
+                                        src="{{asset($conteneur->img5)}}" alt="img-product">
                                 </a>
+                                @endif
+                                @if ($conteneur->img6)
                                 <!-- yellow -->
-                                <a href="images/products/fashion/women-yellow-1.jpg" data-scroll="yellow"
+                                <a href="{{asset($conteneur->img6)}}" data-scroll="yellow"
                                     target="_blank" class="item item-scroll-target" data-pswp-width="552px"
                                     data-pswp-height="827px">
                                     <img class="tf-image-zoom lazyload"
-                                        data-zoom="images/products/fashion/women-yellow-1.jpg"
-                                        data-src="images/products/fashion/women-yellow-1.jpg"
-                                        src="images/products/fashion/women-yellow-1.jpg" alt="img-product">
+                                        data-zoom="{{asset($conteneur->img6)}}"
+                                        data-src="{{asset($conteneur->img6)}}"
+                                        src="{{asset($conteneur->img6)}}" alt="img-product">
                                 </a>
-                                <a href="images/products/fashion/women-yellow-2.jpg" data-scroll="yellow"
+                                @endif
+                                @if ($conteneur->img7)
+                                <a href="{{asset($conteneur->img7)}}" data-scroll="yellow"
                                     target="_blank" class="item item-scroll-target" data-pswp-width="552px"
                                     data-pswp-height="827px">
                                     <img class="tf-image-zoom lazyload"
-                                        data-zoom="images/products/fashion/women-yellow-2.jpg"
-                                        data-src="images/products/fashion/women-yellow-2.jpg"
-                                        src="images/products/fashion/women-yellow-2.jpg" alt="img-product">
+                                        data-zoom="{{asset($conteneur->img7)}}"
+                                        data-src="{{asset($conteneur->img7)}}"
+                                        src="{{asset($conteneur->img7)}}" alt="img-product">
                                 </a>
+                                @endif
+                                @if ($conteneur->img8)
                                 <!-- grey -->
-                                <a href="images/products/fashion/women-grey-1.jpg" data-scroll="grey" target="_blank"
+                                <a href="{{asset($conteneur->img8)}}" data-scroll="grey" target="_blank"
                                     class="item item-scroll-target" data-pswp-width="552px" data-pswp-height="827px">
                                     <img class="tf-image-zoom lazyload"
-                                        data-zoom="images/products/fashion/women-grey-1.jpg"
-                                        data-src="images/products/fashion/women-grey-1.jpg"
-                                        src="images/products/fashion/women-grey-1.jpg" alt="img-product">
+                                        data-zoom="{{asset($conteneur->img8)}}"
+                                        data-src="{{asset($conteneur->img8)}}"
+                                        src="{{asset($conteneur->img)}}" alt="img-product">
                                 </a>
-                                <a href="images/products/fashion/women-grey-2.jpg" target="_blank" data-scroll="grey"
+                                @endif
+                                @if ($conteneur->img9)
+                                <a href="{{asset($conteneur->img9)}}" target="_blank" data-scroll="grey"
                                     class="item item-scroll-target" data-pswp-width="552px" data-pswp-height="827px">
                                     <img class="tf-image-zoom lazyload"
-                                        data-zoom="images/products/fashion/women-grey-2.jpg"
-                                        data-src="images/products/fashion/women-grey-2.jpg"
-                                        src="images/products/fashion/women-grey-2.jpg" alt="img-product">
+                                        data-zoom="{{asset($conteneur->img9)}}"
+                                        data-src="{{asset($conteneur->img9)}}"
+                                        src="{{asset($conteneur->img9)}}" alt="img-product">
                                 </a>
+                                @endif
                             </div>
                         </div>
                         <!-- /Product Images -->
@@ -323,21 +349,15 @@
                                 <div class="tf-zoom-main"></div>
                                 <div class="tf-product-info-list other-image-zoom">
                                     <div class="tf-product-info-heading">
-                                        <h5 class="product-info-name fw-medium">Linen Blend Pants</h5>
+                                        <h5 class="product-info-name fw-medium">{{$conteneur->label}}</h5>
                                         <div class="product-info-rate">
-                                            <div class="list-star">
-                                                <i class="icon icon-star"></i>
-                                                <i class="icon icon-star"></i>
-                                                <i class="icon icon-star"></i>
-                                                <i class="icon icon-star"></i>
-                                                <i class="icon icon-star"></i>
-                                            </div>
-                                            <span class="count-review">(No review)</span>
+
+                                            <span class="count-review">({{$conteneur->etat}})</span>
                                         </div>
                                         <div class="product-info-price">
-                                            <div class="display-sm price-new price-on-sale">$130.00</div>
-                                            <div class="display-sm price-old">$100.00</div>
-                                            <span class="badge-sale">20% Off</span>
+                                            <div class="display-sm price-new price-on-sale">${{$conteneur->prix}}</div>
+                                            <!-- <div class="display-sm price-old">$100.00</div> -->
+                                            <!-- <span class="badge-sale">20% Off</span> -->
                                         </div>
                                         <div class="product-info-sold">
                                             <svg class="icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -358,15 +378,15 @@
                                                     d="M10.8011 0.0119845C10.6829 0.0387033 7.88676 0.701328 6.39096 3.62798C4.90723 6.53083 6.48163 8.24741 6.63386 9.34639L6.63403 9.34629C6.69 9.74974 6.54569 10.0588 6.01356 10.4272C5.69392 10.6486 5.40494 10.6816 5.10034 10.5723V10.5727C5.10034 10.5727 6.17507 11.6058 7.26087 10.8972C8.33686 10.1951 8.02601 9.11809 7.85986 8.63131L7.86025 8.63103C7.46365 7.57951 7.11673 6.19027 8.09319 4.27988C8.67292 3.14557 9.44797 2.35153 10.1868 1.80263C10.426 1.38835 10.7395 1.0331 11.1223 0.795758C11.5326 0.541367 11.2701 -0.0948905 10.8011 0.0119845Z"
                                                     fill="#EA5513" />
                                             </svg>
-                                            <span class="text-dark">30 sold in last 24 hours</span>
+                                            <span class="text-dark">{{$conteneur->quick_description}}</span>
                                         </div>
-                                        <div class="product-info-progress-sale">
+                                        <!-- <div class="product-info-progress-sale">
                                             <div class="title-hurry-up"><span class="text-primary fw-medium">HURRY
                                                     UP!</span> Only <span class="count">4</span> items left!</div>
                                             <div class="progress-sold">
                                                 <div class="value" style="width: 0%;" data-progress="70"></div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="tf-product-total-quantity">
                                         <div class="group-btn">
@@ -376,13 +396,13 @@
                                                 <button class="btn-quantity btn-increase">+</button>
                                             </div>
                                             <a href="#shoppingCart" data-bs-toggle="offcanvas"
-                                                class="tf-btn hover-primary btn-add-to-cart">Add to cart</a>
+                                                class="tf-btn hover-primary btn-add-to-cart">Ajouter au panier</a>
                                         </div>
-                                        <a href="#" class="tf-btn btn-primary w-100 animate-btn">Buy it now</a>
-                                        <a href="checkout.html" class="more-choose-payment link">More payment
-                                            options</a>
+                                        <a href="#" class="tf-btn btn-primary w-100 animate-btn">Ajouter</a>
+                                        <!-- <a href="checkout.html" class="more-choose-payment link">More payment
+                                            options</a> -->
                                     </div>
-                                    <div class="tf-product-info-extra-link">
+                                    <!-- <div class="tf-product-info-extra-link">
                                         <a href="javascript:void(0);" class="product-extra-icon link btn-add-wishlist">
                                             <i class="icon add icon-heart"></i><span class="add">Add to wishlist</span>
                                             <i class="icon added icon-trash"></i><span class="added">Remove from
@@ -394,8 +414,8 @@
                                                 class="icon icon-ask"></i>Ask a question</a>
                                         <a href="#shareSocial" data-bs-toggle="modal" class="product-extra-icon link"><i
                                                 class="icon icon-share"></i>Share</a>
-                                    </div>
-                                    <div class="tf-product-info-trust-seal text-center">
+                                    </div> -->
+                                    <!-- <div class="tf-product-info-trust-seal text-center">
                                         <p class="text-md text-dark-2 text-seal fw-medium">Guarantee Safe Checkout:</p>
                                         <ul class="list-card">
                                             <li class="card-item">
@@ -420,7 +440,7 @@
                                                 <img src="images/payment/ApplePay.png" alt="card">
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> -->
                                     <div class="tf-product-info-delivery-return">
                                         <div class="product-delivery">
                                             <div class="icon icon-car2"></div>
@@ -497,34 +517,10 @@
                     <div id="description" class="collapse">
                         <div class="accordion-body widget-desc">
                             <div class="item">
-                                <p class="fw-medium title">Composition</p>
-                                <ul>
-                                    <li>Viscose 55%, Linen 45%</li>
-                                    <li>We exclude the weight of minor components</li>
-                                </ul>
+                                <p class="fw-medium title">{{$conteneur->description}}</p>
                             </div>
-                            <p class="item">Additional material information</p>
-                            <div class="item">
-                                <p class="title">The total weight of this product contains:</p>
-                                <ul>
-                                    <li>55% LivaEco™ viscose</li>
-                                    <li>Viscose 55%</li>
-                                </ul>
-                            </div>
-                            <ul class="item">
-                                <li>We exclude the weight of minor components such as, but not exclusively: threads,
-                                    buttons, zippers, embellishments and prints.</li>
-                                <li>The total weight of the product is calculated by adding the weight of all layers and
-                                    main components together. Based on that, we calculate how much of that weight is
-                                    made out by each material. For sets & multipacks all pieces are counted together as
-                                    one product in calculations.</li>
-                                <li>Materials in this product explained</li>
-                                <li>LinenLinen is a natural bast fibre derived from flax plants.</li>
-                                <li>LivaEco™ viscoseLivaEco™ viscose is a branded viscose fibre, made from wood pulp.
-                                </li>
-                                <li> ViscoseViscose is a regenerated cellulose fibre commonly made from wood, but the
-                                    raw material could also consist of other cellulosic materials.</li>
-                            </ul>
+
+
                         </div>
                     </div>
                 </div>
@@ -619,7 +615,7 @@
             </div>
         </section>
         <!-- /Product Description -->
-        
+
         <!-- Footer -->
         <footer id="footer" class="footer-default xl-pb-70">
             <div class="footer-top">
@@ -834,12 +830,12 @@
                             </a>
                             <div id="dropdown-menu-home" class="collapse">
                                 <ul class="sub-nav-menu">
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">20' container</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">40' container</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Occasions</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Small</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Standards</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Specific</a></li>
+                                    <li><a href="{{route('productlist','20\' container')}}" class="sub-nav-link">20' container</a></li>
+                                    <li><a href="{{route('productlist','40\' container')}}" class="sub-nav-link">40' container</a></li>
+                                    <li><a href="{{route('productlist','Occasions')}}" class="sub-nav-link">Occasions</a></li>
+                                    <li><a href="{{route('productlist','Petit')}}" class="sub-nav-link">Small</a></li>
+                                    <li><a href="{{route('productlist','Standard')}}" class="sub-nav-link">Standards</a></li>
+                                    <li><a href="{{route('productlist','Specifique')}}" class="sub-nav-link">Specific</a></li>
                                 </ul>
                             </div>
 
@@ -852,9 +848,9 @@
                             </a>
                             <div id="dropdown-menu-shop" class="collapse">
                                 <ul class="sub-nav-menu">
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Reefer</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Isotherm</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Cold Room</a></li>
+                                    <li><a href="{{route('productlist','Réfrigérant')}}" class="sub-nav-link">Reefer</a></li>
+                                    <li><a href="{{route('productlist','Isotherme')}}" class="sub-nav-link">Isotherm</a></li>
+                                    <li><a href="{{route('productlist','Chambre froide')}}" class="sub-nav-link">Cold Room</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -866,11 +862,11 @@
                             </a>
                             <div id="dropdown-menu-product" class="collapse">
                                 <ul class="sub-nav-menu">
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Office</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Sanitary</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Bungalow</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Catering</a></li>
-                                    <li><a href="{{route('productlist')}}" class="sub-nav-link">Swimming pool</a></li>
+                                    <li><a href="{{route('productlist','Bureau')}}" class="sub-nav-link">Office</a></li>
+                                    <li><a href="{{route('productlist','Sanitaire')}}" class="sub-nav-link">Sanitary</a></li>
+                                    <li><a href="{{route('productlist','Bungalow')}}" class="sub-nav-link">Bungalow</a></li>
+                                    <li><a href="{{route('productlist','Restauration')}}" class="sub-nav-link">Catering</a></li>
+                                    <li><a href="{{route('productlist','Piscine')}}" class="sub-nav-link">Swimming pool</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -880,7 +876,7 @@
                         <li class="nav-mb-item">
                             <a href="{{route('homepage')}}" class="mb-menu-link">Our achievements</a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -1166,7 +1162,7 @@
                                                         src="images/products/fashion/product-20.jpg"
                                                         alt="image-product">
                                                 </a>
-                                                
+
                                                 <div class="product-btn-main">
                                                     <a href="product-detail.html" class="btn-main-product ">
                                                         <span class="icon icon-cart2"></span>
@@ -1185,7 +1181,7 @@
                                                     <span class="price-new text-primary">$130.00</span>
                                                     <span class=" price-old">$130.00</span>
                                                 </p>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -1202,7 +1198,7 @@
                                                         src="images/products/fashion/women-black-3.jpg"
                                                         alt="image-product">
                                                 </a>
-                                                
+
                                                 <div class="product-btn-main">
                                                     <a href="product-detail.html" class="btn-main-product ">
                                                         <span class="icon icon-cart2"></span>
@@ -1219,7 +1215,7 @@
                                                     <span class="price-new text-primary">$80.00</span>
                                                     <span class=" price-old">$100.00</span>
                                                 </p>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -1235,7 +1231,7 @@
                                                         data-src="images/products/fashion/product-5.jpg"
                                                         src="images/products/fashion/product-5.jpg" alt="image-product">
                                                 </a>
-                                                
+
                                                 <div class="product-btn-main">
                                                     <a href="product-detail.html" class="btn-main-product ">
                                                         <span class="icon icon-cart2"></span>
@@ -1253,7 +1249,7 @@
                                                     <span class="price-new text-primary">$120.00</span>
                                                     <span class=" price-old">$140.00</span>
                                                 </p>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -1291,14 +1287,14 @@
                             <div class="tf-mini-cart-items">
                                 <div class="tf-mini-cart-item file-delete">
                                     <div class="tf-mini-cart-image">
-                                        <a href="{{route('productdetails')}}">
+                                        <a href="{{route('productdetails',$conteneur)}}">
                                             <img class="lazyload" data-src="{{asset('container/18423846-01.jpg')}}"
                                                 src="{{asset('container/18423846-01.jpg')}}" alt="img-product">
                                         </a>
                                     </div>
                                     <div class="tf-mini-cart-info">
                                         <div class="d-flex justify-content-between">
-                                            <a class="title link text-md fw-medium" href="{{route('productdetails')}}">Short
+                                            <a class="title link text-md fw-medium" href="{{route('productdetails',$conteneur)}}">Short
                                                 Sleeve Sweat</a>
                                             <i class="icon icon-close remove fs-12"></i>
                                         </div>
@@ -1320,15 +1316,14 @@
                                 </div>
                                 <div class="tf-mini-cart-item file-delete">
                                     <div class="tf-mini-cart-image">
-                                        <a href="{{route('productdetails')}}">
+                                        <a href="{{route('productdetails',$conteneur)}}">
                                             <img class="lazyload" data-src="{{asset('container/20piedsDRY-neuf.webp')}}"
                                                 src="{{asset('container/20piedsDRY-neuf.webp')}}" alt="img-product">
                                         </a>
                                     </div>
                                     <div class="tf-mini-cart-info">
                                         <div class="d-flex justify-content-between">
-                                            <a class="title link text-md fw-medium" href="{{route('productdetails')}}">Loose
-                                                Fit Tee</a>
+                                            <a class="title link text-md fw-medium" href="{{route('productdetails',$conteneur)}}">{{$conteneur->label}}</a>
                                             <i class="icon icon-close remove fs-12"></i>
                                         </div>
                                         <div class="d-flex gap-10">
@@ -1351,7 +1346,7 @@
                         </div>
                     </div>
                     <div class="tf-mini-cart-bottom">
-                        
+
                         <div class="tf-mini-cart-bottom-wrap">
                             <div class="tf-cart-totals-discounts">
                                 <div class="tf-cart-total text-xl fw-medium">Total:</div>
@@ -1841,4 +1836,5 @@
 
 
 <!-- Mirrored from vineta-html.vercel.app/product-description-accordions.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Mar 2025 18:10:41 GMT -->
+
 </html>

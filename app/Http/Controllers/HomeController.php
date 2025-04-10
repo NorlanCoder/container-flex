@@ -24,8 +24,9 @@ class HomeController extends Controller
         return view('shop', ['conteneurs' => $conteneurs]);
     }
 
-    public function productdetails(Request $request)
+    public function productdetails(Request $request, string $id)
     {
-        return view('details');
+        $conteneur = Conteneur::find($id);
+        return view('details', ['conteneur' => $conteneur]);
     }
 }
